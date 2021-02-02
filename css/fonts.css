@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;1,400&display=swap');
+
+:root {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  margin: 0;
+
+  /* ukm.no */
+  color: hsl(var(--color-neutral-coldgray-900));
+
+  /* bal.ukm.no */
+  color: hsl(var(--color-primary-orange-900));
+}
+
