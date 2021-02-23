@@ -1,0 +1,7 @@
+<svg id="geo-suggestion" xmlns="http://www.w3.org/2000/svg" width="258.6" height="56" viewBox="0 0 258.6 56">
+  <rect id="Rectangle_154" data-name="Rectangle 154" width="258.6" height="56" fill="#02024a"/>
+  <text id="Skal_du_delta_i_Birkenes_-_21_Januar_" data-name="Skal du delta i Birkenes - 21 Januar?" transform="translate(57.6 31)" fill="#e3ecfc" font-size="10" font-family="Roboto-Light, Roboto" font-weight="300"><tspan x="0" y="0">Skal du delta i </tspan><tspan y="0" font-family="Roboto-Bold, Roboto" font-weight="700">Birkenes - 21 Januar?</tspan></text>
+  <g id="bxs-map" transform="translate(36 20)">
+    <path id="Path_120" data-name="Path 120" d="M8.8,2A4.8,4.8,0,0,0,4,6.8C3.983,10.664,8.618,13.87,8.8,14c0,0,4.817-3.336,4.8-7.2A4.806,4.806,0,0,0,8.8,2Zm0,7.2a2.4,2.4,0,1,1,2.4-2.4A2.4,2.4,0,0,1,8.8,9.2Z" transform="translate(0)" fill="#ff128b"/>
+  </g>
+</svg>

@@ -1,0 +1,39 @@
+<svg id="dropdown" xmlns="http://www.w3.org/2000/svg" width="357" height="56" viewBox="0 0 357 56">
+  <rect id="Rectangle_155" data-name="Rectangle 155" width="357" height="56" fill="#02024a"/>
+  <g id="kategori" transform="translate(72 -1452)" opacity="0.7">
+    <rect id="interactive" width="70" height="44" transform="translate(175 1458)" fill="none"/>
+    <text id="Alle" transform="translate(201 1483)" fill="#f5f7fc" font-size="10" font-family="Roboto-Bold, Roboto" font-weight="700"><tspan x="0" y="0">Alle</tspan></text>
+    <g id="Rectangle_135" data-name="Rectangle 135" transform="translate(176 1467)" fill="none" stroke="#f5f7fc" stroke-width="1">
+      <rect width="68" height="25" rx="12" stroke="none"/>
+      <rect x="0.5" y="0.5" width="67" height="24" rx="11.5" fill="none"/>
+    </g>
+    <path id="Path_347" data-name="Path 347" d="M5.158,7.966a.291.291,0,0,0,.3-.019l3.829-2.7a.3.3,0,0,0,0-.493l-3.829-2.7a.29.29,0,0,0-.3-.019A.3.3,0,0,0,5,2.3V7.7a.3.3,0,0,0,.158.266Z" transform="translate(236 1472.499) rotate(90)" fill="#f5f7fc"/>
+    <g id="bxs-category" transform="translate(-50 1708)">
+      <path id="Path_350" data-name="Path 350" d="M3.5,7h3A.5.5,0,0,0,7,6.5v-3A.5.5,0,0,0,6.5,3h-3a.5.5,0,0,0-.5.5v3A.5.5,0,0,0,3.5,7Zm5,0h3a.5.5,0,0,0,.5-.5v-3a.5.5,0,0,0-.5-.5h-3a.5.5,0,0,0-.5.5v3A.5.5,0,0,0,8.5,7Zm-5,5h3a.5.5,0,0,0,.5-.5v-3A.5.5,0,0,0,6.5,8h-3a.5.5,0,0,0-.5.5v3A.5.5,0,0,0,3.5,12ZM10,12a2,2,0,1,0-2-2A2,2,0,0,0,10,12Z" transform="translate(233 -236)" fill="#f5f7fc"/>
+    </g>
+  </g>
+  <g id="år" transform="translate(-6 -1452)" opacity="0.7">
+    <rect id="interactive-2" data-name="interactive" width="74" height="44" transform="translate(175 1458)" fill="none"/>
+    <text id="_2020" data-name="2020" transform="translate(201 1483)" fill="#f5f7fc" font-size="10" font-family="Roboto-Bold, Roboto" font-weight="700"><tspan x="0" y="0">2020</tspan></text>
+    <g id="Rectangle_135-2" data-name="Rectangle 135" transform="translate(176 1467)" fill="none" stroke="#f5f7fc" stroke-width="1">
+      <rect width="73" height="25" rx="12" stroke="none"/>
+      <rect x="0.5" y="0.5" width="72" height="24" rx="11.5" fill="none"/>
+    </g>
+    <path id="Path_347-2" data-name="Path 347" d="M5.158,7.966a.291.291,0,0,0,.3-.019l3.829-2.7a.3.3,0,0,0,0-.493l-3.829-2.7a.29.29,0,0,0-.3-.019A.3.3,0,0,0,5,2.3V7.7a.3.3,0,0,0,.158.266Z" transform="translate(241 1472.499) rotate(90)" fill="#f5f7fc"/>
+    <path id="Path_348" data-name="Path 348" d="M11,3H10V2H9V3H6V2H5V3H4A1,1,0,0,0,3,4v7a1,1,0,0,0,1,1h7a1,1,0,0,0,1-1V4A1,1,0,0,0,11,3Zm-.5,7.5h-3v-3h3Zm.5-5H4v-1h7Z" transform="translate(183 1472)" fill="#f5f7fc"/>
+  </g>
+  <g id="sted" transform="translate(6 -1449)" opacity="0.699">
+    <rect id="interactive-3" data-name="interactive" width="122" height="44" transform="translate(34 1455)" fill="none"/>
+    <g id="Rectangle_134" data-name="Rectangle 134" transform="translate(36 1464)" fill="none" stroke="#ff128b" stroke-width="1">
+      <rect width="120" height="25" rx="12" stroke="none"/>
+      <rect x="0.5" y="0.5" width="119" height="24" rx="11.5" fill="none"/>
+    </g>
+    <g id="Group_67" data-name="Group 67" transform="translate(-190 -248)">
+      <text id="Birkenes_Agder" data-name="Birkenes, Agder" transform="translate(250 1728)" fill="#ff128b" font-size="10" font-family="Roboto-Bold, Roboto" font-weight="700"><tspan x="0" y="0">Birkenes, Agder</tspan></text>
+    </g>
+    <path id="Path_346" data-name="Path 346" d="M5.158,7.966a.291.291,0,0,0,.3-.019l3.829-2.7a.3.3,0,0,0,0-.493l-3.829-2.7a.29.29,0,0,0-.3-.019A.3.3,0,0,0,5,2.3V7.7a.3.3,0,0,0,.158.266Z" transform="translate(147 1469.5) rotate(90)" fill="#ff128b"/>
+    <g id="bxs-map" transform="translate(42 1470)">
+      <path id="Path_120" data-name="Path 120" d="M8,2A4,4,0,0,0,4,6c-.015,3.222,3.848,5.894,4,6,0,0,4.014-2.78,4-6A4,4,0,0,0,8,2ZM8,8a2,2,0,1,1,2-2A2,2,0,0,1,8,8Z" transform="translate(0 0)" fill="#ff128b"/>
+    </g>
+  </g>
+</svg>
