@@ -1,0 +1,52 @@
+.ukm-bolge {
+    overflow: hidden;
+    position: relative;
+    height: 12.5rem;
+
+    > .div-radius {
+        position: absolute;
+        width: 150%;
+        background: #a0aec0;
+        border-bottom-right-radius: 80%;
+        border-bottom-left-radius: 80%;
+        left: 50%;
+        transform: translate(-50%, 0);
+    }
+
+    // > .div-radius,
+    // .ukm-bolge .background-space {
+    //     height: 12.5rem;
+    // }
+
+    > .background-space {
+        height: calc(214px - 50px);
+    }
+
+    > .div-radius {
+        height: 18.375rem;
+    }
+
+    &-front {
+        height: 18.375rem;
+        position: absolute;
+        padding: 0;
+        border-top-left-radius: 1.25rem;
+        border-top-right-radius: 1.25rem;
+    }
+}
+
+.hero-text {
+    margin: 0;
+    width: 15rem;
+    font: 700 1.75em/1.571em Poppins;
+    color: hsl(223, 54%, 97%);
+    text-shadow: 0 .125rem .25rem hsla(0, 0%, 0%, 0.45);
+
+    &-section {
+        box-sizing: border-box;
+        position: absolute;
+        top: 50%;
+        width: inherit;
+        padding: 0 1.5rem;
+    }
+}

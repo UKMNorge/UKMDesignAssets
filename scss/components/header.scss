@@ -1,0 +1,20 @@
+.header {
+    padding: 0 1rem;
+    padding-top: .2rem;
+}
+
+.ukm-logo {
+    color: hsl(var(--color-neutral-coldgray-100));
+    width: 1.75rem; 
+    height: 1rem; 
+}
+
+.sign-in {
+    color: hsl(var(--color-neutral-coldgray-100));
+    font-size: .8em; 
+    font-weight: var(--font-weight-medium); 
+}
+
+.toggle-burger {
+    float: right;
+}

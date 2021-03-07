@@ -1,0 +1,24 @@
+.testimonial {
+    height: 20.5625rem;
+    background: transparent linear-gradient(360deg, hsl(var(--white)) 0%, hsla((var(--color-primary-blue-100), 0.75)) 27%, hsl(var(--white)) 100%) 0% 0% no-repeat padding-box;
+}
+
+.signature {
+    font: normal normal normal .875rem/1.125rem Sacramento;
+    color: hsl(var(--color-neutral-coldgray-700));
+    margin-left: .25rem;
+
+    &-text {
+        font: normal normal normal .75rem/1.125rem Poppins;
+        color: hsl(var(--color-neutral-coldgray-700));
+        margin-left: .25rem;
+        margin-top: .25rem;
+    }
+}
+
+.side-pic {
+    margin-left:-1.25rem; 
+    width: 12.1875rem; 
+    height: 15.625rem; 
+    border-radius: .75rem;
+}

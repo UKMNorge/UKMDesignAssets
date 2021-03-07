@@ -1,0 +1,148 @@
+.ukm-card {
+    position: relative;
+    border-radius: .625rem;
+    background: #f7fafc;
+    padding: 1.5625rem 2.5rem;
+    box-shadow: 0 .1875rem .375rem .1875rem rgba(0, 0, 0, 19%);
+
+    &-front {
+        width: 20.4375rem;
+        margin: auto;
+    
+        background: linear-gradient( hsl(var(--white)) 19rem, hsla(218, 81%, 94%, 0.24) 1rem);;
+        box-shadow: 0 .5rem 1rem #3983FA1D;
+        padding: 0;
+    }
+
+    &-previous {
+        width: 100%;
+        background: linear-gradient( hsl(var(--white)) 19rem, rgba(237, 242, 250, 0.24) 8rem);
+        box-shadow: 0 .5rem 1rem #3983FA1D;
+    }
+}
+
+.message {
+    &-title {
+        font: normal normal 600 14px/21px Poppins !important;
+        color: hsl(225, 43%, 5%);
+    }
+
+    &-content {
+        display: inline-block;
+        font: 400 12px/18px Roboto;
+        color: hsl(222, 18%, 43%);
+    }
+}
+
+.icon {
+    height: 1.2rem;
+    width: auto;
+    margin-left: .4rem;
+
+    &-chevron {
+        height: 1.7rem;
+        align-self: center;
+        margin-left: 0;
+        margin-right: -.4rem;
+    }
+}
+
+.some {
+    &-title {
+        padding: .7rem .5rem 0;
+        margin: 0;
+    }
+
+    &-section {
+        padding: .7rem .5rem 1.3rem;
+        margin: 0;
+    }
+
+    &-item {
+        appearance: none;
+        background: transparent;
+        border: 0 none;
+        padding: 0 1rem 0 0;
+
+        &-large {
+            padding: .75rem;
+        }
+
+        &-small {
+            padding: .75rem 1.25rem;
+        }
+    }
+}
+
+.dot {
+    height: 1.5rem;
+    width: 1.5rem;
+    background-color: hsla(214, 100%, 99%);
+    border-radius: 50%;
+    display: inline-block;
+    position: absolute;
+    top: 1.6rem;
+    left: 1.6rem;
+}
+
+.svg-dot {
+    width: .83125rem; 
+    height: .875rem; 
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0; 
+    margin: auto; 
+    display: flex;
+    background: none;
+
+    &-large {
+        width: 1.6rem;
+        height: 1.6rem;
+    }
+}
+
+.dot-grey {
+    height: 1.125rem;
+    width: 1.125rem;
+    background-color: hsla(218, 81%, 94%);
+    top: 1.8rem;
+    left: 1.8rem;
+    right: .875rem;
+
+    &-large {
+        position: relative;
+        height: 2.625rem;
+        width: 2.625rem;
+        background-color: hsla(218, 81%, 94%);
+        top: 0;
+        left: 0;
+        right: 0;
+    }
+}
+
+.icon-some {
+    position: absolute;
+    fill:hsla(225, 43%, 5%);
+
+    &-ig-large {
+        width: 1.6625rem; 
+        height: 1.75rem;
+        top: 0;
+        left: 0;
+    }
+
+    &-tiktok-large {
+        width: 1.25rem; 
+        height: 1.25rem;
+        top: 0;
+        left: 0;
+    }
+
+    &-fb-large {
+        width: 1.5rem; 
+        height: 1.55rem;
+        top: 0;
+        left: 0;
+    }
+}
