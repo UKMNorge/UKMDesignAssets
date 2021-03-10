@@ -1,7 +1,29 @@
+.ukm-logo {
+    color: hsl(var(--color-neutral-coldgray-100));
+}
+
+.sign-in {
+    color: hsl(var(--color-neutral-coldgray-100));
+    font-weight: var(--font-weight-medium); 
+}
+
+.toggle-burger {
+    float: right;
+}
+
 @media (max-width: 991.98px) {
     .header {
         padding: 0 1rem;
         padding-top: .2rem;
+    }
+
+    .ukm-logo {
+        width: 1.75rem; 
+        height: 1rem; 
+    }
+
+    .sign-in {
+        font-size: .8em; 
     }
 }
 
@@ -9,21 +31,15 @@
     .header {
         padding-right: 4rem;
         padding-left: 4rem;
+        padding-top: .9rem;
     }
- }
 
-.ukm-logo {
-    color: hsl(var(--color-neutral-coldgray-100));
-    width: 1.75rem; 
-    height: 1rem; 
-}
+    .ukm-logo {
+        width: 4rem;
+        height: 2.25rem;
+    }
 
-.sign-in {
-    color: hsl(var(--color-neutral-coldgray-100));
-    font-size: .8em; 
-    font-weight: var(--font-weight-medium); 
-}
-
-.toggle-burger {
-    float: right;
+    .sign-in {
+        font-size: 1.125em; 
+    }
 }

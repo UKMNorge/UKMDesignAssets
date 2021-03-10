@@ -36,6 +36,7 @@
 
 .hero-text {
     margin: 0;
+    text-shadow: 0 .3125rem .9375rem hsla(0, 0%, 0%, 0.3);
     color: hsl(var(--color-neutral-gray-100));
 
     &-section {
@@ -75,13 +76,19 @@
 
     .hero-text {
         width: 15rem;
-        font: var(--font-weight-medium) 1.75em/2.625em var(--font-poppins);
+        font: var(--font-weight-bold) 1.75rem/2.625rem var(--font-poppins);
     
         &-section {
             top: 50%;
             width: inherit;
             padding: 0 1.5rem;
         }
+    }
+
+    .front-buttons {
+        margin-top: -2rem;
+        margin-bottom: 2rem;
+        padding: 0 1.5rem;
     }
 }
 
@@ -121,7 +128,7 @@
         }
     }
     
-    .lead {
+    .hero-text-lead {
         color: hsl(var(--color-neutral-gray-100));
         font: var(--font-weight-semibold) 2.5em/2.75rem var(--font-poppins);
         opacity: 0.85;
