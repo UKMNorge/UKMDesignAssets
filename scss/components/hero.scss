@@ -19,7 +19,7 @@
     // }
 
     > .background-space {
-        height: calc(214px - 50px);
+        height: calc(13.375rem - 3.125rem);
     }
 
     > .div-radius {
@@ -27,7 +27,6 @@
     }
 
     &-front {
-        height: 18.375rem;
         position: absolute;
         padding: 0;
         border-top-left-radius: 1.25rem;
@@ -37,16 +36,94 @@
 
 .hero-text {
     margin: 0;
-    width: 15rem;
-    font: 700 1.75em/1.571em Poppins;
-    color: hsl(223, 54%, 97%);
-    text-shadow: 0 .125rem .25rem hsla(0, 0%, 0%, 0.45);
+    color: hsl(var(--color-neutral-gray-100));
 
     &-section {
         box-sizing: border-box;
         position: absolute;
-        top: 50%;
-        width: inherit;
-        padding: 0 1.5rem;
+    }
+}
+
+@media (max-width: 991.98px) {
+    .ukm-bolge {
+        overflow: hidden;
+        position: relative;
+        height: 12.5rem;
+    
+        > .div-radius {
+            position: absolute;
+            width: 150%;
+            background: #a0aec0;
+            border-bottom-right-radius: 80%;
+            border-bottom-left-radius: 80%;
+            left: 50%;
+            transform: translate(-50%, 0);
+        }
+    
+        > .background-space {
+            height: calc(13.375rem - 3.125rem);
+        }
+    
+        > .div-radius {
+            height: 18.375rem;
+        }
+    
+        &-front {
+            height: 18.375rem;
+        }
+    }
+
+    .hero-text {
+        width: 15rem;
+        font: var(--font-weight-medium) 1.75em/2.625em var(--font-poppins);
+    
+        &-section {
+            top: 50%;
+            width: inherit;
+            padding: 0 1.5rem;
+        }
+    }
+}
+
+@media (min-width: 992px) {
+    .ukm-bolge {
+        overflow: hidden;
+        position: relative;
+        height: 12.5rem;
+    
+        > .div-radius {
+            position: absolute;
+            width: 150%;
+            left: 50%;
+            transform: translate(-50%, 0);
+        }
+    
+        > .background-space {
+            height: calc(13.375rem - 3.125rem);
+        }
+    
+        > .div-radius {
+            height: 45rem;
+        }
+    
+        &-front {
+            height: 45rem;
+        }
+    }
+
+    .hero-text {
+        font: var(--font-weight-bold) 5rem/5.25rem var(--font-poppins);
+
+        &-section {
+            max-width: 45rem;
+            top: 30%;
+            margin-left: 20rem;
+        }
+    }
+    
+    .lead {
+        color: hsl(var(--color-neutral-gray-100));
+        font: var(--font-weight-semibold) 2.5em/2.75rem var(--font-poppins);
+        opacity: 0.85;
     }
 }
