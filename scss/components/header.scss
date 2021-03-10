@@ -1,7 +1,16 @@
-.header {
-    padding: 0 1rem;
-    padding-top: .2rem;
+@media (max-width: 991.98px) {
+    .header {
+        padding: 0 1rem;
+        padding-top: .2rem;
+    }
 }
+
+@media (min-width: 992px) { 
+    .header {
+        padding-right: 4rem;
+        padding-left: 4rem;
+    }
+ }
 
 .ukm-logo {
     color: hsl(var(--color-neutral-coldgray-100));
