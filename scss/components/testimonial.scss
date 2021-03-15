@@ -1,6 +1,6 @@
 .testimonial {
     height: 20.5625rem;
-    background: transparent linear-gradient(360deg, hsl(var(--white)) 0%, hsla((var(--color-primary-blue-100), 0.75)) 27%, hsl(var(--white)) 100%) 0% 0% no-repeat padding-box;
+    background: transparent linear-gradient(360deg, hsl(var(--white)) 0%, hsla((var(--color-primary-blue-100)), 0.75) 27%, hsl(var(--white)) 100%) 0% 0% no-repeat padding-box;
 }
 
 .signature {
@@ -21,4 +21,71 @@
     width: 12.1875rem; 
     height: 15.625rem; 
     border-radius: .75rem;
+}
+
+@media (max-width: 991.98px) {
+    .testimonial {
+        height: 20.5625rem;
+    }
+
+    .signature {
+        font: normal normal normal .875rem/1.125rem Sacramento;
+        color: hsl(var(--color-neutral-coldgray-700));
+        margin-left: .25rem;
+    
+        &-text {
+            font: normal normal normal .75rem/1.125rem Poppins;
+            color: hsl(var(--color-neutral-coldgray-700));
+            margin-left: .25rem;
+            margin-top: .25rem;
+        }
+    }
+
+    .svg-quote {
+        width: 3.3rem;
+        height: 3.75rem;
+    }
+
+}
+
+@media (min-width: 992px) {
+    .testimonial {
+        height: 64rem;
+        width: 92rem;
+    }
+
+    .signature {
+        font: normal normal normal 34px/44px Sacramento;
+        color: hsl(var(--color-neutral-coldgray-700));
+        margin-left: .25rem;
+    
+        &-text {
+            font: normal normal normal 32px/48px Poppins;
+            color: hsl(var(--color-neutral-coldgray-700));
+            margin-left: .25rem;
+            margin-top: 11.25rem;
+        }
+    }
+
+    .side-pic {
+        // margin-left:-1.25rem; 
+        width: 31.5rem;
+        height: 40.375rem;
+        border-radius: .75rem;
+    }
+
+    .svg-quote {
+        width: 7.5rem;
+        height: 8.375rem;
+        margin-bottom: -26rem;
+        margin-left: -1rem;
+    }
+
+    .svg-chevron {
+        height: 7.2rem;
+        width: auto;
+        margin-left: 0;
+        margin-top: 1.5rem;
+    }
+
 }
