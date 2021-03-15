@@ -9,10 +9,10 @@
         background: hsl(var(--color-neutral-grey-100));
     }
 
-    > .icon {
-        // width: .5rem;
-        // margin: auto;
-    }
+    // > .icon {
+    //     width: .5rem;
+    //     margin: auto;
+    // }
 
     > .text {
         color: hsl(var(--color-neutral-grey-100));
@@ -30,8 +30,8 @@
         );
         box-shadow: 0 .5rem 1rem hsla(var(--color-primary-blue-600, var(--color-primary-orange-600)), 0.25);
         border-radius: 1.5625rem;
-        top: 16rem;
-        left: 1.5rem;
+        // top: 16rem;
+        // left: 1.5rem;
     }
 
     &-front {
@@ -46,8 +46,7 @@
         padding-left: 1.3rem;
         color: hsla(225, 43%, 5%);
         background: none;
-        top: 15.5rem;
-        left: 1.5rem;
+        // top: 15.5rem;
     }
 
     &-footer {
@@ -56,4 +55,140 @@
         color: hsla(225, 43%, 5%);
         background: none;
     }
+}
+
+#spin:after {
+    content:"";
+    animation: spin 0.4s ease-in-out 0.5s;
+}
+
+@keyframes spin {
+0% { content:"voksen?" }
+33% { content:"fra bransjen?" }
+66% { content:"foresatt?" }
+100% { content:"presse?" }
+}
+
+@media (max-width: 991.98px) {
+    .ukm-button {
+        font: normal normal 600 .875em/1.3125em Poppins;
+        display: flex;
+        padding: .875rem 1.2rem;
+        border: none;
+        text-decoration: none;
+    
+        > .half-color {
+            background: hsl(var(--color-neutral-grey-100));
+        }
+    
+        > .text {
+            color: hsl(var(--color-neutral-grey-100));
+            margin-right: .625rem;
+            font-size: .875em;
+        }
+    
+        &-primary {
+            color: hsl(var(--color-primary-blue-50, var(--color-primary-orange-50)));
+            background: 
+            linear-gradient(
+              45deg, 
+              hsl(var(--color-primary-blue-800, var(--color-primary-orange-900))), 
+              hsl(var(--color-primary-blue-600, var(--color-primary-orange-900)))
+            );
+            box-shadow: 0 .5rem 1rem hsla(var(--color-primary-blue-600, var(--color-primary-orange-600)), 0.25);
+            border-radius: 1.5625rem;
+            // top: 16rem;
+            // left: 1.5rem;
+        }
+    
+        &-front {
+            z-index: 2;
+            position: relative; 
+            width: 14.625rem;
+            height: 3rem;
+            padding: .875rem 1rem .875rem 1.4rem;
+        }
+    
+        &-secondary {
+            padding-left: 1.3rem;
+            color: hsla(225, 43%, 5%);
+            background: none;
+            // top: 15.5rem;
+            // left: 1.5rem;
+        }
+    
+        &-footer {
+            width: 13.6875rem;
+            padding-left: 1.3rem;
+            color: hsla(225, 43%, 5%);
+            background: none;
+        }
+    }
+}
+
+@media (min-width: 992px) {
+    .ukm-button {
+        font: normal normal 600 .875em/1.3125em Poppins;
+        // display: flex;
+        display: block;
+        padding: .875rem 1.2rem;
+        border: none;
+        text-decoration: none;
+    
+        > .half-color {
+            background: hsl(var(--color-neutral-grey-100));
+        }
+    
+        > .text {
+            color: hsl(var(--color-neutral-grey-100));
+            margin-right: .625rem;
+            font-size: .875em;
+        }
+
+        >  .icon {
+            width: 1.5rem;
+            height: auto;
+            margin-left: 0;
+        }
+    
+        &-primary {
+            color: hsl(var(--color-primary-blue-50, var(--color-primary-orange-50)));
+            background: 
+            linear-gradient(
+              45deg, 
+              hsl(var(--color-primary-blue-800, var(--color-primary-orange-900))), 
+              hsl(var(--color-primary-blue-600, var(--color-primary-orange-900)))
+            );
+            box-shadow: 0 .5rem 1rem hsla(var(--color-primary-blue-600, var(--color-primary-orange-600)), 0.25);
+            border-radius: 1.5625rem;
+            top: 0rem;
+            left: 0;
+        }
+    
+        &-front {
+            z-index: 2;
+            position: relative; 
+            width: 22rem;
+            height: 4.5rem;
+            font: normal normal 600 22px/33px Poppins;
+            padding: .875rem 1rem .875rem 1.4rem;
+            border-radius: 3.125rem;
+        }
+    
+        &-secondary {
+            padding-left: 2.2rem;
+            color: hsla(225, 43%, 5%);
+            background: none;
+            top: 0rem;
+            text-align: left;
+        }
+    
+        &-footer {
+            width: 13.6875rem;
+            padding-left: 1.3rem;
+            color: hsla(225, 43%, 5%);
+            background: none;
+        }
+    }
+
 }
