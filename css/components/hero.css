@@ -1,0 +1,124 @@
+.ukm-bolge {
+  overflow: hidden;
+  position: relative;
+  height: 12.5rem;
+}
+.ukm-bolge > .div-radius {
+  position: absolute;
+  width: 150%;
+  border-bottom-right-radius: 80%;
+  border-bottom-left-radius: 80%;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+.ukm-bolge > .background-space {
+  height: calc(13.375rem - 3.125rem);
+}
+.ukm-bolge > .div-radius {
+  height: 18.375rem;
+}
+.ukm-bolge-front {
+  position: absolute;
+  padding: 0;
+  border-top-left-radius: 1.25rem;
+  border-top-right-radius: 1.25rem;
+}
+
+.hero-text {
+  margin: 0;
+  text-shadow: 0 0.3125rem 0.9375rem rgba(0, 0, 0, 0.3);
+  color: hsl(var(--color-neutral-gray-100));
+}
+.hero-text-section {
+  box-sizing: border-box;
+  position: absolute;
+}
+
+@media (max-width: 991.98px) {
+  .ukm-bolge {
+    overflow: hidden;
+    position: relative;
+    height: 12.5rem;
+  }
+  .ukm-bolge > .div-radius {
+    position: absolute;
+    width: 150%;
+    background: url("../../img/bolger.png") top center/29rem 21.75rem no-repeat;
+    top: 7.625rem;
+    border-bottom-right-radius: 80%;
+    border-bottom-left-radius: 80%;
+    left: 50%;
+    transform: translate(-50%, 0);
+  }
+  .ukm-bolge > .background-space {
+    height: calc(13.375rem - 3.125rem);
+  }
+  .ukm-bolge > .div-radius {
+    height: 18.375rem;
+  }
+  .ukm-bolge-front {
+    height: 18.375rem;
+  }
+
+  .hero-text {
+    width: 15rem;
+    font: var(--font-weight-bold) 1.75rem/2.625rem var(--font-poppins);
+  }
+  .hero-text-section {
+    top: 50%;
+    width: inherit;
+    padding: 0 1.5rem;
+  }
+
+  .front-buttons {
+    margin-top: -2rem;
+    margin-bottom: 2rem;
+    padding: 0 1.5rem;
+  }
+}
+@media (min-width: 992px) {
+  .ukm-bolge {
+    overflow: hidden;
+    position: relative;
+    height: 12.5rem;
+  }
+  .ukm-bolge > .div-radius {
+    position: absolute;
+    width: 150%;
+    background: url("../../img/bolger.png") top center/120rem 89.9375rem no-repeat;
+    top: -1.5625rem;
+    left: 50%;
+    transform: translate(-50%, 0);
+  }
+  .ukm-bolge > .background-space {
+    height: calc(13.375rem - 3.125rem);
+  }
+  .ukm-bolge > .div-radius {
+    height: 45rem;
+  }
+  .ukm-bolge-front {
+    height: 45rem;
+  }
+
+  .hero-text {
+    font: var(--font-weight-bold) 5rem/5.25rem var(--font-poppins);
+  }
+  .hero-text-section {
+    max-width: 45rem;
+    top: 30%;
+    margin-left: 20rem;
+  }
+
+  .hero-text-lead {
+    color: hsl(var(--color-neutral-gray-100));
+    font: var(--font-weight-semibold) 2.5em/2.75rem var(--font-poppins);
+    opacity: 0.85;
+  }
+
+  .front-buttons {
+    margin-left: 20rem;
+    margin-top: -4rem;
+  }
+}
+
+/*# sourceMappingURL=hero.css.map */
