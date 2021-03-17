@@ -42,6 +42,7 @@
     &-section {
         box-sizing: border-box;
         position: absolute;
+        z-index: 3;
     }
 }
 
@@ -106,6 +107,13 @@
             top: -1.5625rem;
             left: 50%;
             transform: translate(-50%, 0);
+            z-index: 0;
+
+            &-tint {
+                background: linear-gradient(0deg, hsla(223, 16%, 9%, 0.3) 0%, hsla(0, 0%, 100%, 1) 100%);
+                opacity: 0.5;
+                z-index: 1;
+            }
         }
     
         > .background-space {
