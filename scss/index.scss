@@ -1,10 +1,13 @@
-@import './fonts';
+// @import './fonts';
 
-@import './bak_ukm/colors';
-@import './ukm/colors';
+// @use './bak_ukm/colors';
+// @use './ukm/colors';
 
-@import './components/buttons';
-@import './components/cards';
-@import './components/dropdowns';
-@import './components/images';
-@import './components/inputs';
+// @import './components/buttons';
+// @import './components/cards';
+// @import './components/dropdowns';
+// @import './components/images';
+// @import './components/inputs';
+
+@use './ukm/farger';
+@use 'skrift';
