@@ -1,29 +1,19 @@
 .ukm-bolge {
     overflow: hidden;
-    position: relative;
-    height: 12.5rem;
+    // position: relative;
+    // height: 12.5rem;
 
     > .div-radius {
         position: absolute;
         width: 150%;
-        // background: #a0aec0;
         border-bottom-right-radius: 80%;
         border-bottom-left-radius: 80%;
         left: 50%;
         transform: translate(-50%, 0);
     }
 
-    // > .div-radius,
-    // .ukm-bolge .background-space {
-    //     height: 12.5rem;
-    // }
-
     > .background-space {
         height: calc(13.375rem - 3.125rem);
-    }
-
-    > .div-radius {
-        height: 18.375rem;
     }
 
     &-front {
@@ -46,29 +36,29 @@
     }
 }
 
+.callback {
+    display: none;
+}
+
+.burger-text {
+    font: normal normal var(--font-weight-semibold) .875rem/1.125rem var(--font-poppins);
+    color: hsla(225, 43%, 5%, 1);
+}
+
 @media (max-width: 991.98px) {
     .ukm-bolge {
-        overflow: hidden;
         position: relative;
         height: 12.5rem;
     
         > .div-radius {
-            position: absolute;
-            width: 150%;
-            background: url("../../img/bolger.png") top center / 29rem 21.75rem no-repeat;
-            // top: 7.625rem;
-            border-bottom-right-radius: 80%;
-            border-bottom-left-radius: 80%;
-            left: 50%;
-            transform: translate(-50%, 0);
-        }
-    
-        > .background-space {
-            height: calc(13.375rem - 3.125rem);
-        }
-    
-        > .div-radius {
+            background: url("../../img/bolger.png") top center / 100% 21.75rem no-repeat;
             height: 18.375rem;
+
+            &-tint {
+                background: linear-gradient(0deg, rgba(19, 21, 27, 0.3) 0%, white 100%);
+                opacity: 0.5;
+                z-index: 1;
+            }
         }
     
         &-front {
@@ -96,32 +86,19 @@
 
 @media (min-width: 992px) {
     .ukm-bolge {
-        overflow: hidden;
         position: relative;
         height: 12.5rem;
     
         > .div-radius {
-            position: absolute;
-            width: 150%;
-            background: url("../../img/bolger.png") top center / 120rem 89.9375rem no-repeat;
+            background: url("../../img/bolger.png") top center / 100% 89.9375rem no-repeat;
             top: -1.5625rem;
-            left: 50%;
-            transform: translate(-50%, 0);
-            z-index: 0;
+            height: 45rem;
 
             &-tint {
                 background: linear-gradient(0deg, hsla(223, 16%, 9%, 0.3) 0%, hsla(0, 0%, 100%, 1) 100%);
                 opacity: 0.5;
                 z-index: 1;
             }
-        }
-    
-        > .background-space {
-            height: calc(13.375rem - 3.125rem);
-        }
-    
-        > .div-radius {
-            height: 45rem;
         }
     
         &-front {
@@ -148,5 +125,10 @@
     .front-buttons {
         margin-left: 20rem;
         margin-top: -4rem;
+    }
+
+    .burger-text {
+        padding-left: 3rem;
+        padding-right: 2rem;
     }
 }

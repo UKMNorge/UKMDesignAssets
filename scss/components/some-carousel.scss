@@ -130,9 +130,21 @@
         height: 2.6875rem; 
         border-radius: .75rem; 
         position: relative;
+
+        &-square {
+            width: 4rem;
+            height: 4rem;
+        }
     }
 
     .tiktok {
+        // width: .7rem; 
+        // height: .7rem;
+        width: 1.3rem; 
+        height: 1.3rem;
+    }
+
+    .tiktok-card {
         width: .7rem; 
         height: .7rem;
     }
@@ -142,10 +154,21 @@
 @media (min-width: 992px) {
     .img-carousel {
         max-width: none !important;
-        width: 16rem;
-        height: 8rem;
+        width: 13.125rem;
+        height: 6.5625rem;
         border-radius: 1.5625rem; 
         position: relative;
+        
+
+        &-square {
+            width: 10rem;
+            height: 10rem;
+        }
+
+        &-wide {
+            width: 20.875rem;
+            height: 8rem;
+        }
     }
 
     .some-item {
@@ -187,7 +210,7 @@
             }
     
             &-small {
-                padding: .75rem 1.25rem;
+                padding: .75rem 1.4rem;
             }
         }
     }
@@ -197,38 +220,45 @@
     }
 
     .dot {
-        height: 3.375rem;
-        width: 3.375rem;
+        width: 2.75rem;
+        height: 2.6875rem;
         background-color: hsla(214, 100%, 99%);
         border-radius: 50%;
         display: inline-block;
         position: absolute;
-        top: 3.6rem;
-        left: 11.6rem;
+        top: 3.4rem;
+        left: 9.8rem;
+
+        &-wide {
+            left: 16.6rem;
+        }
     
         &-grey {
-            height: 2.5rem;
-            width: 2.5rem;
+            width: 2.125rem;
+            height: 2.1875rem;
             background-color: hsla(218, 81%, 94%);
-            top: 4.05rem;
-            left: 12.05rem;
-            right: .875rem;
+            top: 3.7rem;
+            left: 10.15rem;
         
             &-large {
                 position: relative;
-                height: 2.625rem;
-                width: 2.625rem;
+                width: 5.9375rem;
+                height: 5.875rem;
                 background-color: hsla(218, 81%, 94%);
                 top: 0;
                 left: 0;
                 right: 0;
+            } 
+
+            &-wide {
+                left: 17.05rem;
             }
         }
     }
     
     .svg-dot {
-        width: 1.8rem;
-        height: 1.8rem;
+        width: 1.5rem;
+        height: 1.5rem;
         top: 0;
         right: 0;
         bottom: 0;
@@ -238,14 +268,19 @@
         background: none;
     
         &-large {
-            width: 1.6rem;
-            height: 1.6rem;
+            width: 2.8125rem;
+            height: 2.8125rem;
         }
     }
 
     .tiktok {
-        width: 1.375rem;
-        height: 1.375rem;
+        width: 2.3rem;
+        height: 2.3rem;
+    }
+
+    .tiktok-card {
+        width: 1.3rem; 
+        height: 1.3rem;
     }
 
 }

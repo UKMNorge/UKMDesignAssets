@@ -3,11 +3,11 @@
 // @use './bak_ukm/colors';
 // @use './ukm/colors';
 
-// @import './components/buttons';
-// @import './components/cards';
-// @import './components/dropdowns';
-// @import './components/images';
-// @import './components/inputs';
-
 @use './ukm/farger';
 @use 'skrift';
+
+// Components
+@import './components/geolocation';
+@import './components/header';
+@import './components/hero';
+@import './components/button';
