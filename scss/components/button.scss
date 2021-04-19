@@ -59,7 +59,7 @@
 
 .slideSpan{
 	display: inline;
-	text-indent: 8px;
+	text-indent: .5rem;
 
     span{
         animation: topToBottom 12.5s linear infinite 0s;
@@ -87,6 +87,8 @@
 	80% { opacity: 0; }
 	100% { opacity: 0; }
 }
+
+
 
 @media (max-width: 991.98px) {
     .ukm-button {
@@ -142,6 +144,10 @@
             color: hsla(225, 43%, 5%);
             background: none;
         }
+    }
+
+    .slideSpan {
+        text-indent: .15rem;
     }
 }
 
@@ -208,6 +214,10 @@
             color: hsla(225, 43%, 5%);
             background: none;
         }
+    }
+    
+    .slideSpan {
+        text-indent: .5rem;
     }
 
 }
