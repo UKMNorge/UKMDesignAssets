@@ -12,7 +12,7 @@ $(document).ready(function () {
             $('.' + sublistID ).show(); 
         }
         
-        if (sublistID == 'backToMain' || sublistID == 'nav-icon4') {
+        if (sublistID == 'backToMain' || sublistID == 'hamburger-icon') {
             $('.mainpage').show();
             //$('.' + sublistID ).hide();
             //$('.' + sublistID ).children().hide()
@@ -25,7 +25,7 @@ $(document).ready(function () {
 
     $('.hamburger').on('hide.bs.dropdown', function(e) { if (e.clickEvent) { e.preventDefault();} });
     
-    $('.nav-icon4').click(function(){
+    $('.hamburger-icon').click(function(){
             $(this).toggleClass('open'); 
             $('.hamburger-overlay').toggleClass('open'); 
             $('.hamburger').toggleClass('open'); 
