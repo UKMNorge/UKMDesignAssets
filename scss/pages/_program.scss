@@ -1,0 +1,19 @@
+.program {
+    .hendelse {
+        min-width: 15em;
+        padding: 0.5em;
+        margin: 0.5em 0;
+
+        > .time {
+            float: left;
+            margin-right: 1em;
+        }
+        
+        > .data {
+            margin-left: 4em;
+            > .tittel {
+                font-weight: bold;
+            }
+        }
+    }
+}

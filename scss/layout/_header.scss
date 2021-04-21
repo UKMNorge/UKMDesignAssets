@@ -1,0 +1,145 @@
+/*
+ * ARVET FRA UKMResponsive 🧓
+*/
+.navbar {
+    &-header {
+        padding-top: 0.5rem;
+        padding-bottom: 0rem;
+        margin-bottom: 0rem;
+    }
+
+    &-separator {
+        margin-bottom: 1rem;
+        border-bottom: 5px solid hsl(var(--color-primary-blue-900));
+    }
+
+    &-separator #skygge {
+        height: 15vh;
+        float: right;
+        margin-top: -15vh;
+        margin-right: 4vw;
+    }
+}
+
+#UKMslogan {
+    color: #ffffff;
+    font-size: 1.5rem;
+    padding-top: 1rem;
+
+    @media (min-width: 992px) {
+        margin-top: -3rem;
+    }
+    @media (min-width: 1200px) {
+        padding-bottom: 3.5rem;
+        padding-top: 3.5rem;
+        font-size: 3rem;
+    }
+}
+
+#UKMlogo {
+    width: 3.8em;
+    margin-top: -0.1em;
+}
+
+#UKMheader {
+    background: #fff;
+    position: relative;
+
+    #main_menu_button {
+        background: rgba(255, 255, 255, 0.44);
+    }
+
+    &.navbar-with-slogan {
+        background-repeat: no-repeat;
+        background-position: center top;
+        background-size: cover;
+    }
+
+    /* Section title hvis vi ikke har bakgrunn */
+    .sectionTitle {
+        padding-top: 0.75em;
+        text-align: center;
+
+        & > a {
+            font-size: 1.45em;
+            font-weight: 100;
+            color: hsl(var(--color-primary-blue-900));
+        }
+    }
+
+    &.background {
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+        min-height: 30vh;
+
+        &.top {
+            background-position-y: top;
+        }
+
+        /* Section title hvis vi har bakgrunn */
+        .sectionTitle {
+            position: absolute;
+            bottom: 0.5em;
+
+            & > a {
+                color: #fff;
+
+                &:hover {
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+}
+
+/*
+ * NYTT fra 2020 🎉
+*/
+header {
+    .ukm-logo {
+        color: hsl(var(--color-neutral-coldgray-100));
+    }
+
+    .sign-in {
+        color: hsl(var(--color-neutral-coldgray-100));
+        font-weight: var(--font-weight-medium);
+    }
+
+    .toggle-burger {
+        float: right;
+    }
+
+    @media (max-width: 991.98px) {
+        .header {
+            padding: 0 1rem;
+            padding-top: 0.2rem;
+        }
+
+        .ukm-logo {
+            width: 1.75rem;
+            height: 1rem;
+        }
+
+        .sign-in {
+            font-size: 0.8em;
+        }
+    }
+
+    @media (min-width: 992px) {
+        .header {
+            padding-right: 4rem;
+            padding-left: 4rem;
+            padding-top: 0.9rem;
+        }
+
+        .ukm-logo {
+            width: 4rem;
+            height: 2.25rem;
+        }
+
+        .sign-in {
+            font-size: 1.125em;
+        }
+    }
+}

@@ -1,0 +1,35 @@
+@import './abstracts/mixins';
+@import './abstracts/functions';
+@import './abstracts/ukm/colors';
+
+@import './base/bootstrap_mods';
+@import './base/fonts';
+@import './base/icons-icomoon-entypo';
+@import './base/links';
+@import './base/text';
+
+@import './components/blockquote';
+@import './components/button';
+@import './components/buttons';
+@import './components/card'; 
+@import './components/cards';
+@import './components/dropdowns';
+@import './components/geolocation';
+@import './components/hero';
+@import './components/iframe';
+@import './components/images';
+@import './components/innslag'; // OBS
+@import './components/inputs';
+@import './components/kontakt'; // OBS
+@import './components/menu_page';
+@import './components/overunder';
+@import './components/some-carousel';
+@import './components/testimonial';
+@import './components/fadecollapsible';
+
+@import './layout/header';
+@import './layout/banner';
+@import './layout/nav';
+
+@import './pages/fylke';
+@import './pages/program';

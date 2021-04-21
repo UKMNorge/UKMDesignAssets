@@ -1,0 +1,53 @@
+.small-but-same-height {
+	font-size: .8em;
+	padding-top: .2em;
+}
+
+.is-breakable {
+    word-break: break-word;
+}
+
+.center {
+    text-align: center;
+}
+.right {
+    text-align: right;
+}
+.left {
+    text-align: left;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.click {
+    cursor: pointer;
+}
+
+.alignleft {
+    float: left;
+}
+.alignright {
+    float: right;
+}
+.aligncenter {
+    text-align: center;
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+a:visited,
+a:focus,
+a:active,
+a:hover {
+    color: hsl(var(--color-primary-blue-900));
+}
+
+.wp-caption,
+img {
+    max-width: 100% !important;
+    height: auto;
+}

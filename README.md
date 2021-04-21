@@ -52,7 +52,7 @@ Lim inn den @extend funksjonen som tilsvarer fargepaletten du skal bruke i prosj
 
 **Steg 6**\
 Kjør følgende kommando i terminalen for å la sass observere og kompilere endringer i scss filen din til css når scss filen lagres.\
-`sass --watch ./styles/scss/styles.scss ./styles/css/styles.css`
+`sass --watch scss/index.scss css/index.css`
 
 **Steg 7**\
 Du har nå satt opp sass riktig for å ta i bruk UKMDesignAssets.

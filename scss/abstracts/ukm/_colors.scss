@@ -28,6 +28,11 @@
     --color-dark-blue: 217, 95%, 60%;
     --color-pink: 329, 94%, 52%;
 
+    // dangerous colors 👻
+    --color-danger-50: 0, 81%, 69%;
+    --color-danger-100: 0, 81%, 49%;
+    --color-danger-300: 0, 61%, 49%;
+
     /***** @extend %font; *****/
     --font-roboto: 'Roboto', sans-serif;
     --font-poppins: 'Poppins';

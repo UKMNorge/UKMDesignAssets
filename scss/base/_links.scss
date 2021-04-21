@@ -1,0 +1,11 @@
+/* LINKS */
+a {
+	color: hsl(var(--color-primary-blue-900));
+	cursor: pointer;
+    .nocolor {
+        color: rgba(0, 0, 0, 0.85);
+    }
+}
+.no-color > a {
+	color: #212529 !important;
+}

@@ -19,31 +19,31 @@
         background: linear-gradient( hsl(var(--white)) 19rem, rgba(237, 242, 250, 0.24) 8rem);
         box-shadow: 0 .5rem 1rem #3983FA1D;
     }
-}
 
-.message {
-    &-title {
-        font: normal normal 600 14px/21px Poppins !important;
-        color: hsl(225, 43%, 5%);
+    .message {
+        &-title {
+            font: normal normal 600 14px/21px Poppins !important;
+            color: hsl(225, 43%, 5%);
+        }
+    
+        &-content {
+            display: inline-block;
+            font: 400 12px/18px Roboto;
+            color: hsl(222, 18%, 43%);
+        }
     }
-
-    &-content {
-        display: inline-block;
-        font: 400 12px/18px Roboto;
-        color: hsl(222, 18%, 43%);
-    }
-}
-
-.icon {
-    height: 1.2rem;
-    width: auto;
-    margin-left: .4rem;
-
-    &-chevron {
-        height: 1.7rem;
-        align-self: center;
-        margin-left: 0;
-        margin-right: -.4rem;
+    
+    .icon {
+        height: 1.2rem;
+        width: auto;
+        margin-left: .4rem;
+    
+        &-chevron {
+            height: 1.7rem;
+            align-self: center;
+            margin-left: 0;
+            margin-right: -.4rem;
+        }
     }
 }
 

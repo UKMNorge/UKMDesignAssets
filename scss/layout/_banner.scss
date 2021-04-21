@@ -1,0 +1,31 @@
+.banner {
+    background: hsl(var(--color-primary-blue-900));
+    color: #fff;
+
+    &-banner-container {
+        margin: 0 !important;
+        @media (min-width: 768px) {
+            margin-left: 0px !important;
+            margin-right: 0px !important;
+        }
+    }
+    &-banner {
+        padding-bottom: 0px !important;
+    }
+
+    &-banner {
+        .title {
+            line-height: 1.1;
+            bottom: 0;
+            margin-top: -20px;
+        }
+
+        .innformasjon {
+            margin-left: 0px !important;
+        }
+
+        .knapper .menu-item {
+            padding: 0px !important;
+        }
+    }
+}
