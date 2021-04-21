@@ -33,3 +33,309 @@
 
 @import './pages/fylke';
 @import './pages/program';
+@use 'index';
+
+ul {
+    list-style-type: none;
+}
+
+.title {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    margin-left: 0.8rem;
+    font: normal normal 600 14px/18px Poppins;
+    color: hsla(225, 43%, 5%, 1);
+}
+
+.drop-item {
+    display: flex; 
+    flex-flow: row nowrap; 
+    align-items: center; 
+    padding: 0.7rem 1.5rem;
+}
+
+  @media (min-width: 992px) {
+    .hamburger {
+        margin-left: 1.5rem;
+    }
+
+    .hamburger-menu {
+        top: 9rem !important;
+    }
+}
+
+// test
+// * {
+//     outline: 1px solid hsl(var(--color-primary-blue-400));
+// }
+// test
+
+.clickable {
+    display: inline-block;      
+    padding: 0.8rem 0.5rem;
+}
+
+.ukm-card-section-3 {
+    width: 20.4375rem;
+    height: 18.9375rem;
+}
+
+.people-carousel {
+    margin-left: .5rem;
+    margin-top: -3rem; 
+    overflow: scroll;
+    scrollbar-width: none;
+}
+
+@media (min-width: 992px) {
+    .people-carousel {
+        overflow: hidden;
+    }
+}
+
+.some-carousel {
+    overflow: scroll;
+    scrollbar-width: none;
+}
+
+@media (max-width: 991.98px) {
+    .card-image {
+        width: 19.4375rem;
+        height: 8rem;
+        border-radius: .75rem .75rem 0 0;
+    
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+    
+        &-large {
+            position: relative; 
+            // margin-left: auto;
+            margin-top: 1rem;
+            width: 20.4375rem; 
+            height: 12.75rem; 
+            background: #a0aec0;
+        }
+    
+        &-small {
+            width: 5.5rem; 
+            height: 5.5rem; 
+            border-radius: .75rem;
+        }
+        
+    }
+}
+
+@media (min-width: 992px) {
+    .card-image {
+        width: 37.75rem;
+        height: 15.375rem;        
+        border-radius: .75rem .75rem 0 0;
+    
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+    
+        &-large {
+            position: relative; 
+            // margin-left: auto;
+            margin-top: 1rem;
+            width: 20.4375rem; 
+            height: 12.75rem; 
+            background: #a0aec0;
+        }
+    
+        &-small {
+            // width: 5.5rem; 
+            // height: 5.5rem; 
+            width: 10.9375rem;
+            height: 10.9375rem;
+            border-radius: .75rem;
+        }
+        
+    }
+
+}
+
+.card-element {
+    position: relative;
+    padding: .9rem 1.4rem;
+    margin: 0;
+}
+
+.card-element-end {
+    padding: .5rem;
+}
+
+.message-title {
+    font: normal normal var(--font-weight-semibold) .875em/1.125em Poppins;
+    margin-bottom: 1rem;
+
+    display: inline-block;
+    margin-bottom: 0.25rem;
+}
+
+//nyhter
+@media (max-width: 991.98px) {
+    .message-category {
+        display: block;
+        color: hsl(var(--color-pink)); 
+        text-transform: uppercase; 
+        font: normal normal bold .5em/.9375em Roboto;
+        width: 100%;
+    }
+
+    .message-title-end {
+        font: normal normal var(--font-weight-semibold) .75em/1.125em Poppins;
+        display: inline-block;
+        margin-bottom: .5rem;
+        margin-top: .5rem;
+    }
+
+    .message-content-end {
+        display: inline-block;
+        color: hsl(var(--color-neutral-coldgray-700));
+        font: normal normal normal 11px/15px Roboto;
+        letter-spacing: 0px;
+        max-width: 100%;
+    }
+}
+
+@media (min-width: 992px) {
+    .message-category {
+        display: block;
+        color: hsl(var(--color-pink)); 
+        text-transform: uppercase; 
+        font: normal normal bold 14px/15px Roboto;
+        width: 100%;
+    }
+
+    .message-title-end {
+        font: normal normal 600 24px/30px Poppins;
+        display: inline-block;
+        margin-bottom: .5rem;
+        margin-top: .5rem;
+    }
+
+    .message-content-end {
+        display: inline-block;
+        color: hsl(var(--color-neutral-coldgray-700));
+        font: normal normal normal 18px/27px Roboto;
+        max-width: 100%;
+    }
+}
+
+.se-mer {
+    color: hsl(var(--color-primary-blue-800));
+}
+
+.some-title {
+    padding: .7rem .5rem 0;
+    margin: 0;
+}
+
+.svg-dot {
+    width: .83125rem; 
+    height: .875rem; 
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0; 
+    margin: auto; 
+    display: flex;
+}
+
+.dot {
+    height: 1.5rem;
+    width: 1.5rem;
+    background-color: hsl(var(--color-light-blue));
+    border-radius: 50%;
+    display: inline-block;
+    position: absolute;
+    top: 1.6rem;
+    left: 1.6rem;
+}
+
+.dot-grey {
+    height: 1.125rem;
+    width: 1.125rem;
+    background-color: hsl(var(--color-primary-blue-100));
+    top: 1.8rem;
+    left: 1.8rem;
+    right: .875rem;
+}
+
+.dot-large-grey {
+    position: relative;
+    height: 2.625rem;
+    width: 2.625rem;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.img-carousel-people {
+    width: 4rem; 
+    height: 4rem; 
+    box-shadow: 0rem .1875rem .375rem hsla(var(--color-dark-blue), 0.16);
+}
+
+.icon-some {
+    position: absolute;
+}
+
+.icon-some-large {
+    top: 0;
+    left: 0;
+}
+
+.icon-some-yt {
+    width: 1rem; 
+    height: .90625rem;
+    left: 1.86rem;
+}
+
+.icon-some-large-yt {
+    width: 2rem; 
+    height: 1.8125rem;
+    left: 1.86rem;
+}
+
+.icon {
+    height: 1.2rem;
+    width: auto;
+    margin-left: .4rem;
+}
+  
+.icon-front {
+    height: 1.7rem;
+    align-self: center;
+    margin-left: 0;
+    margin-right: -.4rem;
+}
+
+.btn-toolbar {
+    justify-content: center;
+}
+
+.bread-title {
+    font: normal normal 600 12px/18px Poppins;
+}
+
+ .ukm-button-plain {
+    font: normal normal 600 .75rem/1.125rem Poppins !important; 
+    background: none !important; 
+    padding: .875rem 0 !important;
+ }
+
+ .ukm-button-footer {
+    background: none !important; 
+    padding: .875rem .5rem !important;
+ }
+
+ .dropdown-divider {
+    border-top: 2px solid hsla(var(--color-very-light-blue));
+    width: 13rem;
+    margin: 0.5rem auto;
+ }

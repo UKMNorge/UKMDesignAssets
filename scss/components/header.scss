@@ -1,0 +1,150 @@
+.ukm-logo {
+    color: hsl(var(--color-neutral-coldgray-100));
+}
+
+.sign-in {
+    color: hsl(var(--color-neutral-coldgray-100));
+    font-weight: var(--font-weight-medium); 
+}
+
+.toggle-burger {
+    float: right;
+}
+
+.menu-links {
+    color: hsl(var(--color-neutral-coldgray-100)) !important;
+}
+
+@media (max-width: 991.98px) {
+    .header {
+        padding: 0 1rem;
+        padding-top: .2rem;
+    }
+
+    .ukm-logo {
+        width: 1.75rem; 
+        height: 1rem; 
+    }
+
+    .sign-in {
+        font-size: .8em; 
+    }
+}
+
+@media (min-width: 992px) { 
+    .header {
+        padding-right: 4rem;
+        padding-left: 4rem;
+        padding-top: .9rem;
+    }
+
+    .ukm-logo {
+        width: 4rem;
+        height: 2.25rem;
+    }
+
+    .sign-in {
+        font-size: 1.125em; 
+    }
+}
+
+// hamburger-menu 
+.hamburger {
+    &-overlay.open {
+        background-color: hsla(218, 81%, 94%, 1);
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        opacity: 0.5;
+        z-index: 999;
+    }
+
+    &.open {
+        z-index: 1000;
+        background-color: var(--white);
+        width: 2rem;
+        height: 2rem;
+        border-radius: 50%;
+    }
+
+    &-icon {
+        width: 24px;
+        position: relative;
+        -webkit-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+        transform: rotate(0deg);
+        -webkit-transition: .5s ease-in-out;
+        -moz-transition: .5s ease-in-out;
+        -o-transition: .5s ease-in-out;
+        transition: .5s ease-in-out;
+        cursor: pointer;
+
+        &.open span{
+
+            &:nth-child(1) {
+                -webkit-transform: rotate(45deg);
+                -moz-transform: rotate(45deg);
+                -o-transform: rotate(45deg);
+                transform: rotate(45deg);
+                top: 2px;
+                left: 7px;
+                background: hsla(225, 43%, 5%, 1);
+            }
+
+            &:nth-child(2) {
+                -webkit-transform: rotate(-45deg);
+                -moz-transform: rotate(-45deg);
+                -o-transform: rotate(-45deg);
+                transform: rotate(-45deg);
+                top: 19px;
+                left: 7px;
+                background: hsla(225, 43%, 5%, 1);
+            }
+
+        }
+
+        span {
+            display: block;
+            position: absolute;
+            height: 3px;
+            width: 100%;
+            background: hsla(223, 54%, 97%);
+            border-radius: 9px;
+            opacity: 1;
+            left: 0;
+            -webkit-transform: rotate(0deg);
+            -moz-transform: rotate(0deg);
+            -o-transform: rotate(0deg);
+            transform: rotate(0deg);
+            -webkit-transition: .25s ease-in-out;
+            -moz-transition: .25s ease-in-out;
+            -o-transition: .25s ease-in-out;
+            transition: .25s ease-in-out;
+
+            &:nth-child(1) {
+                top: 0px;
+                -webkit-transform-origin: left center;
+                -moz-transform-origin: left center;
+                -o-transform-origin: left center;
+                transform-origin: left center;
+              }
+
+            &:nth-child(2) {
+            top: 9px;
+            -webkit-transform-origin: left center;
+            -moz-transform-origin: left center;
+            -o-transform-origin: left center;
+            transform-origin: left center;
+            }
+        }
+
+    }
+}
+
+.backToMain {
+font: normal normal 600 10px/18px Poppins;
+color: hsla(222, 18%, 43%, 1);
+}

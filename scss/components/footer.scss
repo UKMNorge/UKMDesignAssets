@@ -1,0 +1,102 @@
+// Linje i footeren
+@media (max-width: 991.98px) {
+    .line {
+        width: 12.5rem; 
+        font: normal normal 300 10px/16px Poppins;
+        color: hsl(var(--color-neutral-coldgray-900));
+        text-align: center; 
+        border-bottom: 2px solid hsla(var(--color-very-light-blue));;
+        line-height: 0.1em;
+        margin: 10px 0 20px; 
+     }
+     
+     .line-long {
+        // width: 100%; 
+        width: 20.4375rem;
+     }
+     
+     .line span { 
+         background: (var(--white)); 
+         padding:0 10px; 
+     }
+
+}
+
+@media (min-width: 992px) {
+    .line {
+        width: 448px;
+        font: normal normal 300 14px/21px Poppins;
+        color: hsl(var(--color-neutral-coldgray-900));
+        text-align: center; 
+        border-bottom: 2px solid hsla(var(--color-very-light-blue));;
+        line-height: 0.1em;
+        margin: 10px 0 20px; 
+     }
+     
+     .line-long {
+        // width: 100%; 
+        width: 20.4375rem;
+     }
+     
+     .line span { 
+         background: (var(--white)); 
+         padding:0 10px; 
+     }
+
+}
+
+// Footer
+@media (max-width: 991.98px) {
+    .footer {
+        background: hsla(var(--color-primary-blue-100), 0.5); 
+        height: 960px;
+     }
+
+     .tiktok-footer {
+        width: .7rem; 
+        height: .7rem;
+     }
+
+     .vibakukm-title {
+        font: normal normal var(--font-weight-semibold) 0.75rem/1.125rem Poppins;
+        color: hsl(var(--color-neutral-coldgray-900));
+        opacity: 0.4;
+        padding: 0 1.4375rem;
+        text-align: center;
+     }
+
+}
+
+@media (min-width: 992px) {
+    .footer {
+        padding-top: 21.375rem;
+        background: hsla(var(--color-primary-blue-100), 0.5); 
+        height: 960px;
+     }
+
+     .tiktok-footer {
+        width: .7rem; 
+        height: .7rem;
+     }
+
+     .vibakukm-footer {
+        width: 1000px; 
+        margin-left: 11rem;
+     }
+
+     .vibakukm-title {
+        font: normal normal 600 18px/26px Poppins;
+        color: hsl(var(--color-neutral-coldgray-900));
+        opacity: 0.4;
+        padding: 0 1.4375rem;
+        text-align: center;
+
+        margin-right: 38rem;
+     }
+
+     .ukm-logo-footer {
+        margin-left: 11.5rem;
+        margin-right: 11rem;
+     }
+
+}
