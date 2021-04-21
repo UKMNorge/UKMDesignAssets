@@ -12,15 +12,14 @@
 @import './components/button';
 @import './components/buttons';
 @import './components/card'; 
-@import './components/cards';
 @import './components/contact';
-@import './components/dropdowns';
+//@import './components/dropdowns'; Currently missing
 @import './components/geolocation';
 @import './components/hero';
 @import './components/iframe';
-@import './components/images';
+//@import './components/images'; Currently missing
 @import './components/innslag'; // OBS
-@import './components/inputs';
+//@import './components/inputs'; Currently missing
 @import './components/kontakt'; // OBS
 @import './components/menu_page';
 @import './components/overunder';
@@ -36,7 +35,6 @@
 
 @import './pages/fylke';
 @import './pages/program';
-@use 'index';
 
 ul {
     list-style-type: none;
