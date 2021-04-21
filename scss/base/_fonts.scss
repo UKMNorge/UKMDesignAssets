@@ -3,6 +3,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Sacramento&display=swap');
 
 :root {
+  --font-roboto: 'Roboto', sans-serif;
+  --font-poppins: 'Poppins';
+  
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+  --font-weight-black: 900;
+
   font-family: 'Roboto', sans-serif;
   font-weight: 400;
   font-style: normal;
