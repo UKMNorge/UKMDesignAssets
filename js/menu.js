@@ -5,7 +5,6 @@ $(document).ready(function () {
 
     $("div").click(function () { 
         var sublistID = event.target.id; 
-        console.log(sublistID);
 
         if (sublistID == 'subpage-ukm' || sublistID == 'subpage-ukmtv' || sublistID == 'subpage-vibakukm' ) { 
             $('.mainpage').hide();
