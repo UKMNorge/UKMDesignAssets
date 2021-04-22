@@ -1,3 +1,12 @@
+.testimonial-small {
+  opacity:0.5;
+}
+
+.testimonial-small:hover {
+  opacity:1;
+  transition: opacity .2s ease-out;
+}
+
 .testimonial {
     height: 20.5625rem;
     background: transparent linear-gradient(360deg, hsl(var(--white)) 0%, hsla((var(--color-primary-blue-100)), 0.75) 27%, hsl(var(--white)) 100%) 0% 0% no-repeat padding-box;

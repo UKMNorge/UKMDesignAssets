@@ -5,7 +5,7 @@
         opacity: 0.4;
         padding: 0 1.4375rem;
         text-align: center;
-    }    
+    }
 
     .undertitler-small {
         font: normal normal var(--font-weight-semibold) .75rem/1.125rem Poppins;
@@ -83,6 +83,10 @@
         &-small {
             font: normal normal 600 20px/30px Poppins;
         }
+
+        &-news {
+            padding-bottom: 3rem;
+        }
     }    
 
     .card-image {
@@ -133,16 +137,16 @@
         }
     }
 
-    .svg-dot {
-        width: 12.5rem;
-        height: 12.5rem; 
-        top: 0;
-        right: 0;
-        bottom: 0;
-        left: 0; 
-        margin: auto; 
-        display: flex;
-    }
+    // .svg-dot {
+    //     width: 12.5rem;
+    //     height: 12.5rem; 
+    //     top: 0;
+    //     right: 0;
+    //     bottom: 0;
+    //     left: 0; 
+    //     margin: auto; 
+    //     display: flex;
+    // }
 
     .button-item {
         font: normal normal bold 22px/49px Roboto;

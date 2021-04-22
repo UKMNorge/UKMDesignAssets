@@ -50,6 +50,12 @@
     position: relative;
 }
 
+.img-carousel-people {
+    // width: 4rem; 
+    // height: 4rem; 
+    box-shadow: 0rem .1875rem .375rem hsla(var(--color-dark-blue), 0.16);
+}
+
 .dot {
     height: 1.5rem;
     width: 1.5rem;
@@ -257,8 +263,6 @@
     }
     
     .svg-dot {
-        width: 1.5rem;
-        height: 1.5rem;
         top: 0;
         right: 0;
         bottom: 0;
@@ -271,6 +275,11 @@
             width: 2.8125rem;
             height: 2.8125rem;
         }
+
+        &-card {
+            width: 1.5rem;
+            height: 1.5rem;
+        }
     }
 
     .tiktok {
@@ -281,6 +290,30 @@
     .tiktok-card {
         width: 1.3rem; 
         height: 1.3rem;
+    }
+
+    .tiktok-footer {
+        width: 2.3rem; 
+        height: 2.3rem;
+    }
+
+}
+
+.some-icon-test {
+    &-instagram {
+        background: url("../../img/instagram.jpg") no-repeat center/cover;
+    }
+    &-youtube {
+        background: url("../../img/youtube.jpg") no-repeat center/cover;
+    }
+    &-tiktok {
+        background: url("../../img/tiktok.jpg") no-repeat center/cover;
+    }
+    &-facebook {
+        background: url("../../img/facebook.jpg") no-repeat center/cover;
+    }
+    &-discord {
+        background: url("../../img/discord.jpg") no-repeat center/cover;
     }
 
 }
