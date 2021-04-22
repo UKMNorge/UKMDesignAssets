@@ -2115,217 +2115,47 @@ iframe {
     border-radius: 100% 0% 96% 3%/81% 44% 54% 16%;
   }
 }
-/*
- * ARVET FRA UKMResponsive 🧓
-*/
-.navbar-header {
-  padding-top: 0.5rem;
-  padding-bottom: 0rem;
-  margin-bottom: 0rem;
+.UKMblock {
+  margin-bottom: 10vh;
+  margin-top: 10vh;
+  font-size: 1.3em;
+  min-height: 20vh;
 }
-.navbar-separator {
-  margin-bottom: 1rem;
-  border-bottom: 5px solid hsl(var(--color-primary-blue-900));
-}
-.navbar-separator #skygge {
-  height: 15vh;
-  float: right;
-  margin-top: -15vh;
-  margin-right: 4vw;
-}
-
-#UKMslogan {
-  color: #ffffff;
-  font-size: 1.5rem;
-  padding-top: 1rem;
-}
-@media (min-width: 992px) {
-  #UKMslogan {
-    margin-top: -3rem;
+@media (min-width: 768px) {
+  .UKMblock {
+    font-weight: 100;
   }
 }
-@media (min-width: 1200px) {
-  #UKMslogan {
-    padding-bottom: 3.5rem;
-    padding-top: 3.5rem;
-    font-size: 3rem;
+.UKMblock p {
+  font-weight: 200;
+}
+.UKMblock blockquote {
+  font-size: 1.2em;
+}
+@media (min-width: 768px) {
+  .UKMblock blockquote {
+    font-size: 0.9em;
   }
 }
-
-#UKMlogo {
-  width: 3.8em;
-  margin-top: -0.1em;
-}
-
-#UKMheader {
-  background: #fff;
-  position: relative;
-  /* Section title hvis vi ikke har bakgrunn */
-}
-#UKMheader #main_menu_button {
-  background: rgba(255, 255, 255, 0.44);
-}
-#UKMheader.navbar-with-slogan {
-  background-repeat: no-repeat;
-  background-position: center top;
-  background-size: cover;
-}
-#UKMheader .sectionTitle {
-  padding-top: 0.75em;
-  text-align: center;
-}
-#UKMheader .sectionTitle > a {
-  font-size: 1.45em;
-  font-weight: 100;
-  color: hsl(var(--color-primary-blue-900));
-}
-#UKMheader.background {
-  background-repeat: no-repeat;
+.UKMblock.UKMblockImage .image {
   background-position: center center;
+  background-repeat: no-repeat;
   background-size: cover;
-  min-height: 30vh;
-  /* Section title hvis vi har bakgrunn */
 }
-#UKMheader.background.top {
-  background-position-y: top;
-}
-#UKMheader.background .sectionTitle {
-  position: absolute;
-  bottom: 0.5em;
-}
-#UKMheader.background .sectionTitle > a {
-  color: #fff;
-}
-#UKMheader.background .sectionTitle > a:hover {
-  text-decoration: none;
-}
-
-/*
- * NYTT fra 2020 🎉
-*/
-header .ukm-logo {
-  color: hsl(var(--color-neutral-coldgray-100));
-}
-header .sign-in {
-  color: hsl(var(--color-neutral-coldgray-100));
-  font-weight: var(--font-weight-medium);
-}
-header .toggle-burger {
-  float: right;
-}
-header .menu-links {
-  color: hsl(var(--color-neutral-coldgray-100)) !important;
-}
-@media (max-width: 991.98px) {
-  header .header {
-    padding: 0 1rem;
-    padding-top: 0.2rem;
-  }
-  header .ukm-logo {
-    width: 1.75rem;
-    height: 1rem;
-  }
-  header .sign-in {
-    font-size: 0.8em;
+@media (max-width: 767px) {
+  .UKMblock .image {
+    height: 45vh;
   }
 }
-@media (min-width: 992px) {
-  header .header {
-    padding-right: 4rem;
-    padding-left: 4rem;
-    padding-top: 0.9rem;
+.UKMblock .text > h1,
+.UKMblock .text > h2 {
+  margin-top: 0em;
+}
+@media (min-width: 768px) {
+  .UKMblock .UKMblockContent {
+    padding-top: 20vh !important;
+    padding-bottom: 20vh !important;
   }
-  header .ukm-logo {
-    width: 4rem;
-    height: 2.25rem;
-  }
-  header .sign-in {
-    font-size: 1.125em;
-  }
-}
-header .hamburger-overlay.open {
-  background-color: #e3ecfc;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  opacity: 0.5;
-  z-index: 999;
-}
-header .hamburger.open {
-  z-index: 1000;
-  background-color: var(--white);
-  width: 2rem;
-  height: 2rem;
-  border-radius: 50%;
-}
-header .hamburger-icon {
-  width: 24px;
-  position: relative;
-  -webkit-transform: rotate(0deg);
-  -moz-transform: rotate(0deg);
-  -o-transform: rotate(0deg);
-  transform: rotate(0deg);
-  -webkit-transition: 0.5s ease-in-out;
-  -moz-transition: 0.5s ease-in-out;
-  -o-transition: 0.5s ease-in-out;
-  transition: 0.5s ease-in-out;
-  cursor: pointer;
-}
-header .hamburger-icon.open span:nth-child(1) {
-  -webkit-transform: rotate(45deg);
-  -moz-transform: rotate(45deg);
-  -o-transform: rotate(45deg);
-  transform: rotate(45deg);
-  top: 2px;
-  left: 7px;
-  background: #070a12;
-}
-header .hamburger-icon.open span:nth-child(2) {
-  -webkit-transform: rotate(-45deg);
-  -moz-transform: rotate(-45deg);
-  -o-transform: rotate(-45deg);
-  transform: rotate(-45deg);
-  top: 19px;
-  left: 7px;
-  background: #070a12;
-}
-header .hamburger-icon span {
-  display: block;
-  position: absolute;
-  height: 3px;
-  width: 100%;
-  background: #f3f6fb;
-  border-radius: 9px;
-  opacity: 1;
-  left: 0;
-  -webkit-transform: rotate(0deg);
-  -moz-transform: rotate(0deg);
-  -o-transform: rotate(0deg);
-  transform: rotate(0deg);
-  -webkit-transition: 0.25s ease-in-out;
-  -moz-transition: 0.25s ease-in-out;
-  -o-transition: 0.25s ease-in-out;
-  transition: 0.25s ease-in-out;
-}
-header .hamburger-icon span:nth-child(1) {
-  top: 0px;
-  -webkit-transform-origin: left center;
-  -moz-transform-origin: left center;
-  -o-transform-origin: left center;
-  transform-origin: left center;
-}
-header .hamburger-icon span:nth-child(2) {
-  top: 9px;
-  -webkit-transform-origin: left center;
-  -moz-transform-origin: left center;
-  -o-transform-origin: left center;
-  transform-origin: left center;
-}
-header .backToMain {
-  font: normal normal 600 10px/18px Poppins;
-  color: #5a6681;
 }
 
 .footerLinks {
@@ -2545,6 +2375,219 @@ header .backToMain {
     height: 2.25rem;
   }
 }
+/*
+ * ARVET FRA UKMResponsive 🧓
+*/
+.navbar-header {
+  padding-top: 0.5rem;
+  padding-bottom: 0rem;
+  margin-bottom: 0rem;
+}
+.navbar-separator {
+  margin-bottom: 1rem;
+  border-bottom: 5px solid hsl(var(--color-primary-blue-900));
+}
+.navbar-separator #skygge {
+  height: 15vh;
+  float: right;
+  margin-top: -15vh;
+  margin-right: 4vw;
+}
+
+#UKMslogan {
+  color: #ffffff;
+  font-size: 1.5rem;
+  padding-top: 1rem;
+}
+@media (min-width: 992px) {
+  #UKMslogan {
+    margin-top: -3rem;
+  }
+}
+@media (min-width: 1200px) {
+  #UKMslogan {
+    padding-bottom: 3.5rem;
+    padding-top: 3.5rem;
+    font-size: 3rem;
+  }
+}
+
+#UKMlogo {
+  width: 3.8em;
+  margin-top: -0.1em;
+}
+
+#UKMheader {
+  background: #fff;
+  position: relative;
+  /* Section title hvis vi ikke har bakgrunn */
+}
+#UKMheader #main_menu_button {
+  background: rgba(255, 255, 255, 0.44);
+}
+#UKMheader.navbar-with-slogan {
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover;
+}
+#UKMheader .sectionTitle {
+  padding-top: 0.75em;
+  text-align: center;
+}
+#UKMheader .sectionTitle > a {
+  font-size: 1.45em;
+  font-weight: 100;
+  color: hsl(var(--color-primary-blue-900));
+}
+#UKMheader.background {
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  min-height: 30vh;
+  /* Section title hvis vi har bakgrunn */
+}
+#UKMheader.background.top {
+  background-position-y: top;
+}
+#UKMheader.background .sectionTitle {
+  position: absolute;
+  bottom: 0.5em;
+}
+#UKMheader.background .sectionTitle > a {
+  color: #fff;
+}
+#UKMheader.background .sectionTitle > a:hover {
+  text-decoration: none;
+}
+
+/*
+ * NYTT fra 2020 🎉
+*/
+header .ukm-logo {
+  color: hsl(var(--color-neutral-coldgray-100));
+}
+header .sign-in {
+  color: hsl(var(--color-neutral-coldgray-100));
+  font-weight: var(--font-weight-medium);
+}
+header .toggle-burger {
+  float: right;
+}
+header .menu-links {
+  color: hsl(var(--color-neutral-coldgray-100)) !important;
+}
+@media (max-width: 991.98px) {
+  header .header {
+    padding: 0 1rem;
+    padding-top: 0.2rem;
+  }
+  header .ukm-logo {
+    width: 1.75rem;
+    height: 1rem;
+  }
+  header .sign-in {
+    font-size: 0.8em;
+  }
+}
+@media (min-width: 992px) {
+  header .header {
+    padding-right: 4rem;
+    padding-left: 4rem;
+    padding-top: 0.9rem;
+  }
+  header .ukm-logo {
+    width: 4rem;
+    height: 2.25rem;
+  }
+  header .sign-in {
+    font-size: 1.125em;
+  }
+}
+header .hamburger-overlay.open {
+  background-color: #e3ecfc;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  opacity: 0.5;
+  z-index: 999;
+}
+header .hamburger.open {
+  z-index: 1000;
+  background-color: var(--white);
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+}
+header .hamburger-icon {
+  width: 24px;
+  position: relative;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: 0.5s ease-in-out;
+  -moz-transition: 0.5s ease-in-out;
+  -o-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+  cursor: pointer;
+}
+header .hamburger-icon.open span:nth-child(1) {
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+  top: 2px;
+  left: 7px;
+  background: #070a12;
+}
+header .hamburger-icon.open span:nth-child(2) {
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  top: 19px;
+  left: 7px;
+  background: #070a12;
+}
+header .hamburger-icon span {
+  display: block;
+  position: absolute;
+  height: 3px;
+  width: 100%;
+  background: #f3f6fb;
+  border-radius: 9px;
+  opacity: 1;
+  left: 0;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: 0.25s ease-in-out;
+  -moz-transition: 0.25s ease-in-out;
+  -o-transition: 0.25s ease-in-out;
+  transition: 0.25s ease-in-out;
+}
+header .hamburger-icon span:nth-child(1) {
+  top: 0px;
+  -webkit-transform-origin: left center;
+  -moz-transform-origin: left center;
+  -o-transform-origin: left center;
+  transform-origin: left center;
+}
+header .hamburger-icon span:nth-child(2) {
+  top: 9px;
+  -webkit-transform-origin: left center;
+  -moz-transform-origin: left center;
+  -o-transform-origin: left center;
+  transform-origin: left center;
+}
+header .backToMain {
+  font: normal normal 600 10px/18px Poppins;
+  color: #5a6681;
+}
+
 .banner {
   background: hsl(var(--color-primary-blue-900));
   color: #fff;
