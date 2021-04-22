@@ -1140,6 +1140,30 @@ button {
   margin-right: -0.4rem;
 }
 
+.UKMfavoritt {
+  margin-bottom: 2em;
+}
+.UKMfavoritt .body {
+  background: #fcfcfc;
+  padding-bottom: 1em;
+  padding-left: 1em;
+  padding-right: 1em;
+  border-bottom: 2px solid #ccc;
+  margin-top: -1em;
+}
+@media (min-width: 768px) {
+  .UKMfavoritt .body {
+    border: 1px solid #ccc;
+    margin-top: 0;
+    padding-left: 0em;
+    padding-right: 0em;
+  }
+}
+.UKMfavoritt .icon-heart {
+  color: hsl(var(--color-primary-blue-900));
+  font-size: 1.3em;
+}
+
 .geolocation-banner {
   display: flex;
   flex-direction: column;
@@ -1460,6 +1484,45 @@ iframe {
   color: #00004c;
 }
 
+.UKMliste {
+  margin-left: 0 !important;
+  padding-left: 0 !important;
+}
+.UKMliste > li {
+  list-style-type: none;
+  border: 1px solid hsl(var(--color-primary-blue-900));
+  border-left: 6px solid hsl(var(--color-primary-blue-900));
+  box-shadow: 3px 3px 3px 0px #e1dfdf;
+  margin-bottom: 1.2em !important;
+  padding: 0.5em;
+  padding-left: 0.8em;
+}
+.UKMliste > li > header {
+  cursor: pointer;
+}
+.UKMliste > li > header > .right {
+  font-size: 0.7em;
+  float: right;
+  margin-top: 0;
+  text-align: right;
+}
+.UKMliste > li > header > .description {
+  font-size: 0.7em;
+}
+.UKMliste > li > section {
+  display: none;
+  margin-top: 1rem;
+}
+.UKMliste > li > footer {
+  display: none;
+  margin-top: 1em;
+  clear: both;
+}
+.UKMliste .list-group-item.active {
+  background: hsl(var(--color-primary-blue-900));
+  border-color: hsl(var(--color-primary-blue-900));
+}
+
 .page-menu .menu-item {
   text-align: center;
   margin-top: 1.5em;
@@ -1556,6 +1619,128 @@ iframe {
   font-weight: normal;
   font-size: 14px;
   margin: 0px;
+}
+
+#the_post_image {
+  margin: 0;
+  margin-top: -1em;
+  margin-bottom: 1em;
+  height: 40vh;
+  width: 100vw;
+  background: hsl(var(--color-primary-blue-200));
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+@media (min-width: 576px) {
+  #the_post_image {
+    height: 50vh;
+  }
+}
+@media (min-width: 768px) {
+  #the_post_image {
+    height: 70vh;
+  }
+}
+
+.postmeta {
+  font-size: 0.9em;
+  border-top: 1px solid hsl(var(--color-primary-blue-200));
+  border-bottom: 1px solid hsl(var(--color-primary-blue-200));
+  margin-bottom: 1em;
+}
+
+.madeby {
+  font-size: 0.9rem;
+}
+@media (min-width: 768px) {
+  .madeby {
+    text-align: right;
+  }
+}
+.madeby .contact {
+  margin: 0.3em;
+}
+@media (min-width: 768px) {
+  .madeby .contact {
+    margin-bottom: 1em !important;
+  }
+}
+.madeby .contact .image {
+  float: left;
+  margin-right: 1em;
+}
+@media (min-width: 768px) {
+  .madeby .contact .image {
+    float: right !important;
+    margin-right: 0 !important;
+    margin-left: 1em !important;
+  }
+}
+.madeby .contact .image img {
+  height: 2.5em;
+}
+.madeby .contact .info .name {
+  text-transform: capitalize;
+  font-weight: bold;
+  line-height: 1.1em;
+  color: hsl(var(--color-primary-blue-900));
+  margin: 0;
+  margin-bottom: 0.2em;
+}
+.madeby .contact .info .title {
+  font-size: 0.9em;
+  line-height: 1em;
+}
+
+/*
+ * PLAY ICON FOR FEATURED IMAGE
+ * (video on top)
+**/
+.featured-image-play {
+  position: absolute;
+  width: 5em;
+  top: "Calc( 50% - 2.5em )";
+  left: "Calc( 50% - 2.5em )";
+  opacity: 0.92;
+}
+
+.post-grid-default .featured-image-play {
+  top: 14%;
+  width: 20%;
+  left: 40%;
+}
+
+.post-grid-default {
+  margin-bottom: 1em;
+  overflow-x: hidden;
+}
+.post-grid-default .image {
+  background: hsl(var(--color-primary-blue-900));
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  padding-bottom: 66%;
+  margin: 0;
+  margin-bottom: 0.1em;
+  position: relative;
+}
+.post-grid-default .image > .repost {
+  color: #fff;
+  background: hsl(var(--color-primary-blue-900));
+  padding: 0.5em;
+  text-transform: uppercase;
+  font-size: 0.75em;
+  font-weight: bold;
+  float: left;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+}
+
+a .post-grid-default {
+  color: #000 !important;
 }
 
 .some-section {

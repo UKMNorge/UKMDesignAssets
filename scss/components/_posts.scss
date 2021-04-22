@@ -1,0 +1,31 @@
+.post-grid-default {
+    margin-bottom: 1em;
+    overflow-x: hidden;
+    .image {
+        background: hsl(var(--color-primary-blue-900));
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+        padding-bottom: 66%;
+        margin: 0;
+        margin-bottom: 0.1em;
+        position: relative;
+        
+        > .repost {
+            color: #fff;
+            background: hsl(var(--color-primary-blue-900));
+            padding: .5em;
+            text-transform: uppercase;
+            font-size: .75em;
+            font-weight: bold;
+            float: left;
+            width: 100%;
+            position: absolute;
+            bottom: 0;
+        }
+    }
+}
+a .post-grid-default {
+	color: #000 !important;
+}
