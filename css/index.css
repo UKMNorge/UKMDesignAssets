@@ -747,7 +747,6 @@ blockquote.lead {
   margin-bottom: 2em;
   font-weight: 500;
 }
-
 blockquote:before {
   content: "";
   background-repeat: no-repeat;
@@ -763,8 +762,7 @@ blockquote:before {
   font-size: 2rem;
   margin-top: -1.4em;
 }
-
-cite {
+blockquote cite {
   display: block;
   font-size: 0.75em;
   font-weight: 100;
