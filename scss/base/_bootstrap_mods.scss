@@ -8,7 +8,6 @@
 
 /* BODY */
 body {
-    font-family: "Helvetica Neue", Arial, freesans, sans-serif !important;
     color: #000;
     line-height: 1.5em;
 
@@ -54,8 +53,6 @@ body {
 
     /* HEADERS */
     #{headings(1,6)} {
-        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-        font-weight: 500;
         opacity: 0.85;
     }
     h1 {
