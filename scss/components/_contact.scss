@@ -8,6 +8,14 @@
       hsla(218, 81%, 94%, 0.5) 100%
     )
     0% 0% no-repeat padding-box;
+
+  &.other-page {
+    height: 80rem;
+    @media (min-width: 992px) {
+      height: 27.875rem;
+    }
+  }
+
   @media (min-width: 992px) {
     margin-top: 40.60625rem;
     height: 27.875rem;

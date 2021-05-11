@@ -71,6 +71,7 @@
   height: 0.7rem;
   @media (min-width: 992px) {
     width: 2.4rem;
+    height: 0.5rem;
   }
 }
 
@@ -90,21 +91,20 @@
       color: hsl(var(--color-neutral-coldgray-900));
       opacity: 0.4;
       padding: 0 1.4375rem;
-      text-align: center;
-
-      margin-left: 11rem;
+      justify-content: normal;
+      padding-left: 0;
     }
   }
 
   &-footer {
     @media (min-width: 992px) {
       //   width: 1000px;
-      margin-left: 11rem;
+      // margin-left: 11rem;
     }
   }
 }
 
-.ukm-logo {
+.footer-ukm-logo {
   padding: 0.8rem 0.5rem;
 
   @media (min-width: 992px) {
@@ -125,8 +125,9 @@
 
 .ukm-logo-footer {
   @media (min-width: 992px) {
-    margin-left: 11.5rem;
-    margin-right: 13rem;
+    width: 76rem;
+    // margin-left: 11.5rem;
+    // margin-right: 13rem;
   }
 }
 
@@ -136,10 +137,11 @@
   border-radius: 0.625rem;
   box-shadow: 0rem 0.3125rem 0.9375rem hsla(var(--color-primary-blue-600), 0.11);
   @media (min-width: 992px) {
-    width: 564px;
-    height: 80px;
+    width: 35.25rem;
+    height: 5rem;
     background: hsla(0, 0%, 100%, 1) 0% 0% no-repeat padding-box;
-    margin-left: 12rem;
+    // margin-left: 12rem;
+    border-radius: 0;
   }
 }
 
@@ -197,7 +199,7 @@
   border-radius: 0.3125rem 0.3125rem 0 0;
   text-align: left;
   border: none;
-  margin-right: 1.8rem;
+  // margin-right: 1.8rem;
 
   @media (min-width: 992px) {
     width: 35.25rem;
@@ -206,7 +208,7 @@
     border-radius: 0.3125rem 0.3125rem 0 0;
     text-align: left;
     border: none;
-    margin-right: 1.8rem;
+    // margin-right: 1.6rem;
   }
 }
 
@@ -226,4 +228,16 @@
     width: 2.25rem;
     height: 2.25rem;
   }
+}
+
+@media (min-width: 992px) {
+  .flex-gap {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 3rem;
+  }
+}
+
+.alternativePopup {
+  position: absolute !important;
 }
