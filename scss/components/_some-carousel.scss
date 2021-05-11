@@ -130,6 +130,10 @@
       right: 0;
 
       @media (min-width: 992px) {
+        .article-svg {
+          width: 3.9375rem;
+          height: 3.875rem;
+        }
         width: 5.9375rem;
         height: 5.875rem;
       }
