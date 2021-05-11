@@ -134,7 +134,11 @@ header {
   }
 
   .menu-links {
-    color: hsl(var(--color-neutral-coldgray-100)) !important;
+    color: hsl(var(--color-neutral-coldgray-100));
+
+    &.other-page {
+      color: hsl(var(--color-neutral-coldgray-900));
+    }
   }
 
   // hamburger-menu
@@ -164,6 +168,13 @@ header {
       transform: rotate(0deg);
       transition: 0.5s ease-in-out;
       cursor: pointer;
+      padding: 0;
+
+        background-color: var(--white);
+        width: 2rem;
+        height: 2rem;
+        border-radius: 50%;
+        text-align: center;
 
       &.open span {
         &:nth-child(1) {
@@ -192,6 +203,10 @@ header {
         left: 0;
         transform: rotate(0deg);
         transition: 0.25s ease-in-out;
+        
+        &.other-page {
+          background: hsla(var(--color-primary-blue-900));
+        }
 
         &:nth-child(1) {
           top: 0px;
