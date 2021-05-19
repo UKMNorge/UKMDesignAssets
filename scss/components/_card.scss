@@ -16,14 +16,34 @@
     box-shadow: 0 0.5rem 1rem #3983fa1d; //fargekonvensjon?
     padding: 0;
 
+    @at-root .news-case#{&} {
+      width: auto;
+    }
+
     @media (min-width: 992px) {
       width: 40.625rem;
       height: 12.4375rem;
       margin: auto;
+    }
 
-      &-main {
+    &-main {
+      @media (min-width: 992px) {
         width: 39.375rem;
         height: 27.0625rem;
+      }
+
+      @at-root .news-case#{&} {
+        @media (min-width: 992px) {
+          height: 25rem;
+          width: 32rem;
+        }
+      }
+
+      @at-root .first-card#{&} {
+        @media (min-width: 992px) {
+          height: 37rem;
+          width: auto;
+        }
       }
     }
   }
@@ -44,7 +64,7 @@
     }
 
     &-content {
-      display: inline-block;
+      display: block;
       font: var(--font-weight-regular) 0.75rem/1.125rem Roboto;
       color: hsl(var(--color-neutral-coldgray-700));
     }

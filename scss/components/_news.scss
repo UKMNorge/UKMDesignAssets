@@ -22,13 +22,13 @@
 
     .message-title-end {
         font: normal normal var(--font-weight-semibold) .75em/1.125em Poppins;
-        display: inline-block;
+        display: block;
         margin-bottom: .5rem;
         margin-top: .5rem;
     }
 
     .message-content-end {
-        display: inline-block;
+        display: block;
         color: hsl(var(--color-neutral-coldgray-700));
         font: normal normal normal 11px/15px Roboto;
         letter-spacing: 0px;
@@ -47,13 +47,13 @@
 
     .message-title-end {
         font: normal normal 600 24px/30px Poppins;
-        display: inline-block;
+        display: block;
         margin-bottom: .5rem;
         margin-top: .5rem;
     }
 
     .message-content-end {
-        display: inline-block;
+        display: block;
         color: hsl(var(--color-neutral-coldgray-700));
         font: normal normal normal 18px/27px Roboto;
         max-width: 100%;
