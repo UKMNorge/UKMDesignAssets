@@ -33,15 +33,11 @@
 @import "./components/infopage";
 @import "./components/likerukmno";
 
-
-
 @import "./layout/block";
 @import "./layout/footer";
 @import "./layout/header";
 @import "./layout/banner";
 @import "./layout/nav";
-
-// @import './layout/header2';
 
 @import "./pages/fylke";
 @import "./pages/program";
@@ -208,14 +204,6 @@ ul {
 
 .card-element-end {
   padding: 0.5rem;
-}
-
-.message-title {
-  font: normal normal var(--font-weight-semibold) 0.875em/1.125em Poppins;
-  margin-bottom: 1rem;
-
-  display: inline-block;
-  margin-bottom: 0.25rem;
 }
 
 .se-mer {

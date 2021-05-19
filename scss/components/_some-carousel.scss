@@ -2,6 +2,16 @@
   &-title {
     padding: 0.7rem 0.5rem 0;
     margin: 0;
+
+    @media (min-width: 992px) {
+      border-top: 0.25rem solid rgba(90, 102, 129, 0.05);
+      margin-top: 13.5rem;
+      span {
+        font-size: 1.5rem;
+        line-height: 1.75rem;
+        padding: 3rem;
+      }
+    }
   }
 
   &-section {
@@ -100,8 +110,8 @@
 
   &-wide {
     @media (min-width: 992px) {
-    //left: 16.6rem; no clue
-    left: 17.05rem;
+      //left: 16.6rem; no clue
+      left: 17.05rem;
     }
   }
 
@@ -114,10 +124,10 @@
     right: 0.875rem;
 
     @media (min-width: 992px) {
-        width: 2.125rem;
-        height: 2.1875rem;
-        top: 3.7rem;
-        left: 10.15rem;
+      width: 2.125rem;
+      height: 2.1875rem;
+      top: 3.7rem;
+      left: 10.15rem;
     }
 
     &-large {
@@ -152,7 +162,7 @@
   display: flex;
   background: none;
 
-  @media (min-width: 992px){
+  @media (min-width: 992px) {
     width: 2.75rem;
   }
 
@@ -160,14 +170,14 @@
     width: 1.6rem;
     height: 1.6rem;
 
-    @media (min-width: 992px){
+    @media (min-width: 992px) {
       width: 2.8125rem;
       height: 2.8125rem;
     }
   }
 
   &-card {
-    @media (min-width: 992px){
+    @media (min-width: 992px) {
       width: 1.5rem;
       height: 1.5rem;
     }
@@ -206,7 +216,7 @@
   width: 1.3rem;
   height: 1.3rem;
 
-  @media (min-width: 992px){
+  @media (min-width: 992px) {
     width: 2.3rem;
     height: 2.3rem;
   }
@@ -214,7 +224,7 @@
   &-card {
     width: 0.7rem;
     height: 0.7rem;
-    @media (min-width: 992px){
+    @media (min-width: 992px) {
       width: 1.3rem;
       height: 1.3rem;
     }
@@ -222,9 +232,9 @@
 
   // duplicate
   &--footer {
-    @media (min-width: 992px){
-    width: 2.3rem;
-    height: 2.3rem;
+    @media (min-width: 992px) {
+      width: 2.3rem;
+      height: 2.3rem;
     }
   }
 }
