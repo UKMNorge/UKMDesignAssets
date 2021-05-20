@@ -1,0 +1,15 @@
+.first-news {
+    justify-content: center;
+    display: flex;
+
+    @media (min-width: 992px) {
+        justify-content: normal;
+        display: initial;
+    }
+}
+
+.first-news-image {
+    @media (min-width: 992px) {
+        height: 28rem;
+    }
+}
