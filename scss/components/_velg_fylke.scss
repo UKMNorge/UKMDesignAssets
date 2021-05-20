@@ -10,13 +10,13 @@
       justify-content: center;
   
       @media (min-width: 992px) {
-        font: normal normal 600 18px/26px Poppins;
-        color: hsl(var(--color-neutral-coldgray-900));
-        opacity: 0.4;
-        padding: 0 1.4375rem;
-        text-align: center;
-  
-        margin-left: -5rem;
+        font: normal normal var(--font-weight-semibold) 1.125rem/1.625rem Poppins;
+        display: initial;
+        padding: 0;
       }
+    }
+
+    &-item {
+      padding-bottom: 0.5rem;
     }
 }
