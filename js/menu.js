@@ -1,33 +1,59 @@
 $(document).ready(function () {
-    $('.subpage-ukm').hide();
-    $('.subpage-ukmtv').hide();
-    $('.subpage-vibakukm').hide();
+    $(".hamburger-icon").css({'background-color' : 'transparent'});
+    $('.subpages').hide();
 
-    $("div").click(function () { 
-        var sublistID = event.target.id; 
+    
+    $('.hamburger-menu').click(function(e) {
+        e.stopPropagation();
+        var e = ""+$(event.target).closest('.drop-item').attr('id');
 
-        if (sublistID == 'subpage-ukm' || sublistID == 'subpage-ukmtv' || sublistID == 'subpage-vibakukm' ) { 
+        if (e.match('subpage-')) { 
             $('.mainpage').hide();
-            $('.' + sublistID ).show(); 
+            $('.' + e ).show(); 
         }
         
-        if (sublistID == 'backToMain' || sublistID == 'hamburger-icon') {
+        if (e.match('backToMain')) {
             $('.mainpage').show();
-            //$('.' + sublistID ).hide();
-            //$('.' + sublistID ).children().hide()
-            $('.subpage-ukm').hide();
-            $('.subpage-ukmtv').hide();
-            $('.subpage-vibakukm').hide();
+            $('.subpages').hide();
         }
-
     });
+    // on firefox
+    $('.hamburger-menu').on('hide.bs.dropdown', function(e) { if (e.clickEvent) { e.preventDefault(); } });
 
-    $('.hamburger').on('hide.bs.dropdown', function(e) { if (e.clickEvent) { e.preventDefault();} });
-    
-    $('.hamburger-icon').click(function(){
-            $(this).toggleClass('open'); 
+    $('body').on('click', function (e) {
+        if ($('.hamburger-icon').attr("aria-expanded") == "true") {
+            $('.hamburger-icon').toggleClass('open'); 
             $('.hamburger-overlay').toggleClass('open'); 
             $('.hamburger').toggleClass('open'); 
 
+            $('html, body').css({
+                overflow: 'auto',
+                height: 'auto'
+            });
+        } 
     });
+
+    $('.hamburger-icon').click(function(){
+        if ($(this).attr("aria-expanded") == "true") {
+            $('html, body').css({
+                overflow: 'auto',
+                height: 'auto'
+            });
+        } 
+        if ($(this).attr("aria-expanded") == "false") {
+            $('html, body').css({
+                overflow: 'hidden',
+                height: '100%'
+            });
+        }
+
+        $('.mainpage').show();
+        $('.subpages').hide();
+
+        $(this).toggleClass('open'); 
+        $('.hamburger-overlay').toggleClass('open'); 
+        $('.hamburger').toggleClass('open'); 
+    });
+
+    
 });

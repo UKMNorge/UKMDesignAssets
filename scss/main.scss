@@ -55,13 +55,6 @@ ul {
   color: hsla(225, 43%, 5%, 1);
 }
 
-.drop-item {
-  display: flex;
-  flex-flow: row nowrap;
-  align-items: center;
-  padding: 0.7rem 1.5rem;
-}
-
 .choice-item {
   background-color: hsla(218, 81%, 94%, 0.5);
   padding: 1.5rem;
@@ -73,21 +66,6 @@ ul {
   @media (min-width: 992px) {
     width: 29rem;
    }
-}
-
-@media (min-width: 992px) {
-  .hamburger {
-    margin-left: 1.5rem;
-    // background-color: var(--white);
-    // width: 2rem;
-    // height: 2rem;
-    // border-radius: 50%;
-    // text-align: center;
-  }
-
-  .hamburger-menu {
-    top: 9rem !important;
-  }
 }
 
 // test
