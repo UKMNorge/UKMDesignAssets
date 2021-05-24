@@ -40,6 +40,10 @@
   margin-left: 0;
   max-width: 76rem;
   // padding: 0 1.5rem;
+
+  .dot-grey-large {
+    background-color: transparent;
+  }
   @media (min-width: 992px) {
     padding: 0;
   }
