@@ -2,7 +2,7 @@
 // Kopier linkadresse
 jQuery(document).on('click', '.kopierUrl', function(e) {
     e.preventDefault();
-    var urlContainer = jQuery(this).parents('.info-section').find('.url');
+    var urlContainer = jQuery(this).parents('.share-buttons').find('.url');
     urlContainer.find('input').show();
     urlContainer.find('.copied').hide();
 
