@@ -6,6 +6,20 @@
     }
 }
 
+.container, 
+.container-fluid {
+    > .row {
+        @media (max-width: 768px) {
+            margin-right: -4px;
+            margin-left: -4px;
+        }
+    }
+}
+
+.card-image {
+    width: 100% !important;
+}
+
 /* BODY */
 body {
     color: #000;
@@ -27,7 +41,7 @@ body {
         }
 
         @media (min-width: 1200px) {
-            font-size: 1.375rem;
+            //font-size: 1.375rem;
         }
     }
 
