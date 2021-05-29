@@ -53,7 +53,5 @@ $(document).ready(function () {
         $(this).toggleClass('open'); 
         $('.hamburger-overlay').toggleClass('open'); 
         $('.hamburger').toggleClass('open'); 
-    });
-
-    
+    }); 
 });
