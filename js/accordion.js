@@ -5,12 +5,12 @@ $(document).ready(function () {
     //     $("#caret-flip").css({"transform" : "rotate(90deg)"});
     // });
 
-    $("#multiCollapseExample1").on("hide.bs.collapse", function(){
+    $("#multiCollapseFooter1").on("hide.bs.collapse", function(){
         $("#caret-flip").css({"transform" : "rotate(0deg)"});
         $("#accordion1").css({"box-shadow": "none"});
       });
 
-    $("#multiCollapseExample1").on("show.bs.collapse", function(){
+    $("#multiCollapseFooter1").on("show.bs.collapse", function(){
     $("#caret-flip").css({"transform" : "rotate(90deg)"});
     $("#accordion1").css({"box-shadow": "0px 5px 15px hsla(228, 96%, 67%, 0.11)"});
     
