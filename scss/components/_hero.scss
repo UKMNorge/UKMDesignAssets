@@ -4,9 +4,11 @@
   height: 12.5rem;
 
   &-front {
-    height: 18.375rem;
-    position: absolute;
-    //padding: 0;
+    // height: 18.375rem;
+    position: relative;
+    height: 24rem;
+
+    // position: absolute;
     border-top-left-radius: 1.25rem;
     border-top-right-radius: 1.25rem;
 
@@ -83,6 +85,11 @@ article h1,
     position: absolute;
     z-index: 3;
 
+    @media (min-width: 992px) {
+      max-width: 50rem;
+      top: 30%; 
+    }
+
     &.other-page {
       margin-left: 0;
       max-width: 76rem;
@@ -90,11 +97,6 @@ article h1,
       @media (min-width: 992px) {
         padding: 0;
       }
-    }
-
-    @media (min-width: 992px) {
-      max-width: 50rem;
-      top: 30%; 
     }
   }
 
@@ -113,15 +115,65 @@ article h1,
   }
 }
 
-.front-buttons {
-  margin-top: -2rem;
-  margin-bottom: 2rem;
-  //padding: 0 1.5rem;
+// midlertidig
+.hero-container {
+  outline: 5px solid greenyellow;
+  // top: 50%;
+  // width: inherit;
+  // box-sizing: border-box;
+  padding-left: 0;
+  position: absolute;
+  z-index: 3;
+  // top: 3.5rem;
 
   @media (min-width: 992px) {
-    margin-top: -4em;
+    // max-width: 50rem;
+    // top: 30%; 
+  }
+
+  h1 {
+    font: var(--font-weight-bold) 1.75rem/1.5em var(--font-poppins);
+    // margin: 0;
+    width: auto;
+    color: hsl(var(--color-neutral-gray-100));
+    text-shadow: 0 0.3125rem 0.9375rem rgba(0, 0, 0, 0.3);
+
+    @media (min-width: 576px) {
+      width: auto;
+      font: var(--font-weight-bold) 2.25rem/1.5em var(--font-poppins);
+    }
+    @media (min-width: 768px) {
+      width: auto;
+      font: var(--font-weight-bold) 3rem/1.5em var(--font-poppins);
+    }
+  
+    @media (min-width: 992px) {
+      width: auto;
+      font: var(--font-weight-bold) 5rem/1.4em var(--font-poppins);
+    }
+  }
+
+  h3 {
+    display: none;
+
+    @media (min-width: 992px) {
+      display: block;
+      color: hsl(var(--color-neutral-gray-100));
+      font: var(--font-weight-semibold) 2.5em/2.75rem var(--font-poppins);
+      opacity: 0.85;
+    }
   }
 }
+
+// .front-buttons {
+//   margin-top: -2rem;
+//   margin-bottom: 2rem;
+//   //padding: 0 1.5rem;
+
+//   @media (min-width: 992px) {
+//     margin-top: -4em;
+//   }
+// }
 
 .callback {
   display: none;
@@ -130,10 +182,12 @@ article h1,
 .ukm-navbar {
   z-index: 9999;
   justify-content: space-between;
-  height: 5rem;
+  height: 4rem;
   border-top-left-radius: 1.25rem;
   border-top-right-radius: 1.25rem;
+  padding: 0;
   @media (min-width: 992px) {
+    padding: .5rem 1rem;
     padding-left: 3rem;
     padding-right: 2rem;
   }
@@ -149,26 +203,26 @@ article h1,
   color: hsla(225, 43%, 5%, 1);
 }
 
-@media (max-width: 991.98px) {
-  // error hvis disse fjernes?
-  .ukm-bolge {
-    position: relative;
-    height: 12.5rem;
+// @media (max-width: 991.98px) {
+//   // error hvis disse fjernes?
+//   .ukm-bolge {
+//     position: relative;
+//     height: 12.5rem;
 
-    &-front {
-      height: 18.375rem;
-    }
-  }
-}
+//     &-front {
+//       height: 18.375rem;
+//     }
+//   }
+// }
 
-@media (min-width: 992px) {
-  .ukm-bolge {
-    // error hvis disse fjernes?
-    position: relative;
-    height: 12.5rem;
+// @media (min-width: 992px) {
+//   .ukm-bolge {
+//     // error hvis disse fjernes?
+//     position: relative;
+//     height: 12.5rem;
 
-    &-front {
-      height: 45rem;
-    }
-  }
-}
+//     &-front {
+//       height: 45rem;
+//     }
+//   }
+// }
