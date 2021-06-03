@@ -1,0 +1,35 @@
+.first-news {
+    justify-content: center;
+    display: flex;
+
+    @media (min-width: 992px) {
+        justify-content: normal;
+        display: initial;
+    }
+}
+
+.first-news-image {
+    @media (min-width: 992px) {
+        height: 28rem;
+    }
+}
+
+.front-carousel {
+
+    &-image {
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+        width: -webkit-fill-available;
+        height: 21rem;
+
+        @media (min-width: 992px) {
+            height: 33rem;
+        }
+    }
+    
+
+    .message-title-end, .message-content-end, .message-category {
+        text-align: center;
+    }
+}

@@ -1,0 +1,61 @@
+@media (min-width: 992px) {
+    .news-section {
+        max-width: 87rem;
+    }
+}
+
+//nyhter
+@media (max-width: 991.98px) {
+    .message-category {
+        display: block;
+        color: hsl(var(--color-pink)); 
+        text-transform: uppercase; 
+        font: normal normal bold .5em/.9375em Roboto;
+        width: 100%;
+    }
+
+    .message-title-end {
+        font: normal normal var(--font-weight-semibold) .75em/1.125em Poppins;
+        display: block;
+        margin-bottom: .5rem;
+        margin-top: .5rem;
+        width: -webkit-fill-available;
+        width: 100%;
+    }
+
+    .message-content-end {
+        display: block;
+        color: hsl(var(--color-neutral-coldgray-700));
+        font: normal normal normal 11px/15px Roboto;
+        letter-spacing: 0px;
+        max-width: 100%;
+        width: 100%;
+    }
+}
+
+@media (min-width: 992px) {
+    .message-category {
+        display: block;
+        color: hsl(var(--color-pink)); 
+        text-transform: uppercase; 
+        font: normal normal bold 14px/15px Roboto;
+        width: 100%;
+    }
+
+    .message-title-end {
+        font: normal normal 600 24px/30px Poppins;
+        display: block;
+        margin-bottom: .5rem;
+        margin-top: .5rem;
+        width: -webkit-fill-available;
+        width: 100%;
+    }
+
+    .message-content-end {
+        display: block;
+        color: hsl(var(--color-neutral-coldgray-700));
+        font: normal normal normal 18px/27px Roboto;
+        max-width: 100%;
+        width: 100%;
+    }
+}

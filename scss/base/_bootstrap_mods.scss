@@ -1,0 +1,238 @@
+/* CONTAINER */
+@media (max-width: 576px) {
+    .container-padding-small {
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+}
+
+.container, 
+.container-fluid {
+    > .row {
+        @media (max-width: 768px) {
+            margin-right: -4px;
+            margin-left: -4px;
+        }
+    }
+}
+
+.card-image {
+    width: 100% !important;
+}
+
+/* BODY */
+body {
+    color: #000;
+    line-height: 1.5em;
+
+    /* TEXT */
+    small,
+    .small {
+        @include small;
+    }
+
+    p {
+        font-size: 1.125rem;
+        line-height: 1.75em;
+        font-weight: var(--font-weight-light);
+
+        & + & {
+            margin-top: 1.5rem;
+        }
+
+        @media (min-width: 1200px) {
+            //font-size: 1.375rem;
+        }
+    }
+
+    .text-danger {
+        color: hsl(var(--color-danger-100)) !important; //@color-danger-border !important;
+    }
+
+    .lead {
+        font-family: "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+        font-size: 1.33rem;
+        font-weight: var(--font-weight-light);
+        line-height: 1.5em;
+    }
+
+    /* LINKS */
+    a {
+        color: hsl(var(--color-neutral-coldgray-900));
+    }
+
+    a.white,
+    .white {
+        color: #fff !important;
+
+        :visited,
+        :focus {
+            color: #fff !important;
+        }
+    }
+
+    /* HEADERS */
+    #{headings(1,6)} {
+        opacity: 0.85;
+    }
+    h1 {
+        font-size: 2.2rem;
+        margin-bottom: 1rem;
+        margin-top: 1.2em;
+    }
+
+    h2 {
+        font-size: 1.4em;
+        margin-top: 1.2em;
+        margin-bottom: 0.2em;
+    }
+
+    h3 {
+        margin-top: 1.3em;
+        font-size: 1.15rem;
+        opacity: 0.9;
+    }
+}
+
+/* FORMS */
+label {
+    margin-bottom: 0;
+
+    & + .help {
+        margin-top: 0;
+    }
+}
+
+.help {
+    @include small;
+
+    font-style: italic;
+    margin-bottom: 0.2em;
+
+    & + .form-control {
+        margin-top: 0.2em;
+    }
+}
+.form-control {
+    border-color: hsl(var(--color-primary-blue-600)); // hsl(var(--color-primary-blue-100))-light-light;
+
+    & + .help {
+        margin-top: 0.4em;
+    }
+    &:focus {
+        border-color: hsl(var(--color-primary-blue-900));
+        transition-duration: 0.2s;
+        transition-timing-function: ease-in;
+        transition-property: border-color;
+    }
+}
+
+/* BUTTONS */
+.btn,
+a.btn {
+    &-xs {
+        font-size: 0.6em;
+        text-transform: uppercase;
+        padding: 0.4em 0.8em;
+    }
+
+    &-danger {
+        background: hsl(var(--color-danger-100)); // @color-danger-background;
+        border-color: hsl(var(--color-danger-300)); //@color-danger-border;
+        color: #fff !important;
+    }
+
+    &-primary {
+        background-color: hsl(var(--color-primary-blue-900));
+        border-color: hsl(var(--color-primary-blue-900));
+        color: #fff !important;
+
+        &:hover,
+        &:active,
+        &:visited,
+        &:focus {
+            background-color: hsl(var(--color-primary-blue-900));
+            border-color: hsl(var(--color-primary-blue-900));
+            color: #fff !important;
+        }
+    }
+
+    &-outline-primary,
+    &-outline-primary {
+        background-color: transparent;
+        border-color: hsl(var(--color-primary-blue-900)) !important;
+        color: hsl(var(--color-primary-blue-900)) !important;
+
+        :hover,
+        :visited {
+            background-color: transparent;
+            border-color: hsl(var(--color-primary-blue-900)) !important;
+            color: hsl(var(--color-primary-blue-900)) !important;
+        }
+
+        :active,
+        :focus,
+        :active:focus {
+            background-color: hsl(var(--color-primary-blue-900)) !important;
+        }
+
+        :focus,
+        :active {
+            color: #fff !important;
+        }
+
+        &.white {
+            color: #fff !important;
+            border-color: #fff !important;
+        }
+    }
+
+    &-secondary {
+        background-color: hsl(var(--color-pink));
+        border-color: hsl(var(--color-pink));
+        color: #fff !important;
+
+        :active,
+        :visited,
+        :focus {
+            background-color: hsl(var(--color-pink));
+            border-color: hsl(var(--color-pink));
+            color: #fff !important;
+        }
+
+        :hover {
+            background-color: hsl(var(--color-pink));
+            border-color: hsl(var(--color-pink));
+        }
+    }
+}
+
+/* BADGES */
+.badge-square {
+    border-radius: 0;
+}
+.badge-primary {
+    background-color: hsl(var(--color-primary-blue-900));
+    border-color: hsl(var(--color-primary-blue-900));
+}
+
+/* ALERTS */
+.alert-primary {
+    background-color: #fff; //hsl(var(--color-primary-blue-100))-light-light !important;
+    border-color: hsl(var(--color-primary-blue-100))-dark !important;
+    color: hsl(var(--color-primary-blue-100))-dark !important;
+}
+
+.alert.alert-danger {
+    background-color: hsl(var(--color-danger-50));
+    border-color: hsl(var(--color-danger-300));
+    color: hsl(var(--color-danger-300));
+}
+
+/* BACKWARDS COMPAT */
+.pull-right {
+    float: right;
+}
+.pull-left {
+    float: left;
+}

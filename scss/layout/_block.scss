@@ -1,0 +1,44 @@
+.UKMblock {
+    margin-bottom: 10vh;
+	margin-top: 10vh;
+	font-size: 1.3em;
+	min-height: 20vh;
+    
+    @media (min-width: 768px) {
+        font-weight: 100;
+    }
+    
+    p {
+        font-weight: 200;
+    }
+    
+    blockquote {
+        font-size: 1.2em;
+        @media (min-width: 768px) {
+            font-size: .9em;
+        }
+    }
+    
+    &.UKMblockImage .image {
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .image {
+        @media (max-width: 767px) {
+            height: 45vh;
+        }
+    }
+    
+    .text > h1,
+    .text > h2 {
+        margin-top: 0em;
+    }
+    
+    .UKMblockContent {
+        @media (min-width: 768px) {
+            padding-top: 20vh !important;
+            padding-bottom: 20vh !important;
+        }
+    }
+}

@@ -1,0 +1,26 @@
+.UKMtoggleContent#UKMtoggleLokal {
+    display: none;
+}
+
+@media (min-width: 768px) {
+    .UKMtoggleContent#UKMtoggleLokal {
+        display: block;
+        display: flex;
+    }
+}
+
+@media (min-width: 768px) {
+    // Passer på at ting flyter til høyre i md-view
+    #finnKommune.found-few,
+    #finnKommune.found-none {
+        margin-bottom: 10em !important;
+    }
+}
+
+.fylke-pameldte {
+    margin-top: -1rem;
+    color: hsl(var(--color-primary-blue-100));
+    font-size: 0.7em;
+    font-weight: 400;
+    float: right;
+}

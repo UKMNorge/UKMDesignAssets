@@ -1,0 +1,37 @@
+.geolocation {
+
+  &-banner {
+    display: flex;
+    flex-direction: column;
+    background-color: hsl(var(--color-primary-blue-900));
+    margin-bottom: -1.5rem;
+    height: 4rem;
+  }
+
+  &-box {
+    font-size: 0.6em;
+    margin-top: .2rem;
+    padding: 0.375rem;
+  
+    @media (min-width: 768px) {
+      font-size: 1em;
+    }
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--font-roboto) !important;
+    font-weight: var(--font-weight-regular);
+    text-decoration: none !important;
+    touch-action: manipulation;
+    
+    color: hsl(var(--color-primary-blue-100)) !important;
+    a,
+    a:active,
+    a:focus
+    a:hover {
+      color: hsl(var(--color-primary-blue-100)) !important;
+      text-decoration: none;
+    }
+  }
+}

@@ -1,0 +1,37 @@
+.contact-section {
+  margin-top: 20vh;
+  height: 27.875rem;
+  background: transparent
+    linear-gradient(
+      180deg,
+      hsla(var(--color-primary-blue-100), 0) 0%,
+      hsla(218, 81%, 94%, 0.5) 100%
+    )
+    0% 0% no-repeat padding-box;
+
+  &.other-page {
+    height: 80rem;
+    @media (min-width: 992px) {
+      height: 27.875rem;
+    }
+  }
+
+  @media (min-width: 992px) {
+    margin-top: 40.60625rem;
+    height: 27.875rem;
+    background: transparent
+      linear-gradient(
+        180deg,
+        hsla(var(--color-primary-blue-100), 0) 0%,
+        hsla(218, 81%, 94%, 0.5) 100%
+      )
+      0% 0% no-repeat padding-box;
+  }
+}
+
+.start {
+  margin-top: 8rem;
+  @media (min-width: 992px) {
+    margin-top: 12rem;
+  }
+}

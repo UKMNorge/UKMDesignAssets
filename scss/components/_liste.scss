@@ -1,0 +1,47 @@
+.UKMliste {
+    margin-left: 0 !important;
+    padding-left: 0 !important;
+
+    > li {
+        list-style-type: none;
+
+        border: 1px solid hsl(var(--color-primary-blue-900));
+        border-left: 6px solid hsl(var(--color-primary-blue-900));
+
+        box-shadow: 3px 3px 3px 0px #e1dfdf;
+
+        margin-bottom: 1.2em !important;
+
+        padding: 0.5em;
+        padding-left: 0.8em;
+
+        > header {
+            cursor: pointer;
+            > .right {
+                font-size: 0.7em;
+
+                float: right;
+                margin-top: 0;
+                text-align: right;
+            }
+            > .description {
+                font-size: 0.7em;
+            }
+        }
+        > section {
+            display: none;
+            margin-top: 1rem;
+        }
+
+        > footer {
+            display: none;
+
+            margin-top: 1em;
+            clear: both;
+        }
+    }
+    .list-group-item.active {
+        background: hsl(var(--color-primary-blue-900));
+        border-color: hsl(var(--color-primary-blue-900));
+    }
+}

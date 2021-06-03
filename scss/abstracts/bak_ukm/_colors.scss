@@ -1,0 +1,28 @@
+/* Hvordan å bruke disse variablene i koden? 
+ *
+ * background-color: hsl(var(--color-primary-100));
+ * background-color: hsla(var(--color-primary-100), .5);
+*/
+
+%color-palette-bak-ukm {
+  --color-primary-orange-50: 40, 100%, 99%;
+  /* --color-primary-orange-100: #fff; */
+  --color-primary-orange-200: 23, 57%, 95%;
+  --color-primary-orange-300: 19, 71%, 93%;
+  --color-primary-orange-400: 19, 88%, 84%;
+  --color-primary-orange-500: 20, 100%, 56%;
+  --color-primary-orange-600: 15, 90%, 55%;
+  --color-primary-orange-700: 18, 62%, 51%;
+  --color-primary-orange-800: 18, 73%, 29%;
+  --color-primary-orange-900: 8, 52%, 9%;
+
+  /* --color-neutral-warmgray-100: #fff;
+  --color-neutral-warmgray-200: #fff;
+  --color-neutral-warmgray-300: #fff;
+  --color-neutral-warmgray-400: #fff;
+  --color-neutral-warmgray-500: #fff;
+  --color-neutral-warmgray-600: #fff;
+  --color-neutral-warmgray-700: #fff;
+  --color-neutral-warmgray-800: #fff;
+  --color-neutral-warmgray-900: #fff; */
+}

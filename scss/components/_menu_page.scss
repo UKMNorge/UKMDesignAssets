@@ -1,0 +1,28 @@
+.page-menu {
+    .menu-item {
+        text-align: center;
+        margin-top: 1.5em;
+        margin-bottom: .5em;
+        color: hsl(var(--color-primary-blue-900));
+
+        a,
+        a:hover,
+        a:visited,
+        a:focus,
+        a:active {
+            text-decoration: none;
+            color: hsl(var(--color-primary-blue-900));
+        }
+
+        .icon {
+            font-size:1.5em;
+            margin-bottom: .4em;
+        }
+        
+        .pameldte-badge {
+            position: absolute;
+            top: -.8em;
+            left: "Calc( 50% + 0.55em)";
+        }
+    }
+}
