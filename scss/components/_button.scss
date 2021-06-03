@@ -58,12 +58,14 @@ button {
     width: 14.625rem;
     height: 3rem;
     padding: 0.875rem 1rem 0.875rem 1.4rem;
+    text-align: center;
 
     @media (min-width: 992px) {
       width: 22rem;
       height: 4.5rem;
       font: normal normal var(--font-weight-semibold) 1.375rem/2.0625rem Poppins;
       border-radius: 3.125rem;
+      padding: 1.2rem;
     }
   }
 
