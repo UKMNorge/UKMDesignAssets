@@ -28,8 +28,12 @@
     border: 0 none;
     padding: 0 1rem 0 0;
 
+    @media (min-width: 768px) {
+      padding: 0.2rem 0;
+    }
+
     @media (min-width: 992px) {
-      padding: 0;
+      padding: 0 1rem 0 0;
 
       a {
         width: 100%;
@@ -63,12 +67,28 @@
   }
 }
 
+.some-list-group {
+  flex-direction: row;
+  @media (min-width: 768px) {
+    flex-direction: column;
+  }
+  @media (min-width: 992px) {
+    flex-direction: row;
+  }
+}
+
 .img-carousel {
   max-width: none !important;
   width: 2.6875rem;
   height: 2.6875rem;
   border-radius: 0.75rem;
   position: relative;
+
+  @media (min-width: 768px) {
+    width: 10.4rem;
+    height: 2.765rem;
+  }
+
   @media (min-width: 992px) {
     width: 13.125rem;
     height: 6.5625rem;
@@ -104,6 +124,11 @@
   top: 1.6rem;
   left: 1.6rem;
 
+  @media (min-width: 768px) {
+    top: 1.2rem;
+    left: 8.6rem;
+  }
+
   @media (min-width: 992px) {
     width: 2.75rem;
     height: 2.6875rem;
@@ -125,6 +150,11 @@
     top: 1.8rem;
     left: 1.8rem;
     right: 0.875rem;
+
+    @media (min-width: 768px) {
+      top: 1.4rem;
+      left: 8.8rem;
+    }
 
     @media (min-width: 992px) {
       width: 2.125rem;
@@ -242,7 +272,7 @@
   }
 }
 
-.some-icon-test {
+.some-icon {
   &-instagram {
     background: url("../../img/instagram.jpg") no-repeat center/cover;
   }
