@@ -26,7 +26,8 @@
     appearance: none;
     background: transparent;
     border: 0 none;
-    padding: 0 1rem 0 0;
+    // padding: 0 1rem 0 0;
+    padding: 0 0.5rem 0 0;
 
     @media (min-width: 768px) {
       padding: 0.2rem 0;
@@ -90,6 +91,14 @@
   }
 
   @media (min-width: 992px) {
+    // width: 13.125rem;
+    // height: 6.5625rem;
+    border-radius: 1.5625rem;
+    width: 11.2rem;
+    height: 6.5625rem;
+  }
+
+  @media (min-width: 1199px) {
     width: 13.125rem;
     height: 6.5625rem;
     border-radius: 1.5625rem;
@@ -133,6 +142,12 @@
     width: 2.75rem;
     height: 2.6875rem;
     top: 3.4rem;
+    // left: 9.8rem;
+    left: 7.8rem;
+  }
+
+  @media (min-width: 1199px) {
+    top: 3.4rem;
     left: 9.8rem;
   }
 
@@ -159,6 +174,13 @@
     @media (min-width: 992px) {
       width: 2.125rem;
       height: 2.1875rem;
+      top: 3.7rem;
+      // left: 10.15rem;
+      left: 8.15rem;
+
+    }
+
+    @media (min-width: 1199px) {
       top: 3.7rem;
       left: 10.15rem;
     }

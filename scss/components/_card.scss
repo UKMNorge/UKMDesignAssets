@@ -13,6 +13,8 @@
     box-shadow: 0 0.5rem 1rem #3983fa1d; //fargekonvensjon?
     padding: 0;
 
+    height: 100%;
+
     @at-root .news-case#{&} {
       width: auto;
     }
@@ -114,7 +116,9 @@
 }
 
 .btn-text {
-  font: normal normal bold 1.25rem/1.5rem Roboto;
+  @media (min-width: 992px) {
+    font: normal normal bold 1.25rem/1.5rem Roboto;
+  }
 }
 
 .message-img {

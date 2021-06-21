@@ -314,11 +314,12 @@
 } 
 
 .btn-pamelding {
-  visibility: hidden;
-  // @media (min-width: 768px) {
-  //   visibility: visible;
-  // }
-  @media (min-width: 992px) {
+  display: none;
+  @media (min-width: 768px) {
+    display: revert;
+    visibility: hidden;
+  }
+  @media (min-width: 1199px) {
     visibility: visible;
   }
 }
