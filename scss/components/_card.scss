@@ -20,8 +20,6 @@
     }
 
     @media (min-width: 992px) {
-      //width: 40.625rem;
-      //height: 12.4375rem;
       margin: auto;
     }
 
@@ -84,21 +82,12 @@
   margin-bottom: 8rem;
 
   @media (min-width: 992px) {
-    // width: 72.5rem;
-    // height: 56.6875rem;
     margin-top: 14rem;
-    // padding-left: 0;
-    // padding-right: 0;
-    // margin-left: 21.5rem;
-    // margin-right: 20rem;
-    // margin-bottom: 20rem;
   }
 }
 
 .message-title {
   font: normal normal var(--font-weight-semibold) 0.875em/1.125em Poppins;
-  margin-bottom: 1rem;
-
   display: inline-block;
   margin-bottom: 0.25rem;
 
@@ -106,6 +95,8 @@
     max-width: 13.5rem;
     font-size: 2.5rem;
     line-height: 2.75rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
   }
 }
 
@@ -113,11 +104,16 @@
   max-width: 19rem;
   font-size: 1.5rem;
   line-height: 2.125rem;
+
+  @media (min-width: 992px) {
+    margin-bottom: 1rem;
+  }
 }
 
 .btn-text {
   @media (min-width: 992px) {
     font: normal normal bold 1.25rem/1.5rem Roboto;
+    margin-top: 1rem;
   }
 }
 
@@ -128,5 +124,23 @@
   @media (min-width: 992px) {
     height: 6rem;
     width: 6rem;
+  }
+}
+
+.bottom-buffer {
+  margin-bottom: 1rem;
+}
+
+.collapse-item {
+  border: none;
+  border-radius: 0;
+  padding: 0.25rem 0.7rem;
+
+  @media (min-width: 992px) {
+    padding: 1.25rem;
+  }
+
+  &:hover {
+    background-color: revert;
   }
 }

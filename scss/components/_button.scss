@@ -162,6 +162,10 @@ button {
     align-items: center;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
+    font: normal normal var(--font-weight-semibold) 0.875em Poppins;
+    @media(min-width: 992px) {
+        font: normal normal var(--font-weight-semibold) 1.375rem/2.0625rem Poppins;
+    }
 
     &:hover {
       text-decoration: none;
@@ -169,26 +173,29 @@ button {
 }
 
 .btn-large {
-    border-radius: 1.75rem;
-    font-size: 1.25rem;
     padding: 1rem 2rem;
+    border-radius: 3.125rem;
+    @media(min-width: 992px) {
+        // font-size: 1.25rem;
+        padding: 1.25rem 2rem;
+    }
 
     &:hover {
         box-shadow: 0 .5rem .9375rem rgb(0 0 0 / 20%);
-        background: hsl(var(--color-primary-blue-800),0.7);
+        background: hsl(var(--color-primary-blue-800),0.9);
     }
 }
 
 .btn-blue {
-    // background-color: #23272a;
-    // background-color: hsl(var(--color-primary-blue-900));
-    // color: #fff;
-    // color: var(--white);
-
-    color: hsl(var(--color-primary-blue-50, var(--color-primary-orange-50)));
+    color: hsl(var(--color-primary-blue-50, var(--color-primary-orange-50))) !important;
     background: linear-gradient(45deg , hsl(var(--color-primary-blue-800, var(--color-primary-orange-900))), hsl(var(--color-primary-blue-600, var(--color-primary-orange-900))));
 
   &:hover {
     color: white;
   }
+}
+
+.front-buttons {
+    position: absolute;
+    z-index: 999;
 }
