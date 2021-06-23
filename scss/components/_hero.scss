@@ -163,9 +163,9 @@ article h1,
   border-top-left-radius: 1.25rem;
   border-top-right-radius: 1.25rem;
   @media (min-width: 992px) {
-    padding: .5rem 1rem;
     padding-left: 3rem;
     padding-right: 2rem;
+    margin-bottom: 2rem;
   }
 
   &.other-page {
