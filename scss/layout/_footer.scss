@@ -49,12 +49,9 @@
 
 .footer {
   background: hsla(var(--color-primary-blue-100), 0.5);
-  // height: 60rem;
   @media (min-width: 992px) {
     padding-top: 21.375rem;
     background: hsla(var(--color-primary-blue-100), 0.5);
-    // height: 73rem;
-    /*max-width: 125rem;*/
   }
 }
 
@@ -87,13 +84,6 @@
       padding-left: 0;
     }
   }
-
-  &-footer {
-    @media (min-width: 992px) {
-      //   width: 1000px;
-      // margin-left: 11rem;
-    }
-  }
 }
 
 .footer-ukm-logo {
@@ -112,12 +102,6 @@
       width: 4rem;
       height: 2.25rem;
     }
-  }
-}
-
-.ukm-logo-footer {
-  @media (min-width: 992px) {
-    width: 76rem;
   }
 }
 
@@ -150,24 +134,7 @@
   }
 }
 
-// .button-tint {
-//   background: hsla(var(--color-primary-blue-100));
-//   opacity: 0.24;
-//   z-index: 1;
-//   position: absolute;
-//   width: -webkit-fill-available;
-//   height: 3rem;
-//   align-items: center;
-
-//   @media (min-width: 992px) {
-//     // width: 35.25rem;
-//     height: 5rem;
-//     background: none;
-//   }
-// }
-
 .mainAccordText {
-  // width: 21.5625rem;
   width: -webkit-fill-available;
   height: 3rem;
   background: hsla(0, 0%, 100%, 1);
@@ -182,7 +149,6 @@
   &::after {
     content: "";
     position: absolute;
-    // z-index: -1;
     top: 0;
     left: 0;
     width: 100%;
@@ -196,13 +162,7 @@
     background: hsla(0, 0%, 100%, 1);
     opacity: 1;
     border-color: white;
-    // -webkit-transform: scale(1.25, 1.25);
-    // transform: scale(1.25, 1.25);
   }
-
-//   > * {
-//     z-index: 10;
-// }
 
   @media (min-width: 992px) {
     // width: 35.25rem;
@@ -218,14 +178,12 @@
 }
 
 .accordSubbutton {
-  // width: 21.5625rem;
   width: -webkit-fill-available;
   height: 3rem;
   background: hsla(0, 0%, 100%, 1);
   border-radius: 0.3125rem 0.3125rem 0 0;
   text-align: left;
   border: none;
-  // margin-right: 1.8rem;
 
   position: relative;
 
@@ -245,23 +203,15 @@
     background: hsla(0, 0%, 100%, 1);
     opacity: 1;
     border-color: white;
-    // -webkit-transform: scale(1.25, 1.25);
-    // transform: scale(1.25, 1.25);
   }
-  
-  // &:hover::after {
-  //     opacity: 1;
-  // }
 
   @media (min-width: 992px) {
-    // width: 35.25rem;
     width: inherit;
     height: 5rem;
     background: hsla(0, 0%, 100%, 1);
     border-radius: 0.3125rem 0.3125rem 0 0;
     text-align: left;
     border: none;
-    // margin-right: 1.6rem;
   }
 }
 
