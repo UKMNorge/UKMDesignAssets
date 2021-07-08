@@ -93,15 +93,16 @@ button {
     }
 }
 
-.slideSpan {
+.slide-span {
     display: inline;
     text-indent: 0.15rem;
+    
     @media(min-width: 992px) {
         text-indent: 0.5rem;
     }
 
     span {
-        animation: topToBottom 12.5s linear infinite 0s;
+        animation: top-to-bottom 10.5s linear infinite 0s;
         opacity: 0;
         overflow: hidden;
         position: absolute;
@@ -121,7 +122,7 @@ button {
     }
 }
 
-@keyframes topToBottom {
+@keyframes top-to-bottom {
     0% {
         opacity: 0;
     }

@@ -103,15 +103,23 @@
   border-top-left-radius: 1.25rem;
   border-top-right-radius: 1.25rem;
 
+  ul {
+    font: normal normal var(--font-weight-semibold) 0.875rem/1.125rem var(--font-poppins);
+    color: hsla(225, 43%, 5%, 1);
+
+    li {
+      &:nth-child(2){
+        border-left: 0.15rem solid hsla(223, 54%, 97%, 0.5);
+        padding-left: 1rem;
+        margin-left: 1rem;
+      }
+    }
+  }
+
   &.other-page {
     background-color: white;
     z-index: unset;
   }
-}
-
-.burger-text {
-  font: normal normal var(--font-weight-semibold) 0.875rem/1.125rem var(--font-poppins);
-  color: hsla(225, 43%, 5%, 1);
 }
 
 header {
@@ -156,6 +164,10 @@ header {
     &:hover,
     &:active {
       text-decoration: underline;
+    }
+
+    @media (min-width: 992px) {
+    padding: 0.1rem 1.5rem;
     }
   }
 

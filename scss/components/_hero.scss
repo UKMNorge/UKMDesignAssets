@@ -114,13 +114,19 @@ article h1,
 }
 
 .hero-container {
+  margin-top: 16vh;
+  transform: translateY(calc(-100% + 1rem));
+
+  @media (min-width: 992px) {
+    margin-top: 55vh;
+  }
+
   h1 {
     font: var(--font-weight-bold) 1.75rem/1.5em var(--font-poppins);
     width: 15rem;
     color: hsl(var(--color-neutral-gray-100));
     opacity: 1;
     text-shadow: 0 0.3125rem 0.9375rem rgba(0, 0, 0, 0.3);
-    margin-top: 5.2rem;
 
     @media (min-width: 576px) {
       width: auto;
@@ -128,12 +134,10 @@ article h1,
       margin-bottom: 0;
     }
     @media (min-width: 768px) {
-      width: auto;
       font: var(--font-weight-bold) 3rem/1.2em var(--font-poppins);
     }
   
     @media (min-width: 992px) {
-      width: auto;
       font: var(--font-weight-bold) 5rem/1.4em var(--font-poppins);
     }
   }
