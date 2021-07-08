@@ -70,6 +70,13 @@ button {
         background: none;
         // top: 15.5rem;
         // left: 1.5rem;
+
+        &:hover, &:active {
+            span {
+                text-decoration: underline;
+            }
+        }
+
         @media (min-width: 992px) {
             padding-left: 2.2rem;
             color: hsla(var(--color-even-darker-blue));
@@ -102,7 +109,7 @@ button {
     text-indent: 0.15rem;
 
     @media (min-width: 992px) {
-        text-indent: 0.5rem;
+        text-indent: 0;
     }
 
     span {
@@ -143,19 +150,19 @@ button {
     }
     5% {
         opacity: 0;
-        transform: translateY(-50px);
+        transform: translateY(-2rem);
     }
     10% {
         opacity: 1;
-        transform: translateY(0px);
+        transform: translateY(0);
     }
     25% {
         opacity: 1;
-        transform: translateY(0px);
+        transform: translateY(0);
     }
     30% {
         opacity: 0;
-        transform: translateY(50px);
+        transform: translateY(2rem);
     }
     80% {
         opacity: 0;
