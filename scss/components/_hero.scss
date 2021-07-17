@@ -1,14 +1,12 @@
 .ukm-bolge {
-  overflow: hidden;
+  // overflow: hidden;
   position: relative;
-  height: 12.5rem;
+  // height: 12.5rem;
 
   &-front {
-    position: relative;
-    height: 24rem;
-
-    border-top-left-radius: 1.25rem;
-    border-top-right-radius: 1.25rem;
+    // height: 24rem;
+    // border-top-left-radius: 1.25rem;
+    // border-top-right-radius: 1.25rem;
 
     @media (min-width: 992px) {
       height: 50rem;
@@ -16,18 +14,31 @@
   }
 
   > .div-radius {
-    background: url("../../img/bolger.png") top center / 100% 21.75rem no-repeat;
+    background: url("../../img/bolger.png") top center / 100% 100% no-repeat;
     height: 18.375rem;
     position: absolute;
+    // height: auto;
     width: 150%;
+    clip-path: ellipse(100% 87% at 50% 0);
+
     border-bottom-right-radius: 80%;
     border-bottom-left-radius: 80%;
     left: 50%;
     transform: translate(-50%, 0);
 
+    // test
+    // height: 100%;
+    // width: 100%;
+    // background-image: url("../../img/bolger.png");
+    // background-size: cover;
+    // background-position: center;
+    // background-position: top center;
+    // background-repeat: no-repeat;
+    // clip-path: ellipse(100% 87% at 50% 0);
+
     @media (min-width: 992px) {
-      background: url("../../img/bolger.png") top center / 100% 89.9375rem no-repeat;
-      top: -1.5625rem;
+      background: url("../../img/bolger.png") top center / 100% 100% no-repeat;
+      // top: -1.5625rem;
       height: 45rem;
     }
 

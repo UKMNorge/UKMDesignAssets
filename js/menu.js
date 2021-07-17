@@ -1,7 +1,6 @@
 $(document).ready(function () {
     $(".hamburger-icon").css({'background-color' : 'transparent'});
     $('.subpages').hide();
-
     
     $('.hamburger-menu').click(function(e) {
         e.stopPropagation();
