@@ -84,6 +84,43 @@
   }
 }
 
+.card-component {
+  img {
+    height: 3.5rem;
+    width: 3.5rem;
+    border-radius: 50%;
+    @media (min-width: 992px) {
+      height: 6rem;
+      width: 6rem;
+  }
+}
+
+  h5 {
+    font: normal normal var(--font-weight-semibold) 0.875em/1.125em Poppins;
+    display: inline-block;
+    margin-bottom: 0.25rem;
+
+    @media (min-width: 992px) {
+      max-width: 13.5rem;
+      font-size: 2.5rem;
+      line-height: 2.75rem;
+      margin-top: 2rem;
+      margin-bottom: 2rem;
+    }
+  }
+
+  span {
+    max-width: 19rem;
+    font-size: 1.5rem;
+    line-height: 2.125rem;
+    color: hsl(var(--color-neutral-coldgray-700));
+    font-weight: var(--font-weight-light);
+    @media (min-width: 992px) {
+      margin-bottom: 1rem;
+    }
+  }
+}
+
 .message-title {
   font: normal normal var(--font-weight-semibold) 0.875em/1.125em Poppins;
   display: inline-block;

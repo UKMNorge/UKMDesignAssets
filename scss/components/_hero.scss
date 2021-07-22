@@ -1,55 +1,29 @@
 .ukm-bolge {
-  // overflow: hidden;
-  position: relative;
-  // height: 12.5rem;
-
-  &-front {
-    // height: 24rem;
-    // border-top-left-radius: 1.25rem;
-    // border-top-right-radius: 1.25rem;
-
-    @media (min-width: 992px) {
-      height: 50rem;
-    }
+  height: 29rem;
+  @media (min-width: 992px) {
+    height: 55rem;
   }
-
   > .div-radius {
-    background: url("../../img/bolger.png") top center / 100% 100% no-repeat;
-    height: 18.375rem;
+    background: url("../../img/bolger.png") top center / 100% 21.75rem no-repeat;
+    height: 23rem;
     position: absolute;
-    // height: auto;
-    width: 150%;
+    width: 100%;
     clip-path: ellipse(100% 87% at 50% 0);
-
-    border-bottom-right-radius: 80%;
-    border-bottom-left-radius: 80%;
     left: 50%;
     transform: translate(-50%, 0);
 
-    // test
-    // height: 100%;
-    // width: 100%;
-    // background-image: url("../../img/bolger.png");
-    // background-size: cover;
-    // background-position: center;
-    // background-position: top center;
-    // background-repeat: no-repeat;
-    // clip-path: ellipse(100% 87% at 50% 0);
-
     @media (min-width: 992px) {
-      background: url("../../img/bolger.png") top center / 100% 100% no-repeat;
-      // top: -1.5625rem;
-      height: 45rem;
+      background: url("../../img/bolger.png") top center / 100% 89.9375rem no-repeat;
+      height: 59rem;
     }
 
     &-tint {
-      background: linear-gradient(0deg, rgba(19, 21, 27, 0.3) 0%, white 100%);
-      opacity: 0.5;
+      background: linear-gradient(0deg, rgba(19, 21, 27, 0) 0%, white 100%);
+      width: 100%;
+      height: 100%;
+      opacity: 0.3;
       z-index: 1;
-
-      @media (min-width: 992px) {
-        background: linear-gradient(0deg, hsla(223, 16%, 9%, 0.3) 0%, hsla(0, 0%, 100%, 1) 100%);
-      }
+      border-radius: 1.25rem 1.25rem 0 0;
     }
   }
 
@@ -58,15 +32,14 @@
   }
 }
 
-
-article h1, 
+article h1,
 .hero-text {
   font: var(--font-weight-bold) 1.75rem/1.5em var(--font-poppins);
   margin: 0;
   color: black;
   text-shadow: none;
   padding: 2rem 0;
-  
+
   header & {
     width: auto;
     color: hsl(var(--color-neutral-gray-100));
@@ -96,7 +69,7 @@ article h1,
 
     @media (min-width: 992px) {
       max-width: 50rem;
-      top: 30%; 
+      top: 30%;
     }
 
     &.other-page {
@@ -147,7 +120,7 @@ article h1,
     @media (min-width: 768px) {
       font: var(--font-weight-bold) 3rem/1.2em var(--font-poppins);
     }
-  
+
     @media (min-width: 992px) {
       font: var(--font-weight-bold) 5rem/1.4em var(--font-poppins);
     }
