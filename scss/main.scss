@@ -134,46 +134,6 @@ ul {
   }
 }
 
-@media (min-width: 992px) {
-  .card-image {
-    width: 37.75rem;
-    height: 15.375rem;
-    border-radius: 0.75rem 0.75rem 0 0;
-
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
-
-    &-large {
-      position: relative;
-      // margin-left: auto;
-      margin-top: 1rem;
-      width: 20.4375rem;
-      height: 12.75rem;
-      background: #a0aec0;
-    }
-
-    &-small {
-      // width: 5.5rem;
-      // height: 5.5rem;
-      width: 10.9375rem;
-      height: 10.9375rem;
-      border-radius: 0.75rem;
-    }
-
-    &.card-news {
-      height: 15rem;
-      width: -webkit-fill-available;
-    }
-
-    &.first-news-image {
-      @media (min-width: 992px) {
-          height: 28rem;
-      }
-  }
-  }
-}
-
 .card-element {
   position: relative;
   padding: 0.9rem 1.4rem;

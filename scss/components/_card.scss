@@ -109,7 +109,7 @@
     }
   }
 
-  span {
+  > span {
     max-width: 19rem;
     font-size: 1.5rem;
     line-height: 2.125rem;
@@ -169,13 +169,18 @@
 .collapse-item {
   border: none;
   border-radius: 0;
-  padding: 0.25rem 0.7rem;
+  // padding: 0.25rem 0.7rem;
+  padding: 0.5rem 0.7rem;
+  display: flex;
+  justify-content: space-between;
 
   @media (min-width: 992px) {
-    padding: 1.25rem;
+    // padding: 1.25rem;
+    padding: 0.9rem 1.25rem;
   }
 
-  &:hover {
-    background-color: revert;
+  &:hover, &:active {
+    // background-color: revert; 
+    text-decoration: none;
   }
 }

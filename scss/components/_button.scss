@@ -205,7 +205,9 @@ button {
 
     &:hover {
         box-shadow: 0 0.5rem 0.9375rem rgb(0 0 0 / 20%);
-        background: hsl(var(--color-primary-blue-800), 0.9);
+        // background: hsl(var(--color-primary-blue-800), 0.9);
+        background: hsl(var(--color-primary-blue-800));
+
     }
 }
 
@@ -220,6 +222,20 @@ button {
     &:hover {
         color: white;
     }
+}
+
+.btn-small {
+    width: 13rem;
+    height: 3rem;
+    font-size: smaller;
+    // padding: 0.875rem 1rem 0.875rem 2.4rem;
+}
+
+.btn-derdubor {
+    margin-top: 1.5rem;
+    @media (min-width: 992px) {
+        margin-top: 3rem;
+    }    
 }
 
 .front-buttons {

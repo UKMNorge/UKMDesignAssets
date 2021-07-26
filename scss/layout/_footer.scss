@@ -39,6 +39,7 @@
 
   &-long {
     width: -webkit-fill-available;
+    width: -moz-available;
   }
 
   span {
@@ -107,6 +108,7 @@
 
 .locationBreadcrum {
   width: -webkit-fill-available;
+  width: -moz-available;
   background: rgba(255, 255, 255, 0.6);;
   border-radius: 0.625rem;
   box-shadow: 0rem 0.3125rem 0.9375rem hsla(var(--color-primary-blue-600), 0.11);
@@ -135,6 +137,7 @@
 }
 
 .mainAccordText {
+  width: -moz-available;
   width: -webkit-fill-available;
   height: 3rem;
   background: hsla(0, 0%, 100%, 1);
@@ -165,7 +168,7 @@
   }
 
   @media (min-width: 992px) {
-    // width: 35.25rem;
+    width: -moz-available;
     width: -webkit-fill-available;
     height: 5rem;
     background: hsla(0, 0%, 100%, 1);
@@ -178,13 +181,13 @@
 }
 
 .accordSubbutton {
+  width: -moz-available;
   width: -webkit-fill-available;
   height: 3rem;
   background: hsla(0, 0%, 100%, 1);
   border-radius: 0.3125rem 0.3125rem 0 0;
   text-align: left;
   border: none;
-
   position: relative;
 
   &::after {
@@ -203,21 +206,34 @@
     background: hsla(0, 0%, 100%, 1);
     opacity: 1;
     border-color: white;
+    box-shadow: none;
   }
 
   @media (min-width: 992px) {
-    width: inherit;
     height: 5rem;
     background: hsla(0, 0%, 100%, 1);
     border-radius: 0.3125rem 0.3125rem 0 0;
     text-align: left;
     border: none;
   }
+
+  span {
+    font: normal normal var(--font-weight-regular) 1rem/1.1875rem Roboto;
+    color: hsla(var(--color-neutral-coldgray-900), 1);
+    z-index: 99999;
+    position: inherit;
+    @media (min-width: 992px) {
+      font: normal normal var(--font-weight-regular) 1.5rem/1.75rem Roboto;
+      color: hsla(var(--color-neutral-coldgray-900), 1);
+    }
+  }
 }
 
 .accordSubtext {
   font: normal normal var(--font-weight-regular) 1rem/1.1875rem Roboto;
   color: hsla(var(--color-neutral-coldgray-900), 1);
+  z-index: 99999;
+  position: inherit;
   @media (min-width: 992px) {
     font: normal normal var(--font-weight-regular) 1.5rem/1.75rem Roboto;
     color: hsla(var(--color-neutral-coldgray-900), 1);
@@ -227,10 +243,17 @@
 .caret-flip {
   width: 1.5rem;
   height: 1.5rem;
+  -moz-transition: transform 0.5s;
+  -webkit-transition: transform 0.5s;
+  transition: transform 0.5s;
   @media (min-width: 992px) {
     width: 2.25rem;
     height: 2.25rem;
   }
+}
+
+.rotate-90 {
+  transform: rotate(90deg);
 }
 
 .flex-gap {

@@ -2,6 +2,31 @@
     @media (min-width: 992px) {
         max-width: 87rem;
     }
+
+    .card-news {
+        &:active, &:hover {
+            text-decoration: none;
+            opacity: 0.7;
+        } 
+        span:first-child {
+            display: block;
+            color: hsl(var(--color-pink));
+            text-transform: uppercase;
+            font: normal normal bold 0.5em/.9375em Roboto;
+            width: 100%;
+    
+            @media (min-width: 992px) {
+                display: block;
+                color: hsl(var(--color-pink));
+                text-transform: uppercase;
+                font: normal normal bold 0.875rem/.9375rem Roboto;
+                width: 100%;
+                padding-right: 3rem;
+                padding-bottom: 0.3rem;
+                padding-top: 0.3rem;
+            }
+        }
+    }
 }
 
 //nyheter
@@ -59,3 +84,43 @@
         }
     }
 }
+
+@media (min-width: 992px) {
+    .card-image {
+      width: 37.75rem;
+      height: 15.375rem;
+      border-radius: 0.75rem 0.75rem 0 0;
+  
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: cover;
+  
+      &-large {
+        position: relative;
+        // margin-left: auto;
+        margin-top: 1rem;
+        width: 20.4375rem;
+        height: 12.75rem;
+        background: #a0aec0;
+      }
+  
+      &-small {
+        // width: 5.5rem;
+        // height: 5.5rem;
+        width: 10.9375rem;
+        height: 10.9375rem;
+        border-radius: 0.75rem;
+      }
+  
+      &.card-news {
+        height: 15rem;
+        width: -webkit-fill-available;
+      }
+  
+      &.first-news-image {
+        @media (min-width: 992px) {
+            height: 28rem;
+        }
+    }
+    }
+  }

@@ -39,6 +39,10 @@
       a {
         width: 100%;
         display: inline-block;
+
+        &:hover, &:active {
+          opacity: 0.7;
+        }
       }
     }
 
@@ -182,7 +186,7 @@
 
     @media (min-width: 1199px) {
       top: 3.7rem;
-      left: 10.15rem;
+      left: 10.1rem;
     }
 
     &-large {
@@ -307,17 +311,22 @@
 .some-icon {
   &-instagram {
     background: url("../../img/instagram.jpg") no-repeat center/cover;
+    @include overlay;
   }
   &-youtube {
     background: url("../../img/youtube.jpg") no-repeat center/cover;
+    @include overlay;
   }
   &-tiktok {
     background: url("../../img/tiktok.jpg") no-repeat center/cover;
+    @include overlay;
   }
   &-facebook {
     background: url("../../img/facebook.jpg") no-repeat center/cover;
+    @include overlay;
   }
   &-discord {
     background: url("../../img/discord.jpg") no-repeat center/cover;
+    @include overlay;
   }
 }
