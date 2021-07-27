@@ -3,7 +3,8 @@
  * background-color: hsl(var(--color-primary-100));
  * background-color: hsla(var(--color-primary-100), .5);
 */
-:root {
+
+%color-palette-bak-ukm {
   --color-primary-orange-50: 40, 100%, 99%;
   /* --color-primary-orange-100: #fff; */
   --color-primary-orange-200: 23, 57%, 95%;

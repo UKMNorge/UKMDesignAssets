@@ -224,11 +224,34 @@ button {
     }
 }
 
+.btn-orange {
+    color: hsl(var(--color-primary-orange-50)) !important;
+    background: linear-gradient(
+        45deg,
+        hsl(var(--color-primary-orange-900)),
+        hsl(var(--color-primary-orange-900))
+    );
+    &:hover {
+        color: white;
+    }
+}
+
 .btn-small {
     width: 13rem;
     height: 3rem;
     font-size: smaller;
     // padding: 0.875rem 1rem 0.875rem 2.4rem;
+}
+
+.btn-filter {
+    width: 9rem;
+height: 2.5rem;
+font-size: smaller;
+padding: 0.5rem 1rem;
+
+    > svg {
+        color: white;
+    }
 }
 
 .btn-derdubor {
