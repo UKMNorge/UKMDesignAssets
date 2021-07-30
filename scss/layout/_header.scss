@@ -144,6 +144,10 @@ header {
       width: 4rem;
       height: 2.25rem;
     }
+
+    .vibakukm & {
+      color: hsl(var(--color-neutral-coldgray-900));
+    }
   }
 
   .sign-in {
@@ -162,6 +166,7 @@ header {
 
   .menu-links {
     color: hsl(var(--color-neutral-coldgray-100));
+    // color: hsl(var(--color-neutral-coldgray-900));
     &:hover,
     &:active {
       text-decoration: underline;
@@ -169,6 +174,10 @@ header {
 
     @media (min-width: 992px) {
     padding: 0 1.5rem;
+    }
+
+    .vibakukm & {
+      color: hsl(var(--color-neutral-coldgray-900));
     }
   }
 

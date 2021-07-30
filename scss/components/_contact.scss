@@ -1,6 +1,7 @@
 .contact-section {
   margin-top: 20vh;
-  height: 27.875rem;
+  // height: 27.875rem;
+  padding-bottom: 21.375vh;
   background: transparent
     linear-gradient(
       180deg,
@@ -18,7 +19,7 @@
 
   @media (min-width: 992px) {
     margin-top: 40.60625rem;
-    height: 27.875rem;
+    // height: 27.875rem;
     background: transparent
       linear-gradient(
         180deg,

@@ -71,7 +71,8 @@ button {
         // top: 15.5rem;
         // left: 1.5rem;
 
-        &:hover, &:active {
+        &:hover,
+        &:active {
             span {
                 text-decoration: underline;
             }
@@ -119,8 +120,8 @@ button {
         position: absolute;
 
         &::after {
-            content: ' ';
-            background: url('../../img/chevron-blue.svg') no-repeat;
+            content: " ";
+            background: url("../../img/chevron-blue.svg") no-repeat;
             background-size: cover;
             display: inline-block;
             height: 1.2rem;
@@ -207,7 +208,6 @@ button {
         box-shadow: 0 0.5rem 0.9375rem rgb(0 0 0 / 20%);
         // background: hsl(var(--color-primary-blue-800), 0.9);
         background: hsl(var(--color-primary-blue-800));
-
     }
 }
 
@@ -225,14 +225,14 @@ button {
 }
 
 .btn-orange {
-    color: hsl(var(--color-primary-orange-50)) !important;
-    background: linear-gradient(
-        45deg,
-        hsl(var(--color-primary-orange-900)),
-        hsl(var(--color-primary-orange-900))
-    );
+    outline: 0.2rem solid hsl(var(--color-primary-orange-900));
+    color: hsl(var(--color-primary-orange-900));
+    text-align: center;
+    margin: 0.35rem;
     &:hover {
         color: white;
+        background: linear-gradient(45deg, hsl(var(--color-primary-orange-600)), hsl(var(--color-primary-orange-500)));
+        outline: none;
     }
 }
 
@@ -244,10 +244,14 @@ button {
 }
 
 .btn-filter {
-    width: 9rem;
-height: 2.5rem;
-font-size: smaller;
-padding: 0.5rem 1rem;
+    font-size: smaller;
+    padding: 0.5rem 1.5rem;
+    display: inline-block;
+
+    @media (min-width: 992px) {
+        
+font-size: larger;
+    }
 
     > svg {
         color: white;
@@ -258,7 +262,7 @@ padding: 0.5rem 1rem;
     margin-top: 1.5rem;
     @media (min-width: 992px) {
         margin-top: 3rem;
-    }    
+    }
 }
 
 .front-buttons {

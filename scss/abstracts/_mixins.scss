@@ -18,3 +18,14 @@
         margin: 0;
     }
 }
+
+@mixin zoom-on-hover {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transition: 0.3s ease-in-out;
+    transition: 0.3s ease-in-out;
+    &:hover {
+        transform: scale(1.04);
+        border-radius: 1.5625rem;
+    }
+}

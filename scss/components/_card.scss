@@ -9,9 +9,13 @@
   &-front {
     margin: auto;
     background: linear-gradient(hsl(var(--white)) 19rem, hsla(218, 81%, 94%, 0.24) 1rem);
-    box-shadow: 0 0.5rem 1rem #3983fa1d; //fargekonvensjon?
+    box-shadow: 0 0.5rem 1rem hsla(228, 96%, 67%, 0.11);
     padding: 0;
     height: 100%;
+
+    &:hover, &:active {
+      box-shadow: 0 0.1875rem 0.375rem 0.1875rem hsla(228, 96%, 67%, 0.15);
+    }
 
     @at-root .news-case#{&} {
       width: auto;
