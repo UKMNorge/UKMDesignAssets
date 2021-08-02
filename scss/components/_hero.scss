@@ -14,7 +14,8 @@
     width: 100%;
     clip-path: ellipse(100% 87% at 50% 0);
     left: 50%;
-    transform: translate(-50%, 0);
+    // transform: translate(-50%, 0);
+    margin-left: -50%;
 
     @media (min-width: 992px) {
       background: url("../../img/bolger.png") top center / 100% 89.9375rem no-repeat;
