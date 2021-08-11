@@ -103,48 +103,6 @@ ul {
   scrollbar-width: none;
 }
 
-@media (max-width: 991.98px) {
-  .card-image {
-    width: 19.4375rem;
-    height: 8rem;
-    border-radius: 0.75rem 0.75rem 0 0;
-
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
-
-    &-large {
-      position: relative;
-      // margin-left: auto;
-      margin-top: 1rem;
-      width: 20.4375rem;
-      height: 12.75rem;
-      background: #a0aec0;
-    }
-
-    &-small {
-      width: 5.5rem;
-      height: 5.5rem;
-      border-radius: 0.75rem;
-    }
-
-    &.card-news {
-      height: 10rem;
-      width: -webkit-fill-available;
-    }
-  }
-}
-
-.card-element {
-  position: relative;
-  padding: 0.9rem 1.4rem;
-  margin: 0;
-}
-
-.card-element-end {
-  padding: 0.5rem;
-}
-
 .se-mer {
   color: hsl(var(--color-primary-blue-800));
 }
