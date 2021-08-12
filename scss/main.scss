@@ -59,6 +59,7 @@ ul {
 .choice-item {
   background-color: hsla(218, 81%, 94%, 0.5);
   padding: 1.5rem;
+  border-radius: 0.3125rem;
 
   @media (min-width: 768px) {
    width: 18rem;
@@ -68,12 +69,6 @@ ul {
     width: 29rem;
    }
 }
-
-// test
-// * {
-//     outline: 20px solid hsl(var(--color-primary-blue-400));
-// }
-// test
 
 .clickable {
   display: inline-block;
