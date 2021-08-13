@@ -5,11 +5,11 @@ $(document).ready(function () {
     $('.hamburger-menu').click(function(e) {
         e.stopPropagation();
         var e = ""+$(event.target).closest('.drop-item').attr('id');
-        
-        $('.' + e ).filter(function() {
+
+        if (e.match('subpage-')) { 
             $('.mainpage').hide();
             $('.' + e ).show(); 
-        });
+        }
         
         if (e.match('backToMain')) {
             $('.mainpage').show();
