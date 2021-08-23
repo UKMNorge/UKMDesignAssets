@@ -894,9 +894,33 @@ button {
   padding-left: 1.3rem;
   color: #070a12;
   background: none;
+  text-decoration: none !important;
 }
-.ukm-button-secondary:hover span, .ukm-button-secondary:active span {
-  text-decoration: underline;
+.ukm-button-secondary span {
+  display: inline-block;
+  position: relative;
+}
+.ukm-button-secondary span::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 0.15rem;
+  bottom: 0;
+  left: 0;
+  background-color: hsl(var(--color-neutral-coldgray-900));
+  transform: scaleX(0);
+  transform-origin: top left;
+  transition: transform 0.3s ease;
+}
+.ukm-button-secondary span:hover::before, .ukm-button-secondary span:active::before {
+  transform: scaleX(1);
+}
+.front-buttons .ukm-button-secondary:hover, .front-buttons .ukm-button-secondary:active {
+  text-decoration: none;
+}
+.front-buttons .ukm-button-secondary:hover span, .front-buttons .ukm-button-secondary:active span {
+  text-decoration: none;
 }
 @media (min-width: 992px) {
   .ukm-button-secondary {
@@ -1214,7 +1238,7 @@ button {
 
 @media (min-width: 992px) {
   .btn-text {
-    font: normal normal bold 1.25rem/1.5rem Roboto;
+    font: normal normal var(--font-weight-semibold) 1.375rem/2.0625rem Poppins;
     margin-top: 1rem;
   }
 }
@@ -1256,6 +1280,30 @@ button {
   padding-bottom: 21.375vh;
   background: transparent linear-gradient(180deg, hsla(var(--color-primary-blue-100), 0) 0%, rgba(227, 236, 252, 0.5) 100%) 0% 0% no-repeat padding-box;
 }
+.contact-section .contact-link {
+  opacity: 1;
+  text-decoration: none !important;
+}
+.contact-section .contact-link span {
+  display: inline-block;
+  position: relative;
+}
+.contact-section .contact-link span::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 0.15rem;
+  bottom: 0;
+  left: 0;
+  background-color: hsl(var(--color-neutral-coldgray-900));
+  transform: scaleX(0);
+  transform-origin: top left;
+  transition: transform 0.3s ease;
+}
+.contact-section .contact-link span:hover::before, .contact-section .contact-link span:active::before {
+  transform: scaleX(1);
+}
 .contact-section.other-page {
   height: 80rem;
 }
@@ -1280,6 +1328,39 @@ button {
   }
 }
 
+.icon {
+  height: 1.2rem;
+  width: auto;
+}
+@media (min-width: 992px) {
+  .icon {
+    height: 1.7rem;
+  }
+}
+.icon-front {
+  height: 1.7rem;
+  align-self: center;
+  margin-left: 0;
+  margin-right: -0.4rem;
+}
+.icon-some {
+  position: absolute;
+}
+.icon-some-large {
+  top: 0;
+  left: 0;
+}
+.icon-some-yt {
+  width: 1rem;
+  height: 0.90625rem;
+  left: 1.86rem;
+}
+.icon-some-large-yt {
+  width: 2rem;
+  height: 1.8125rem;
+  left: 1.86rem;
+}
+
 .dot-large-grey {
   position: relative;
   height: 2.625rem;
@@ -1287,40 +1368,6 @@ button {
   top: 0;
   left: 0;
   right: 0;
-}
-
-.icon-some {
-  position: absolute;
-}
-
-.icon-some-large {
-  top: 0;
-  left: 0;
-}
-
-.icon-some-yt {
-  width: 1rem;
-  height: 0.90625rem;
-  left: 1.86rem;
-}
-
-.icon-some-large-yt {
-  width: 2rem;
-  height: 1.8125rem;
-  left: 1.86rem;
-}
-
-.icon {
-  height: 1.2rem;
-  width: auto;
-  margin-left: 0.4rem;
-}
-
-.icon-front {
-  height: 1.7rem;
-  align-self: center;
-  margin-left: 0;
-  margin-right: -0.4rem;
 }
 
 .geolocation-banner {
@@ -2485,15 +2532,21 @@ a .post-grid-default {
 .testimonial-small {
   opacity: 0.5;
 }
-
 .testimonial-small:hover {
   opacity: 1;
   transition: opacity 0.2s ease-out;
 }
 
 .testimonial {
+  margin-top: 7.5rem;
   height: 20.5625rem;
   background: transparent linear-gradient(360deg, hsl(var(--white)) 0%, hsla(var(--color-primary-blue-100), 0.75) 27%, hsl(var(--white)) 100%) 0% 0% no-repeat padding-box;
+}
+@media (min-width: 992px) {
+  .testimonial {
+    height: 64rem;
+    width: 92rem;
+  }
 }
 
 .signature {
@@ -2501,11 +2554,37 @@ a .post-grid-default {
   color: hsl(var(--color-neutral-coldgray-700));
   margin-left: 0.25rem;
 }
+@media (min-width: 992px) {
+  .signature {
+    font: normal normal normal 2.125rem/2.75rem Sacramento;
+    color: hsl(var(--color-neutral-coldgray-700));
+    margin-left: 0.25rem;
+  }
+}
 .signature-text {
   font: normal normal normal 0.75rem/1.125rem Poppins;
   color: hsl(var(--color-neutral-coldgray-700));
   margin-left: 0.25rem;
   margin-top: 0.25rem;
+}
+@media (min-width: 992px) {
+  .signature-text {
+    font: normal normal normal 2rem/3rem Poppins;
+    margin-top: 11.25rem;
+  }
+}
+
+.svg-quote {
+  width: 3.3rem;
+  height: 3.75rem;
+}
+@media (min-width: 992px) {
+  .svg-quote {
+    width: 7.5rem;
+    height: 8.375rem;
+    margin-bottom: -26rem;
+    margin-left: -1rem;
+  }
 }
 
 .side-pic {
@@ -2514,60 +2593,15 @@ a .post-grid-default {
   height: 15.625rem;
   border-radius: 0.75rem;
 }
-
-@media (max-width: 991.98px) {
-  .testimonial {
-    height: 20.5625rem;
-  }
-
-  .signature {
-    font: normal normal normal 0.875rem/1.125rem Sacramento;
-    color: hsl(var(--color-neutral-coldgray-700));
-    margin-left: 0.25rem;
-  }
-  .signature-text {
-    font: normal normal normal 0.75rem/1.125rem Poppins;
-    color: hsl(var(--color-neutral-coldgray-700));
-    margin-left: 0.25rem;
-    margin-top: 0.25rem;
-  }
-
-  .svg-quote {
-    width: 3.3rem;
-    height: 3.75rem;
-  }
-}
 @media (min-width: 992px) {
-  .testimonial {
-    height: 64rem;
-    width: 92rem;
-  }
-
-  .signature {
-    font: normal normal normal 34px/44px Sacramento;
-    color: hsl(var(--color-neutral-coldgray-700));
-    margin-left: 0.25rem;
-  }
-  .signature-text {
-    font: normal normal normal 32px/48px Poppins;
-    color: hsl(var(--color-neutral-coldgray-700));
-    margin-left: 0.25rem;
-    margin-top: 11.25rem;
-  }
-
   .side-pic {
     width: 31.5rem;
     height: 40.375rem;
     border-radius: 0.75rem;
   }
+}
 
-  .svg-quote {
-    width: 7.5rem;
-    height: 8.375rem;
-    margin-bottom: -26rem;
-    margin-left: -1rem;
-  }
-
+@media (min-width: 992px) {
   .svg-chevron {
     height: 7.2rem;
     width: auto;
@@ -2575,6 +2609,7 @@ a .post-grid-default {
     margin-top: 1.5rem;
   }
 }
+
 /* FADE-COLLAPSIBLE */
 @media (max-width: 768px) {
   .fade-collapsible .content {
@@ -2645,10 +2680,6 @@ a .post-grid-default {
     border: 0.0625rem solid hsl(var(--color-neutral-coldgray-100)) !important;
     color: hsl(var(--color-neutral-coldgray-100)) !important;
     border-radius: 0.75rem;
-  }
-
-  .btn {
-    line-height: 0.5rem;
   }
 
   .leaf {
@@ -3411,7 +3442,7 @@ a .post-grid-default {
 }
 @media (min-width: 992px) {
   .ukm-navbar.other-page {
-    margin-bottom: 5rem;
+    margin-bottom: 2rem;
   }
 }
 
@@ -3455,9 +3486,32 @@ header .toggle-burger {
 }
 header .menu-links {
   color: hsl(var(--color-neutral-coldgray-100));
+  border-radius: revert !important;
+  text-decoration: none !important;
 }
-header .menu-links:hover, header .menu-links:active {
-  text-decoration: underline;
+header .menu-links span {
+  display: inline-block;
+  position: relative;
+}
+header .menu-links span::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 0.15rem;
+  bottom: 0;
+  left: 0;
+  background-color: hsl(var(--color-neutral-coldgray-900));
+  transform: scaleX(0);
+  transform-origin: top left;
+  transition: transform 0.3s ease;
+}
+header .menu-links span:hover::before, header .menu-links span:active::before {
+  transform: scaleX(1);
+}
+header .menu-links span::before {
+  background-color: hsl(var(--color-neutral-coldgray-100));
+  bottom: -0.4rem;
 }
 @media (min-width: 992px) {
   header .menu-links {
@@ -3469,6 +3523,9 @@ header .menu-links:hover, header .menu-links:active {
 }
 header .other-page .menu-links {
   color: hsl(var(--color-neutral-coldgray-900));
+}
+header .other-page .menu-links span::before {
+  background-color: hsl(var(--color-neutral-coldgray-900));
 }
 header .other-page .hamburger-icon span {
   background: hsl(var(--color-neutral-coldgray-900));
@@ -3511,6 +3568,9 @@ header .hamburger-icon {
   width: 2rem;
   height: 2rem;
   text-align: center;
+}
+header .hamburger-icon:focus {
+  box-shadow: none;
 }
 header .hamburger-icon.open span:nth-child(1) {
   transform: rotate(45deg);

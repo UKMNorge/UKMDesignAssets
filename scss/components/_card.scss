@@ -152,7 +152,8 @@
 
 .btn-text {
   @media (min-width: 992px) {
-    font: normal normal bold 1.25rem/1.5rem Roboto;
+    // font: normal normal bold 1.25rem/1.5rem Roboto;
+    font: normal normal var(--font-weight-semibold) 1.375rem/2.0625rem Poppins;
     margin-top: 1rem;
   }
 }

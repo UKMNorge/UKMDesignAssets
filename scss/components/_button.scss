@@ -68,13 +68,16 @@ button {
         padding-left: 1.3rem;
         color: hsla(225, 43%, 5%);
         background: none;
-        // top: 15.5rem;
-        // left: 1.5rem;
+        @include animate-underline;
 
-        &:hover,
-        &:active {
+        .front-buttons &:hover,
+        .front-buttons &:active {
+            text-decoration: none;
+            // color: hsla(var(--color-primary-blue-800),0.8);
+
             span {
-                text-decoration: underline;
+                text-decoration: none;
+                // color: hsla(var(--color-primary-blue-800),0.8);
             }
         }
 

@@ -107,7 +107,7 @@
     color: hsla(225, 43%, 5%, 1);
 
     .nav-hide li {
-      &:nth-child(1){
+      &:nth-child(1) {
         border-left: 0.15rem solid hsla(223, 54%, 97%, 0.5);
         padding-left: 1rem;
         margin-left: 1rem;
@@ -122,7 +122,7 @@
     margin-bottom: 1rem;
 
     @media (min-width: 992px) {
-      margin-bottom: 5rem;
+      margin-bottom: 2rem;
     }
   }
 }
@@ -170,13 +170,15 @@ header {
 
   .menu-links {
     color: hsl(var(--color-neutral-coldgray-100));
-    &:hover,
-    &:active {
-      text-decoration: underline;
+    border-radius: revert !important;
+    @include animate-underline;
+    span::before {
+      background-color: hsl(var(--color-neutral-coldgray-100));
+      bottom: -0.4rem;
     }
 
     @media (min-width: 992px) {
-    padding: 0 1.5rem;
+      padding: 0 1.5rem;
     }
 
     .vibakukm & {
@@ -187,24 +189,27 @@ header {
   .other-page {
     .menu-links {
       color: hsl(var(--color-neutral-coldgray-900));
+      span::before {
+        background-color: hsl(var(--color-neutral-coldgray-900));
+      }
     }
-    .hamburger-icon span{
+    .hamburger-icon span {
       background: hsl(var(--color-neutral-coldgray-900));
     }
   }
 
   .hamburger {
     @media (min-width: 992px) {
-        margin-left: 1.5rem;
+      margin-left: 1.5rem;
     }
     &-menu {
-      border-radius: .9375rem;
+      border-radius: 0.9375rem;
       border-color: transparent;
       width: 16rem;
       top: 2.5rem;
       left: auto;
-      padding: .5rem 0 0 0;
-      
+      padding: 0.5rem 0 0 0;
+
       transform-origin: right top;
       transition: all 250ms linear, opacity 200ms;
       display: block !important;
@@ -212,7 +217,7 @@ header {
       opacity: 0.3;
 
       &.show {
-        transform: scale(1,1);
+        transform: scale(1, 1);
         opacity: 1;
       }
     }
@@ -236,18 +241,22 @@ header {
       height: 2rem;
       text-align: center;
 
+      &:focus {
+        box-shadow: none;
+      }
+
       &.open span {
         &:nth-child(1) {
           transform: rotate(45deg);
           top: 0.3rem;
-          left: .4375rem;
+          left: 0.4375rem;
           background: hsla(225, 43%, 5%, 1);
         }
 
         &:nth-child(2) {
           transform: rotate(-45deg);
           top: 1.3rem;
-          left: .4375rem;
+          left: 0.4375rem;
           background: hsla(225, 43%, 5%, 1);
         }
       }
@@ -255,7 +264,7 @@ header {
       span {
         display: block;
         position: absolute;
-        height: .1875rem;
+        height: 0.1875rem;
         width: 1.45rem;
         background: hsla(223, 54%, 97%);
         border-radius: 9px;
@@ -309,7 +318,8 @@ header {
   align-items: center;
   padding: 0.7rem 1.5rem;
 
-  &:hover, &:active {
+  &:hover,
+  &:active {
     background-color: revert;
   }
 }

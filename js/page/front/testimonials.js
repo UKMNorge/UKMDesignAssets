@@ -1,7 +1,8 @@
 var text;
 
-jQuery(document).on('mouseover', '.testimonial-small', function(e) {
-    jQuery('#testimonial .side-pic').html( jQuery(this).data('img'));
+jQuery(document).on('mouseover click', '.testimonial-small', function(e) {
+    var bilde = "url('" + jQuery(this).data('img') + "') no-repeat center/cover";
+    jQuery('#testimonial .side-pic').css("background", bilde);
 
     $('#testimonial .signature-text').animate({left: '250px'}, function(){
         jQuery('#testimonial .signature-text').html( jQuery(this).data('text') );

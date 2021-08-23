@@ -10,6 +10,11 @@
     )
     0% 0% no-repeat padding-box;
 
+  .contact-link {
+    opacity: 1;
+    @include animate-underline;
+  }
+
   &.other-page {
     height: 80rem;
     @media (min-width: 992px) {
