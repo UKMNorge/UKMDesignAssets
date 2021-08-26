@@ -1127,7 +1127,7 @@ button {
   box-shadow: 0 0.5rem 1rem rgba(90, 122, 252, 0.11);
   padding: 0;
   height: 100%;
-  border-radius: 1.5625rem;
+  border-radius: 0.9375rem;
 }
 .news-case.ukm-card-front {
   width: auto;
@@ -1866,7 +1866,7 @@ iframe {
 .news-section .card-news span:nth-of-type(2) {
   font: normal normal var(--font-weight-semibold) 0.75em/1.125em Poppins;
   display: block;
-  margin: 0.5rem 0 0.5rem 0;
+  margin: 0.5rem 0 0.5rem -15px !important;
   width: -webkit-fill-available;
   width: 100%;
 }
@@ -1874,7 +1874,7 @@ iframe {
   .news-section .card-news span:nth-of-type(2) {
     font: normal normal 600 1.5rem/1.875rem Poppins;
     display: block;
-    margin: 0.6875rem 0 0.6875rem 0;
+    margin: 0.6875rem 0 0.6875rem -15px !important;
     width: -webkit-fill-available;
     width: 100%;
   }
@@ -1896,6 +1896,13 @@ iframe {
     max-width: 100%;
     width: 100%;
   }
+}
+
+.truncate-overflow {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  max-width: 27rem;
 }
 
 @media (min-width: 992px) {
@@ -1960,9 +1967,44 @@ iframe {
   padding: 0.9rem 1.4rem;
   margin: 0;
 }
-.card-element .card-news {
-  padding: 1rem 0 0 2rem;
+.news-section .card-element {
+  padding: 0.5rem;
 }
+
+.news-body {
+  max-width: 12rem;
+  padding: 0 0 0 1.1rem;
+}
+@media (min-width: 499px) {
+  .news-body {
+    max-width: 19rem;
+  }
+}
+@media (min-width: 992px) {
+  .news-body {
+    max-width: 25rem;
+  }
+}
+@media (min-width: 1200px) {
+  .news-body {
+    max-width: 21rem;
+  }
+}
+@media (min-width: 1399px) {
+  .news-body {
+    max-width: 28rem;
+  }
+}
+
+.card-margin {
+  padding: 8px;
+}
+@media (min-width: 992px) {
+  .card-margin {
+    padding: 12px;
+  }
+}
+
 .overunder {
   text-align: center;
   font-weight: 400;
@@ -3552,6 +3594,7 @@ header .hamburger-menu {
   top: 2.5rem;
   left: auto;
   padding: 0.5rem 0 0 0;
+  box-shadow: rgba(90, 122, 252, 0.11) 0px 5px 16px 0px;
   transform-origin: right top;
   transition: all 250ms linear, opacity 200ms;
   display: block !important;
@@ -3646,6 +3689,9 @@ header .backToMain span {
 }
 .drop-item:hover, .drop-item:active {
   background-color: hsla(var(--color-primary-blue-200));
+}
+.hamburger-menu .drop-item:hover, .hamburger-menu .drop-item:active {
+  background-color: white;
 }
 
 .banner {

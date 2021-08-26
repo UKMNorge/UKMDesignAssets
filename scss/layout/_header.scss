@@ -209,6 +209,7 @@ header {
       top: 2.5rem;
       left: auto;
       padding: 0.5rem 0 0 0;
+      box-shadow: rgba(90, 122, 252, 0.11) 0px 5px 16px 0px;
 
       transform-origin: right top;
       transition: all 250ms linear, opacity 200ms;
@@ -321,5 +322,9 @@ header {
   &:hover,
   &:active {
     background-color: hsla(var(--color-primary-blue-200));
+
+    .hamburger-menu & {
+      background-color: white;
+    } 
   }
 }
