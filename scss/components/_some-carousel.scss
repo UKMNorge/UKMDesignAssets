@@ -268,6 +268,10 @@
     position: absolute;
     fill: hsla(225, 43%, 5%);
 
+    .subpages & {
+        fill: hsla(222, 18%, 43%, 1);
+    }
+
     &-ig-large {
         width: 1.6625rem;
         height: 1.75rem;

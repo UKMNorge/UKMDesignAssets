@@ -70,14 +70,21 @@ button {
         background: none;
         @include animate-underline;
 
-        .front-buttons &:hover,
-        .front-buttons &:active {
-            text-decoration: none;
-            // color: hsla(var(--color-primary-blue-800),0.8);
+        .front-buttons & span {
+            &::before {
+                background-color: revert;
+                transform: none;
+            }
 
-            span {
-                text-decoration: none;
-                // color: hsla(var(--color-primary-blue-800),0.8);
+            &:hover,
+            &:active {
+                .slide-span span,
+                .slide-span span {
+                    color: hsl(var(--color-primary-blue-800));
+                }
+                &::before {
+                    transform: none;
+                }
             }
         }
 
@@ -252,8 +259,7 @@ button {
     display: inline-block;
 
     @media (min-width: 992px) {
-        
-font-size: larger;
+        font-size: larger;
     }
 
     > svg {

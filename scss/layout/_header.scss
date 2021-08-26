@@ -320,6 +320,6 @@ header {
 
   &:hover,
   &:active {
-    background-color: revert;
+    background-color: hsla(var(--color-primary-blue-200));
   }
 }

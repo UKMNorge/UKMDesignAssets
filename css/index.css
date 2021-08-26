@@ -730,6 +730,11 @@ a .nocolor {
   color: #212529 !important;
 }
 
+.small-links {
+  font: normal normal normal 0.75rem/0.875rem Roboto;
+  color: #5a6681;
+}
+
 .small-but-same-height {
   font-size: 0.8em;
   padding-top: 0.2em;
@@ -775,7 +780,6 @@ a .nocolor {
   text-transform: uppercase;
 }
 
-a:visited,
 a:focus,
 a:active,
 a:hover {
@@ -916,11 +920,17 @@ button {
 .ukm-button-secondary span:hover::before, .ukm-button-secondary span:active::before {
   transform: scaleX(1);
 }
-.front-buttons .ukm-button-secondary:hover, .front-buttons .ukm-button-secondary:active {
-  text-decoration: none;
+.front-buttons .ukm-button-secondary span::before {
+  background-color: revert;
+  transform: none;
 }
-.front-buttons .ukm-button-secondary:hover span, .front-buttons .ukm-button-secondary:active span {
-  text-decoration: none;
+.front-buttons .ukm-button-secondary span:hover .slide-span span,
+.front-buttons .ukm-button-secondary span:hover .slide-span span, .front-buttons .ukm-button-secondary span:active .slide-span span,
+.front-buttons .ukm-button-secondary span:active .slide-span span {
+  color: hsl(var(--color-primary-blue-800));
+}
+.front-buttons .ukm-button-secondary span:hover::before, .front-buttons .ukm-button-secondary span:active::before {
+  transform: none;
 }
 @media (min-width: 992px) {
   .ukm-button-secondary {
@@ -2367,6 +2377,9 @@ a .post-grid-default {
   position: absolute;
   fill: #070a12;
 }
+.subpages .icon-some {
+  fill: #5a6681;
+}
 .icon-some-ig-large {
   width: 1.6625rem;
   height: 1.75rem;
@@ -3635,7 +3648,7 @@ header .backToMain span {
   padding: 0.7rem 1.5rem;
 }
 .drop-item:hover, .drop-item:active {
-  background-color: revert;
+  background-color: hsla(var(--color-primary-blue-200));
 }
 
 .banner {
