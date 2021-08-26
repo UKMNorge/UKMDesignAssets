@@ -54,6 +54,7 @@ button {
         height: 3rem;
         padding: 0.875rem 1rem 0.875rem 1.4rem;
         text-align: center;
+        -webkit-appearance: none;
 
         @media (min-width: 992px) {
             width: 22rem;
@@ -197,6 +198,7 @@ button {
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
     font: normal normal var(--font-weight-semibold) 0.875em Poppins;
+    -webkit-appearance: none;
     @media (min-width: 992px) {
         font: normal normal var(--font-weight-semibold) 1.375rem/2.0625rem Poppins;
     }
@@ -206,71 +208,77 @@ button {
     }
 }
 
-.btn-large {
-    padding: 1rem 2rem;
-    border-radius: 3.125rem;
-    @media (min-width: 992px) {
-        // font-size: 1.25rem;
-        padding: 1.25rem 2rem;
+.btn {
+    &-large {
+        padding: 1rem 2rem;
+        border-radius: 3.125rem;
+        @media (min-width: 992px) {
+            // font-size: 1.25rem;
+            padding: 1.25rem 2rem;
+        }
+
+        &:hover {
+            box-shadow: 0 0.5rem 0.9375rem rgb(0 0 0 / 20%);
+            // background: hsl(var(--color-primary-blue-800), 0.9);
+            background: hsl(var(--color-primary-blue-800));
+        }
     }
 
-    &:hover {
-        box-shadow: 0 0.5rem 0.9375rem rgb(0 0 0 / 20%);
-        // background: hsl(var(--color-primary-blue-800), 0.9);
-        background: hsl(var(--color-primary-blue-800));
-    }
-}
+    &-blue {
+        color: hsl(var(--color-primary-blue-50, var(--color-primary-orange-50))) !important;
+        background: linear-gradient(
+            45deg,
+            hsl(var(--color-primary-blue-800, var(--color-primary-orange-900))),
+            hsl(var(--color-primary-blue-600, var(--color-primary-orange-900)))
+        );
 
-.btn-blue {
-    color: hsl(var(--color-primary-blue-50, var(--color-primary-orange-50))) !important;
-    background: linear-gradient(
-        45deg,
-        hsl(var(--color-primary-blue-800, var(--color-primary-orange-900))),
-        hsl(var(--color-primary-blue-600, var(--color-primary-orange-900)))
-    );
-
-    &:hover {
-        color: white;
-    }
-}
-
-.btn-orange {
-    outline: 0.2rem solid hsl(var(--color-primary-orange-900));
-    color: hsl(var(--color-primary-orange-900));
-    text-align: center;
-    margin: 0.35rem;
-    &:hover {
-        color: white;
-        background: linear-gradient(45deg, hsl(var(--color-primary-orange-600)), hsl(var(--color-primary-orange-500)));
-        outline: none;
-    }
-}
-
-.btn-small {
-    width: 13rem;
-    height: 3rem;
-    font-size: smaller;
-    // padding: 0.875rem 1rem 0.875rem 2.4rem;
-}
-
-.btn-filter {
-    font-size: smaller;
-    padding: 0.5rem 1.5rem;
-    display: inline-block;
-
-    @media (min-width: 992px) {
-        font-size: larger;
+        &:hover {
+            color: white;
+        }
     }
 
-    > svg {
-        color: white;
+    &-orange {
+        outline: 0.2rem solid hsl(var(--color-primary-orange-900));
+        color: hsl(var(--color-primary-orange-900));
+        text-align: center;
+        margin: 0.35rem;
+        &:hover {
+            color: white;
+            background: linear-gradient(
+                45deg,
+                hsl(var(--color-primary-orange-600)),
+                hsl(var(--color-primary-orange-500))
+            );
+            outline: none;
+        }
     }
-}
 
-.btn-derdubor {
-    margin-top: 1.5rem;
-    @media (min-width: 992px) {
-        margin-top: 3rem;
+    &-small {
+        width: 13rem;
+        height: 3rem;
+        font-size: smaller;
+        // padding: 0.875rem 1rem 0.875rem 2.4rem;
+    }
+
+    &-filter {
+        font-size: smaller;
+        padding: 0.5rem 1.5rem;
+        display: inline-block;
+
+        @media (min-width: 992px) {
+            font-size: larger;
+        }
+
+        > svg {
+            color: white;
+        }
+    }
+
+    &-derdubor {
+        margin-top: 1.5rem;
+        @media (min-width: 992px) {
+            margin-top: 3rem;
+        }
     }
 }
 

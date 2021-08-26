@@ -884,6 +884,7 @@ button {
   height: 3rem;
   padding: 0.875rem 1rem 0.875rem 1.4rem;
   text-align: center;
+  -webkit-appearance: none;
 }
 @media (min-width: 992px) {
   .ukm-button-front {
@@ -1038,6 +1039,7 @@ button {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   font: normal normal var(--font-weight-semibold) 0.875em Poppins;
+  -webkit-appearance: none;
 }
 @media (min-width: 992px) {
   .perfect-btn {
@@ -1061,7 +1063,6 @@ button {
   box-shadow: 0 0.5rem 0.9375rem rgba(0, 0, 0, 0.2);
   background: hsl(var(--color-primary-blue-800));
 }
-
 .btn-blue {
   color: hsl(var(--color-primary-blue-50, var(--color-primary-orange-50))) !important;
   background: linear-gradient(45deg, hsl(var(--color-primary-blue-800, var(--color-primary-orange-900))), hsl(var(--color-primary-blue-600, var(--color-primary-orange-900))));
@@ -1069,7 +1070,6 @@ button {
 .btn-blue:hover {
   color: white;
 }
-
 .btn-orange {
   outline: 0.2rem solid hsl(var(--color-primary-orange-900));
   color: hsl(var(--color-primary-orange-900));
@@ -1081,13 +1081,11 @@ button {
   background: linear-gradient(45deg, hsl(var(--color-primary-orange-600)), hsl(var(--color-primary-orange-500)));
   outline: none;
 }
-
 .btn-small {
   width: 13rem;
   height: 3rem;
   font-size: smaller;
 }
-
 .btn-filter {
   font-size: smaller;
   padding: 0.5rem 1.5rem;
@@ -1101,7 +1099,6 @@ button {
 .btn-filter > svg {
   color: white;
 }
-
 .btn-derdubor {
   margin-top: 1.5rem;
 }
