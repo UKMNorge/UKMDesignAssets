@@ -1123,11 +1123,16 @@ button {
 }
 .ukm-card-front {
   margin: auto;
-  background: linear-gradient(hsl(var(--white)) 19rem, rgba(227, 236, 252, 0.24) 1rem);
+  background: linear-gradient(white 21.5rem, rgba(227, 236, 252, 0.24) 1rem);
   box-shadow: 0 0.5rem 1rem rgba(90, 122, 252, 0.11);
   padding: 0;
   height: 100%;
   border-radius: 0.9375rem;
+}
+@media (min-width: 376px) {
+  .ukm-card-front {
+    background: linear-gradient(white 20.5rem, rgba(227, 236, 252, 0.24) 1rem);
+  }
 }
 .news-case.ukm-card-front {
   width: auto;
@@ -2200,14 +2205,11 @@ a .post-grid-default {
     box-shadow: 0 1px 2px hsla(var(--color-dark-blue), 0.16);
   }
   .some-section .some-col .some-item a:hover, .some-section .some-col .some-item a:active {
-    filter: brightness(0.8);
+    filter: brightness(0.9);
   }
 }
 .some-item-large {
   padding: 0.75rem;
-}
-.some-item-large:hover, .some-item-large:active {
-  opacity: 0.7;
 }
 .some-item-small {
   padding: 0.75rem 1.25rem;
@@ -2359,6 +2361,9 @@ a .post-grid-default {
   top: 0;
   left: 0;
   right: 0;
+}
+.some-item-large .dot-grey-large:hover, .some-item-large .dot-grey-large:active {
+  background-color: hsla(var(--color-neutral-coldgray-700), 0.3);
 }
 .drop-item .dot-grey-large {
   width: 2rem;
@@ -3135,7 +3140,7 @@ a .post-grid-default {
 
 .tiktok-footer {
   width: 0.7rem;
-  height: 0.7rem;
+  height: 0.8rem;
 }
 @media (min-width: 992px) {
   .tiktok-footer {
