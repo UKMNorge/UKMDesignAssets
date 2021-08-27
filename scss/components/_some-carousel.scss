@@ -48,7 +48,7 @@
 
                     &:hover,
                     &:active {
-                        filter: brightness(0.8);
+                        filter: brightness(0.9);
                     }
                 }
             }
@@ -56,10 +56,6 @@
 
         &-large {
             padding: 0.75rem;
-            &:hover,
-            &:active {
-                opacity: 0.7;
-            }
         }
 
         &-small {
@@ -208,6 +204,13 @@
             top: 0;
             left: 0;
             right: 0;
+
+            &:hover,
+            &:active {
+                .some-item-large & {
+                    background-color: hsla(var(--color-neutral-coldgray-700),0.3);
+                }
+            }
 
             .drop-item & {
                 width: 2rem;
