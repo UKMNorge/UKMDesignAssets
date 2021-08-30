@@ -1025,7 +1025,7 @@ button {
     opacity: 0;
   }
 }
-.perfect-btn {
+.standard-btn {
   border-radius: 50%;
   line-height: 1.5rem;
   cursor: pointer;
@@ -1042,11 +1042,11 @@ button {
   -webkit-appearance: none;
 }
 @media (min-width: 992px) {
-  .perfect-btn {
+  .standard-btn {
     font: normal normal var(--font-weight-semibold) 1.375rem/2.0625rem Poppins;
   }
 }
-.perfect-btn:hover {
+.standard-btn:hover {
   text-decoration: none;
 }
 
@@ -1133,6 +1133,9 @@ button {
   .ukm-card-front {
     background: linear-gradient(white 20.5rem, rgba(227, 236, 252, 0.24) 1rem);
   }
+}
+.card-news .ukm-card-front {
+  background: white;
 }
 .news-case.ukm-card-front {
   width: auto;
@@ -1343,6 +1346,11 @@ button {
 .icon {
   height: 1.2rem;
   width: auto;
+}
+@media (min-width: 992px) {
+  .standard-btn .icon {
+    height: 1.2rem;
+  }
 }
 @media (min-width: 992px) {
   .icon {
@@ -2925,6 +2933,7 @@ a .post-grid-default {
 @media (min-width: 992px) {
   .article-header {
     font-size: 3.75rem;
+    padding-top: 0;
   }
 }
 
@@ -2938,6 +2947,7 @@ a .post-grid-default {
 @media (min-width: 992px) {
   .info-text-section {
     padding: 0;
+    padding-top: 2rem;
   }
 }
 
@@ -2971,7 +2981,7 @@ a .post-grid-default {
 }
 @media (min-width: 992px) {
   .article-date {
-    font-size: 1.375rem;
+    font-size: 1.2rem;
     line-height: 2.5rem;
   }
 }

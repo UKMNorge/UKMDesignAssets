@@ -13,10 +13,16 @@
     padding: 0;
     height: 100%;
     // border-radius: 1.5625rem;
-    border-radius: .9375rem;
+    border-radius: 0.9375rem;
+
     @media (min-width: 376px) {
-    background: linear-gradient(white 20.5rem, rgba(227, 236, 252, 0.24) 1rem);
-  }
+      background: linear-gradient(white 20.5rem, rgba(227, 236, 252, 0.24) 1rem);
+    }
+
+    .card-news & {
+      background: white;
+    }
+
     @at-root .news-case#{&} {
       width: auto;
     }
@@ -88,8 +94,8 @@
     @media (min-width: 992px) {
       height: 6rem;
       width: 6rem;
+    }
   }
-}
 
   h5 {
     font: normal normal var(--font-weight-semibold) 0.875em/1.125em Poppins;
@@ -176,8 +182,9 @@
     padding: 0.9rem 1.25rem;
   }
 
-  &:hover, &:active {
-    // background-color: revert; 
+  &:hover,
+  &:active {
+    // background-color: revert;
     text-decoration: none;
   }
 }
