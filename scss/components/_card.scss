@@ -6,6 +6,10 @@
   box-shadow: 0 0.1875rem 0.375rem 0.1875rem rgba(0, 0, 0, 19%);
   width: 100% !important;
 
+  .card-news & {
+    background: white;
+  }
+
   &-front {
     margin: auto;
     background: linear-gradient(white 21.5rem, hsla(218, 81%, 94%, 0.24) 1rem);

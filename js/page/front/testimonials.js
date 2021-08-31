@@ -11,9 +11,10 @@ jQuery(document).on('mouseover click', '.testimonial-small', function(e) {
 
     if (text != jQuery(this).data('text')) {
         jQuery(this).css({opacity : "1"});
-        jQuery('.testimonial-small:not(:hover)').css({opacity : "0.5"});
+        // jQuery('.testimonial-small:not(:hover)').css({opacity : "0.5"});
     }
     text = jQuery(this);
     jQuery('#testimonial .signature-text').html( text.data('text') );
     jQuery('#testimonial .signature').html( jQuery(this).data('signature'));
 });
+
