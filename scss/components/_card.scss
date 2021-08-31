@@ -12,7 +12,8 @@
 
   &-front {
     margin: auto;
-    background: linear-gradient(white 21.5rem, hsla(218, 81%, 94%, 0.24) 1rem);
+    // background: linear-gradient(white 21.5rem, hsla(218, 81%, 94%, 0.24) 1rem);
+    background: white;
     box-shadow: 0 0.5rem 1rem hsla(228, 96%, 67%, 0.11);
     padding: 0;
     height: 100%;
@@ -20,7 +21,8 @@
     border-radius: 0.9375rem;
 
     @media (min-width: 376px) {
-      background: linear-gradient(white 20.5rem, rgba(227, 236, 252, 0.24) 1rem);
+      background: white;
+      // background: linear-gradient(white 20.5rem, rgba(227, 236, 252, 0.24) 1rem);
     }
 
     @media (min-width: 992px) {

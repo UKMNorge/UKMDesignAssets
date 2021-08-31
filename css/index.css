@@ -1134,7 +1134,7 @@ button {
 }
 .ukm-card-front {
   margin: auto;
-  background: linear-gradient(white 21.5rem, rgba(227, 236, 252, 0.24) 1rem);
+  background: white;
   box-shadow: 0 0.5rem 1rem rgba(90, 122, 252, 0.11);
   padding: 0;
   height: 100%;
@@ -1142,7 +1142,7 @@ button {
 }
 @media (min-width: 376px) {
   .ukm-card-front {
-    background: linear-gradient(white 20.5rem, rgba(227, 236, 252, 0.24) 1rem);
+    background: white;
   }
 }
 @media (min-width: 992px) {
@@ -2500,6 +2500,16 @@ a .post-grid-default {
   transform: scale(1.04);
   border-radius: 1.5625rem;
 }
+@media (min-width: 768px) {
+  .some-icon-instagram:hover {
+    border-radius: 0.75rem;
+  }
+}
+@media (min-width: 992px) {
+  .some-icon-instagram:hover {
+    border-radius: 1.5625rem;
+  }
+}
 .some-icon-youtube {
   background: url("../../img/youtube-ny.jpeg") no-repeat center/cover;
   -webkit-transform: scale(1);
@@ -2522,6 +2532,16 @@ a .post-grid-default {
 .some-icon-youtube:hover {
   transform: scale(1.04);
   border-radius: 1.5625rem;
+}
+@media (min-width: 768px) {
+  .some-icon-youtube:hover {
+    border-radius: 0.75rem;
+  }
+}
+@media (min-width: 992px) {
+  .some-icon-youtube:hover {
+    border-radius: 1.5625rem;
+  }
 }
 .some-icon-tiktok {
   background: url("../../img/tiktok-ny.jpeg") no-repeat center/cover;
@@ -2546,6 +2566,16 @@ a .post-grid-default {
   transform: scale(1.04);
   border-radius: 1.5625rem;
 }
+@media (min-width: 768px) {
+  .some-icon-tiktok:hover {
+    border-radius: 0.75rem;
+  }
+}
+@media (min-width: 992px) {
+  .some-icon-tiktok:hover {
+    border-radius: 1.5625rem;
+  }
+}
 .some-icon-facebook {
   background: url("../../img/facebook-ny.jpeg") no-repeat center/cover;
   -webkit-transform: scale(1);
@@ -2569,6 +2599,16 @@ a .post-grid-default {
   transform: scale(1.04);
   border-radius: 1.5625rem;
 }
+@media (min-width: 768px) {
+  .some-icon-facebook:hover {
+    border-radius: 0.75rem;
+  }
+}
+@media (min-width: 992px) {
+  .some-icon-facebook:hover {
+    border-radius: 1.5625rem;
+  }
+}
 .some-icon-discord {
   background: url("../../img/discord-ny.jpeg") no-repeat center/cover;
   -webkit-transform: scale(1);
@@ -2591,6 +2631,16 @@ a .post-grid-default {
 .some-icon-discord:hover {
   transform: scale(1.04);
   border-radius: 1.5625rem;
+}
+@media (min-width: 768px) {
+  .some-icon-discord:hover {
+    border-radius: 0.75rem;
+  }
+}
+@media (min-width: 992px) {
+  .some-icon-discord:hover {
+    border-radius: 1.5625rem;
+  }
 }
 
 .testimonial-small:hover {
