@@ -326,27 +326,27 @@
 
 .some-icon {
     &-instagram {
-        background: url("../../img/instagram.jpg") no-repeat center/cover;
+        background: url("../../img/instagram-ny.jpeg") no-repeat center/cover;
         @include overlay;
         @include zoom-on-hover;
     }
     &-youtube {
-        background: url("../../img/youtube.jpg") no-repeat center/cover;
+        background: url("../../img/youtube-ny.jpeg") no-repeat center/cover;
         @include overlay;
         @include zoom-on-hover;
     }
     &-tiktok {
-        background: url("../../img/tiktok.jpg") no-repeat center/cover;
+        background: url("../../img/tiktok-ny.jpeg") no-repeat center/cover;
         @include overlay;
         @include zoom-on-hover;
     }
     &-facebook {
-        background: url("../../img/facebook.jpg") no-repeat center/cover;
+        background: url("../../img/facebook-ny.jpeg") no-repeat center/cover;
         @include overlay;
         @include zoom-on-hover;
     }
     &-discord {
-        background: url("../../img/discord.jpg") no-repeat center/cover;
+        background: url("../../img/discord-ny.jpeg") no-repeat center/cover;
         @include overlay;
         @include zoom-on-hover;
     }
