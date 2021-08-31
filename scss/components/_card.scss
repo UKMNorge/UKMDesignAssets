@@ -19,29 +19,8 @@
       background: linear-gradient(white 20.5rem, rgba(227, 236, 252, 0.24) 1rem);
     }
 
-    .card-news & {
-      background: white;
-    }
-
-    @at-root .news-case#{&} {
-      width: auto;
-    }
-
     @media (min-width: 992px) {
       margin: auto;
-    }
-
-    &-main {
-      @at-root .news-case#{&} {
-        @media (min-width: 992px) {
-        }
-      }
-
-      @at-root .first-card#{&} {
-        @media (min-width: 992px) {
-          width: auto;
-        }
-      }
     }
   }
 

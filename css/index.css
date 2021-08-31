@@ -1046,6 +1046,14 @@ button {
     font: normal normal var(--font-weight-semibold) 1.375rem/2.0625rem Poppins;
   }
 }
+.standard-btn span {
+  padding-right: 0.45rem;
+}
+@media (min-width: 992px) {
+  .standard-btn span {
+    padding-right: 0.4rem;
+  }
+}
 .standard-btn:hover {
   text-decoration: none;
 }
@@ -1134,24 +1142,11 @@ button {
     background: linear-gradient(white 20.5rem, rgba(227, 236, 252, 0.24) 1rem);
   }
 }
-.card-news .ukm-card-front {
-  background: white;
-}
-.news-case.ukm-card-front {
-  width: auto;
-}
-
 @media (min-width: 992px) {
   .ukm-card-front {
     margin: auto;
   }
 }
-@media (min-width: 992px) {
-  .first-card.ukm-card-front-main {
-    width: auto;
-  }
-}
-
 .ukm-card-previous {
   width: 100%;
   background: linear-gradient(hsl(var(--white)) 19rem, rgba(237, 242, 250, 0.24) 8rem);
@@ -1442,7 +1437,7 @@ button {
   }
 }
 .ukm-bolge > .div-radius {
-  background: url("../../img/bolger.png") top center/100% 100% no-repeat;
+  background: url("../../img/bolger-ny.png") top center/100% 100% no-repeat;
   height: 22rem;
   position: absolute;
   width: 100%;
