@@ -1278,6 +1278,7 @@ button {
   padding: 0.5rem 0.7rem;
   display: flex;
   justify-content: space-between;
+  -webkit-appearance: none;
 }
 @media (min-width: 992px) {
   .collapse-item {
@@ -3841,7 +3842,7 @@ ul {
 
 .choice-item {
   background-color: rgba(227, 236, 252, 0.5);
-  padding: 1.5rem;
+  padding: 1rem;
   border-radius: 0.3125rem;
 }
 @media (min-width: 768px) {
