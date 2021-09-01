@@ -3713,7 +3713,7 @@ header .backToMain span {
   background-color: hsla(var(--color-primary-blue-200));
 }
 .hamburger-menu .drop-item:hover, .hamburger-menu .drop-item:active {
-  background-color: white;
+  background-color: transparent;
 }
 
 .banner {

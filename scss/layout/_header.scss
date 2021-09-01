@@ -322,9 +322,9 @@ header {
   &:hover,
   &:active {
     background-color: hsla(var(--color-primary-blue-200));
-
+    
     .hamburger-menu & {
-      background-color: white;
+      background-color: transparent;
     } 
   }
 }
