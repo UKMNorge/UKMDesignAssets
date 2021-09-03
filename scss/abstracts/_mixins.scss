@@ -26,10 +26,9 @@
     transition: 0.3s ease-in-out;
     &:hover {
         transform: scale(1.04);
-        border-radius: 1.5625rem;
 
         @media (min-width: 768px) {
-          border-radius: .75rem;;
+          border-radius: .75rem;
         }
 
         @media (min-width: 992px) {

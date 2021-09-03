@@ -285,8 +285,12 @@
     display: revert;
     visibility: hidden;
   }
-  @media (min-width: 1199px) {
+  @media (min-width: 992px) {
     visibility: visible;
+    margin-right: -2rem;
+  }
+  @media (min-width: 1199px) {
+    margin-right: 0;
   }
 }
 

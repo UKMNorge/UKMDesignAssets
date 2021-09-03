@@ -2498,7 +2498,6 @@ a .post-grid-default {
 }
 .some-icon-instagram:hover {
   transform: scale(1.04);
-  border-radius: 1.5625rem;
 }
 @media (min-width: 768px) {
   .some-icon-instagram:hover {
@@ -2531,7 +2530,6 @@ a .post-grid-default {
 }
 .some-icon-youtube:hover {
   transform: scale(1.04);
-  border-radius: 1.5625rem;
 }
 @media (min-width: 768px) {
   .some-icon-youtube:hover {
@@ -2564,7 +2562,6 @@ a .post-grid-default {
 }
 .some-icon-tiktok:hover {
   transform: scale(1.04);
-  border-radius: 1.5625rem;
 }
 @media (min-width: 768px) {
   .some-icon-tiktok:hover {
@@ -2597,7 +2594,6 @@ a .post-grid-default {
 }
 .some-icon-facebook:hover {
   transform: scale(1.04);
-  border-radius: 1.5625rem;
 }
 @media (min-width: 768px) {
   .some-icon-facebook:hover {
@@ -2630,7 +2626,6 @@ a .post-grid-default {
 }
 .some-icon-discord:hover {
   transform: scale(1.04);
-  border-radius: 1.5625rem;
 }
 @media (min-width: 768px) {
   .some-icon-discord:hover {
@@ -3378,9 +3373,15 @@ a .post-grid-default {
     visibility: hidden;
   }
 }
-@media (min-width: 1199px) {
+@media (min-width: 992px) {
   .btn-pamelding {
     visibility: visible;
+    margin-right: -2rem;
+  }
+}
+@media (min-width: 1199px) {
+  .btn-pamelding {
+    margin-right: 0;
   }
 }
 
@@ -3864,6 +3865,7 @@ ul {
 @media (min-width: 992px) {
   .choice-item {
     width: 29rem;
+    padding: 1.25rem;
   }
 }
 
