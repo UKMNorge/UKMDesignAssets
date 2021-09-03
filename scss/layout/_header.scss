@@ -213,6 +213,9 @@ header {
 
       transform-origin: right top;
       transition: all 250ms linear, opacity 200ms;
+      -webkit-transition: all 250ms linear, opacity 200ms;
+      -moz-transition: all 250ms linear, opacity 200ms;
+      -o-transition: all 250ms linear, opacity 200ms;
       display: block !important;
       transform: scale(0);
       opacity: 0.3;
@@ -236,6 +239,9 @@ header {
       position: relative;
       transform: rotate(0deg);
       transition: 0.5s ease-in-out;
+      -webkit-transition: 0.5s ease-in-out;
+      -moz-transition: 0.5s ease-in-out;
+      -o-transition: 0.5s ease-in-out;
       cursor: pointer;
 
       width: 2rem;
@@ -272,6 +278,9 @@ header {
         opacity: 1;
         transform: rotate(0deg);
         transition: 0.25s ease-in-out;
+        -webkit-transition: 0.25s ease-in-out;
+        -moz-transition: 0.25s ease-in-out;
+        -o-transition: 0.25s ease-in-out;
         left: 50%;
         transform: translateX(-50%);
 
