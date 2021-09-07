@@ -1033,7 +1033,6 @@ button {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
   -webkit-box-sizing: border-box;
@@ -1984,7 +1983,7 @@ iframe {
 }
 
 .news-body {
-  max-width: 12rem;
+  max-width: 11.5rem;
   padding: 0 0 0 1.1rem;
 }
 @media (min-width: 499px) {
@@ -2492,12 +2491,15 @@ a .post-grid-default {
   width: 100%;
   height: 100%;
   box-shadow: inset 0 0 0 1000px hsla(var(--color-primary-blue-100), 0.2);
+  -webkit-box-shadow: inset 0 0 0 1000px hsla(var(--color-primary-blue-100), 0.2);
+  -webkit-appearance: none;
   mix-blend-mode: color;
   border: none;
   margin: 0;
 }
 .some-icon-instagram:hover {
-  transform: scale(1.04);
+  transform: translateZ(0) scale(1.04);
+  -webkit-transform: translateZ(0) scale(1.04);
 }
 @media (min-width: 768px) {
   .some-icon-instagram:hover {
@@ -2524,12 +2526,15 @@ a .post-grid-default {
   width: 100%;
   height: 100%;
   box-shadow: inset 0 0 0 1000px hsla(var(--color-primary-blue-100), 0.2);
+  -webkit-box-shadow: inset 0 0 0 1000px hsla(var(--color-primary-blue-100), 0.2);
+  -webkit-appearance: none;
   mix-blend-mode: color;
   border: none;
   margin: 0;
 }
 .some-icon-youtube:hover {
-  transform: scale(1.04);
+  transform: translateZ(0) scale(1.04);
+  -webkit-transform: translateZ(0) scale(1.04);
 }
 @media (min-width: 768px) {
   .some-icon-youtube:hover {
@@ -2556,12 +2561,15 @@ a .post-grid-default {
   width: 100%;
   height: 100%;
   box-shadow: inset 0 0 0 1000px hsla(var(--color-primary-blue-100), 0.2);
+  -webkit-box-shadow: inset 0 0 0 1000px hsla(var(--color-primary-blue-100), 0.2);
+  -webkit-appearance: none;
   mix-blend-mode: color;
   border: none;
   margin: 0;
 }
 .some-icon-tiktok:hover {
-  transform: scale(1.04);
+  transform: translateZ(0) scale(1.04);
+  -webkit-transform: translateZ(0) scale(1.04);
 }
 @media (min-width: 768px) {
   .some-icon-tiktok:hover {
@@ -2588,12 +2596,15 @@ a .post-grid-default {
   width: 100%;
   height: 100%;
   box-shadow: inset 0 0 0 1000px hsla(var(--color-primary-blue-100), 0.2);
+  -webkit-box-shadow: inset 0 0 0 1000px hsla(var(--color-primary-blue-100), 0.2);
+  -webkit-appearance: none;
   mix-blend-mode: color;
   border: none;
   margin: 0;
 }
 .some-icon-facebook:hover {
-  transform: scale(1.04);
+  transform: translateZ(0) scale(1.04);
+  -webkit-transform: translateZ(0) scale(1.04);
 }
 @media (min-width: 768px) {
   .some-icon-facebook:hover {
@@ -2620,12 +2631,15 @@ a .post-grid-default {
   width: 100%;
   height: 100%;
   box-shadow: inset 0 0 0 1000px hsla(var(--color-primary-blue-100), 0.2);
+  -webkit-box-shadow: inset 0 0 0 1000px hsla(var(--color-primary-blue-100), 0.2);
+  -webkit-appearance: none;
   mix-blend-mode: color;
   border: none;
   margin: 0;
 }
 .some-icon-discord:hover {
-  transform: scale(1.04);
+  transform: translateZ(0) scale(1.04);
+  -webkit-transform: translateZ(0) scale(1.04);
 }
 @media (min-width: 768px) {
   .some-icon-discord:hover {
