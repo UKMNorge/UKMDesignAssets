@@ -18,3 +18,7 @@ jQuery(document).on('mouseover click', '.testimonial-small', function(e) {
     jQuery('#testimonial .signature').html( jQuery(this).data('signature'));
 });
 
+// Wait for page load
+$(function() {
+    $('body').addClass('some-icon', 500);
+  });

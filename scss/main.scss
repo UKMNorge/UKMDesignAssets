@@ -81,24 +81,6 @@ ul {
   height: 18.9375rem;
 }
 
-.people-carousel {
-  margin-left: 0.5rem;
-  margin-top: -3rem;
-  overflow: scroll;
-  scrollbar-width: none;
-}
-
-@media (min-width: 992px) {
-  .people-carousel {
-    overflow: hidden;
-  }
-}
-
-.some-carousel {
-  overflow: scroll;
-  scrollbar-width: none;
-}
-
 .se-mer {
   color: hsl(var(--color-primary-blue-800));
 }

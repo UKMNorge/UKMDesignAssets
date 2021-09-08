@@ -2455,8 +2455,8 @@ a .post-grid-default {
 }
 @media (min-width: 992px) {
   .tiktok {
-    width: 2.3rem;
-    height: 2.3rem;
+    width: 2.5rem;
+    height: 2.5rem;
   }
 }
 .tiktok-card {
@@ -2660,12 +2660,14 @@ a .post-grid-default {
 .testimonial {
   margin-top: 7.5rem;
   height: 20.5625rem;
+  max-width: 28rem;
   background: transparent linear-gradient(360deg, hsl(var(--white)) 0%, hsla(var(--color-primary-blue-100), 0.75) 27%, hsl(var(--white)) 100%) 0% 0% no-repeat padding-box;
 }
 @media (min-width: 992px) {
   .testimonial {
     height: 64rem;
     width: 92rem;
+    max-width: 87rem;
   }
 }
 
@@ -2728,6 +2730,31 @@ a .post-grid-default {
     margin-left: 0;
     margin-top: 1.5rem;
   }
+}
+
+.people-carousel {
+  margin-left: 0.5rem;
+  margin-top: -3rem;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+@media (min-width: 992px) {
+  .people-carousel {
+    overflow: hidden;
+  }
+}
+
+.some-carousel {
+  overflow: scroll;
+  scrollbar-width: none;
+}
+
+.testimonial-items {
+  height: 100%;
+  width: 100%;
+  overflow: auto;
+  padding-right: 20px;
 }
 
 /* FADE-COLLAPSIBLE */
@@ -3900,23 +3927,6 @@ ul {
 .ukm-card-section-3 {
   width: 20.4375rem;
   height: 18.9375rem;
-}
-
-.people-carousel {
-  margin-left: 0.5rem;
-  margin-top: -3rem;
-  overflow: scroll;
-  scrollbar-width: none;
-}
-
-@media (min-width: 992px) {
-  .people-carousel {
-    overflow: hidden;
-  }
-}
-.some-carousel {
-  overflow: scroll;
-  scrollbar-width: none;
 }
 
 .se-mer {
