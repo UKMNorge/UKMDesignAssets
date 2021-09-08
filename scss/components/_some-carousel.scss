@@ -30,8 +30,10 @@
         border: 0 none;
         padding: 0 0.5rem 0 0;
 
-        @media (min-width: 768px) {
-            padding: 0.2rem 0;
+        .contact-section &, .ukm-card-front .some-section & {
+            @media (min-width: 768px) {
+                padding: 0.2rem 0;
+            }
         }
 
         @media (min-width: 992px) {
@@ -208,7 +210,7 @@
             &:hover,
             &:active {
                 .some-item-large & {
-                    background-color: hsla(var(--color-neutral-coldgray-700),0.3);
+                    background-color: hsla(var(--color-neutral-coldgray-700), 0.3);
                 }
             }
 

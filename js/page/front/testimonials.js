@@ -18,7 +18,17 @@ jQuery(document).on('mouseover click', '.testimonial-small', function(e) {
     jQuery('#testimonial .signature').html( jQuery(this).data('signature'));
 });
 
-// Wait for page load
-$(function() {
-    $('body').addClass('some-icon', 500);
-  });
+  $(document).ready(function(){
+    var interval = $('.testimonial-items li .testimonial-small').length;
+    (function switchToImage(img) {
+        $(img).click()
+        var images = $('.testimonial-items li .testimonial-small');
+        interval--;
+        if (interval == 0) {
+            interval = $('.testimonial-items li .testimonial-small').length;
+        }
+        setTimeout(function() { 
+          switchToImage(images[interval]) 
+        }, 5000);
+      }) ($('.testimonial-items li')[0]);
+   });

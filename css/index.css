@@ -2193,7 +2193,7 @@ a .post-grid-default {
   padding: 0 0.5rem 0 0;
 }
 @media (min-width: 768px) {
-  .some-item {
+  .contact-section .some-item, .ukm-card-front .some-section .some-item {
     padding: 0.2rem 0;
   }
 }
