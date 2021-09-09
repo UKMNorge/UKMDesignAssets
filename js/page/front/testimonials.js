@@ -19,13 +19,13 @@ jQuery(document).on('mouseover click', '.testimonial-small', function(e) {
 });
 
   $(document).ready(function(){
-    var interval = $('.testimonial-items li .testimonial-small').length;
+    var interval = 0;
     (function switchToImage(img) {
         $(img).click()
         var images = $('.testimonial-items li .testimonial-small');
-        interval--;
-        if (interval == 0) {
-            interval = $('.testimonial-items li .testimonial-small').length;
+        interval++;
+        if (interval == $('.testimonial-items li .testimonial-small').length) {
+            interval = 0;
         }
         setTimeout(function() { 
           switchToImage(images[interval]) 
