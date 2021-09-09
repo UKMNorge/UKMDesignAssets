@@ -21,7 +21,12 @@
         background-position: center center;
         background-size: cover;
         width: -webkit-fill-available;
-        height: 21rem;
+        // height: 21rem;
+
+        height: 46rem;
+        width: 85rem;
+
+        // margin: unset;
 
         @media (min-width: 992px) {
             height: 33rem;

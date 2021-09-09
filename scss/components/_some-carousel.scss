@@ -30,7 +30,7 @@
         border: 0 none;
         padding: 0 0.5rem 0 0;
 
-        .contact-section &, .ukm-card-front .some-section & {
+        .ukm-card-front .some-section & {
             @media (min-width: 768px) {
                 padding: 0.2rem 0;
             }
@@ -74,6 +74,10 @@
         }
     }
     &-col {
+        @media (min-width: 768px) {
+            justify-content: center;
+            display: flex;
+        }
         @media (min-width: 992px) {
             padding: 0;
         }

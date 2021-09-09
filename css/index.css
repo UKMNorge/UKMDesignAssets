@@ -2193,7 +2193,7 @@ a .post-grid-default {
   padding: 0 0.5rem 0 0;
 }
 @media (min-width: 768px) {
-  .contact-section .some-item, .ukm-card-front .some-section .some-item {
+  .ukm-card-front .some-section .some-item {
     padding: 0.2rem 0;
   }
 }
@@ -2226,6 +2226,12 @@ a .post-grid-default {
 @media (min-width: 992px) {
   .some-item-small {
     padding: 0.75rem 1.4rem;
+  }
+}
+@media (min-width: 768px) {
+  .some-col {
+    justify-content: center;
+    display: flex;
   }
 }
 @media (min-width: 992px) {
@@ -3075,7 +3081,8 @@ a .post-grid-default {
   background-position: center center;
   background-size: cover;
   width: -webkit-fill-available;
-  height: 21rem;
+  height: 46rem;
+  width: 85rem;
 }
 @media (min-width: 992px) {
   .front-carousel-image {
@@ -3555,6 +3562,13 @@ a .post-grid-default {
   z-index: unset;
   border-radius: 1.25rem 1.25rem 0 0;
   margin-bottom: 1rem;
+}
+.ukm-navbar.other-page ul {
+  font: normal normal var(--font-weight-semibold) 0.875rem/1.125rem var(--font-poppins);
+  color: #070a12;
+}
+.ukm-navbar.other-page ul .nav-hide li:nth-child(1) {
+  border-left: 0.15rem solid #070a12;
 }
 @media (min-width: 992px) {
   .ukm-navbar.other-page {
