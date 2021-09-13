@@ -3903,6 +3903,20 @@ header .backToMain span {
   font-weight: bold;
 }
 
+@keyframes smooth_transition {
+  from {
+    opacity: 0;
+    transition: rotateX(-10deg);
+  }
+  to {
+    opacity: 1;
+    transition: rotateX(0);
+  }
+}
+.container {
+  animation: smooth_transition 0.75s;
+}
+
 ul {
   list-style-type: none;
 }
