@@ -70,6 +70,9 @@ button {
         color: hsla(225, 43%, 5%);
         background: none;
         @include animate-underline;
+        span::before {
+            bottom: -0.4rem;
+          }
 
         .front-buttons & span {
             &::before {

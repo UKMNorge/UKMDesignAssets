@@ -13,6 +13,10 @@
   .contact-link {
     opacity: 1;
     @include animate-underline;
+
+    span::before {
+      bottom: -0.4rem;
+    }
   }
 
   &.other-page {
