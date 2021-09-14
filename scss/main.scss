@@ -43,7 +43,7 @@
 @import "./pages/fylke";
 @import "./pages/program";
 
-@keyframes smooth_transition {
+@keyframes subtle_transition {
   from {
     opacity: 0;
     transition: rotateX(-10deg);
@@ -55,8 +55,50 @@
   }
 }
 
-.container {
-  animation: smooth_transition 0.75s;
+@mixin fadeIn($waitTime) {
+  animation: 
+  wait #{$waitTime},
+  smooth_transform 800ms #{$waitTime};
+}
+
+@keyframes wait {
+  0% { opacity: 0; }
+  100% { opacity: 0; }
+}
+
+@keyframes smooth_transform {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.navbar {
+  animation: subtle_transition 0.75s;
+}
+
+.hero-container .row:first-child {
+  animation: smooth_transform 1s;
+}
+
+.card-info-section .card-component {
+  &:first-child {
+    @include fadeIn('0.5s');
+
+  }
+  &:nth-child(2) {
+    @include fadeIn('1s');
+  }
+  &:nth-child(3) {
+    @include fadeIn('1.5s');
+
+    
+  }
 }
 
 ul {
@@ -78,13 +120,13 @@ ul {
   border-radius: 0.3125rem;
 
   @media (min-width: 768px) {
-   width: 18rem;
+    width: 18rem;
   }
 
   @media (min-width: 992px) {
     width: 29rem;
     padding: 1.25rem;
-   }
+  }
 }
 
 .clickable {
