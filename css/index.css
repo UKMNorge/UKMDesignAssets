@@ -1861,7 +1861,9 @@ iframe {
 .news-section .card-news:active, .news-section .card-news:hover {
   text-decoration: none;
 }
-.news-section .card-news span:first-child {
+
+.news-section .card-news span:first-child,
+.news-case span:first-child {
   display: block;
   color: hsl(var(--color-pink));
   text-transform: uppercase;
@@ -1869,7 +1871,8 @@ iframe {
   width: 100%;
 }
 @media (min-width: 992px) {
-  .news-section .card-news span:first-child {
+  .news-section .card-news span:first-child,
+.news-case span:first-child {
     display: block;
     color: hsl(var(--color-pink));
     text-transform: uppercase;
@@ -1880,7 +1883,8 @@ iframe {
     padding-top: 0.3rem;
   }
 }
-.news-section .card-news span:nth-of-type(2) {
+.news-section .card-news span:nth-of-type(2),
+.news-case span:nth-of-type(2) {
   font: normal normal var(--font-weight-semibold) 0.75em/1.125em Poppins;
   display: block;
   margin: 0.5rem 0 0.5rem -15px !important;
@@ -1888,7 +1892,8 @@ iframe {
   width: 100%;
 }
 @media (min-width: 992px) {
-  .news-section .card-news span:nth-of-type(2) {
+  .news-section .card-news span:nth-of-type(2),
+.news-case span:nth-of-type(2) {
     font: normal normal 600 1.5rem/1.875rem Poppins;
     display: block;
     margin: 0.6875rem 0 0.6875rem -15px !important;
@@ -1896,7 +1901,8 @@ iframe {
     width: 100%;
   }
 }
-.news-section .card-news p {
+.news-section .card-news p,
+.news-case p {
   display: block;
   color: hsl(var(--color-neutral-coldgray-700));
   font: normal normal normal 0.6875rem/0.9375rem Roboto;
@@ -1906,7 +1912,8 @@ iframe {
   font-weight: 300 !important;
 }
 @media (min-width: 992px) {
-  .news-section .card-news p {
+  .news-section .card-news p,
+.news-case p {
     display: block;
     color: hsl(var(--color-neutral-coldgray-700));
     font: normal normal normal 1.125rem/1.6875rem Roboto;
@@ -1992,6 +1999,9 @@ iframe {
   max-width: 11.5rem;
   padding: 0 0 0 1.1rem;
 }
+.liker-section .news-body {
+  padding: 1.25rem;
+}
 @media (min-width: 499px) {
   .news-body {
     max-width: 19rem;
@@ -2001,15 +2011,24 @@ iframe {
   .news-body {
     max-width: 25rem;
   }
+  .liker-section .news-body {
+    max-width: 28rem;
+  }
 }
 @media (min-width: 1200px) {
   .news-body {
     max-width: 21rem;
   }
+  .liker-section .news-body {
+    max-width: 37rem;
+  }
 }
 @media (min-width: 1399px) {
   .news-body {
     max-width: 28rem;
+  }
+  .liker-section .news-body {
+    max-width: 39rem;
   }
 }
 
@@ -3937,7 +3956,7 @@ header .backToMain span {
     transform: translateY(0);
   }
 }
-.navbar {
+.navbar .container {
   animation: subtle_transition 0.75s;
 }
 
