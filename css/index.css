@@ -2786,6 +2786,7 @@ a .post-grid-default {
   width: 100%;
   overflow: auto;
   padding-right: 20px;
+  scrollbar-width: none;
 }
 
 /* FADE-COLLAPSIBLE */
