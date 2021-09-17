@@ -1142,6 +1142,14 @@ button {
   height: 100%;
   border-radius: 0.9375rem;
 }
+.liker-section .ukm-card-front {
+  height: revert;
+}
+@media (min-width: 992px) {
+  .liker-section .ukm-card-front {
+    height: 100%;
+  }
+}
 @media (min-width: 376px) {
   .ukm-card-front {
     background: white;
@@ -2000,6 +2008,7 @@ iframe {
   padding: 0 0 0 1.1rem;
 }
 .liker-section .news-body {
+  max-width: 18.5rem;
   padding: 1.25rem;
 }
 @media (min-width: 499px) {

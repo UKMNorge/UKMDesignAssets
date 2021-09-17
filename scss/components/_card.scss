@@ -20,6 +20,15 @@
     // border-radius: 1.5625rem;
     border-radius: 0.9375rem;
 
+  .liker-section & {
+    height: revert;
+
+    @media (min-width: 992px) {
+      height: 100%;
+    }
+
+  }
+
     @media (min-width: 376px) {
       background: white;
       // background: linear-gradient(white 20.5rem, rgba(227, 236, 252, 0.24) 1rem);
