@@ -249,10 +249,12 @@ button {
     }
 
     &-orange {
-        outline: 0.2rem solid hsl(var(--color-primary-orange-900));
+        // outline: 0.2rem solid hsl(var(--color-primary-orange-900));
         color: hsl(var(--color-primary-orange-900));
         text-align: center;
         margin: 0.35rem;
+        box-shadow: 0 0 0.2rem 0 hsl(var(--color-primary-orange-900));
+
         &:hover {
             color: white;
             background: linear-gradient(

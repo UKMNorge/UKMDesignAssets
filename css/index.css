@@ -75,7 +75,7 @@
   --color-neutral-warmgray-600: #fff;
   --color-neutral-warmgray-700: #fff;
   --color-neutral-warmgray-800: #fff;
-  --color-neutral-warmgray-900: #fff;
+  --color-neutral-warmgray-900: 20, 6%, 9%;
 }
 
 /* CONTAINER */
@@ -1081,10 +1081,10 @@ button {
   color: white;
 }
 .btn-orange {
-  outline: 0.2rem solid hsl(var(--color-primary-orange-900));
   color: hsl(var(--color-primary-orange-900));
   text-align: center;
   margin: 0.35rem;
+  box-shadow: 0 0 0.2rem 0 hsl(var(--color-primary-orange-900));
 }
 .btn-orange:hover {
   color: white;
@@ -1410,7 +1410,7 @@ button {
   height: 4rem;
 }
 .vibakukm .geolocation-banner {
-  background-color: hsl(var(--color-primary-orange-900));
+  background-color: hsl(var(--color-neutral-warmgray-900));
 }
 .geolocation-box {
   display: flex;
