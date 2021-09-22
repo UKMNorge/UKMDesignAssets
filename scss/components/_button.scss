@@ -248,6 +248,15 @@ button {
         }
     }
 
+    &-black {
+        color: white !important;
+        background: hsl(var(--color-neutral-warmgray-900));
+
+        &:hover {
+            color: rgb(160, 150, 150);
+        }
+    }
+
     &-orange {
         // outline: 0.2rem solid hsl(var(--color-primary-orange-900));
         color: hsl(var(--color-primary-orange-900));

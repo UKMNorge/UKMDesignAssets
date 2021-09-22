@@ -20,6 +20,9 @@
     // border-radius: 1.5625rem;
     border-radius: 0.9375rem;
 
+    .vibakukm & {
+      box-shadow: 0 0.5rem 1rem hsla(var(--color-primary-orange-500), 0.1);
+    }
   .liker-section & {
     height: revert;
 
