@@ -23,14 +23,13 @@
     .vibakukm & {
       box-shadow: 0 0.5rem 1rem hsla(var(--color-primary-orange-500), 0.1);
     }
-  .liker-section & {
-    height: revert;
+    .liker-section & {
+      height: revert;
 
-    @media (min-width: 992px) {
-      height: 100%;
+      @media (min-width: 992px) {
+        height: 100%;
+      }
     }
-
-  }
 
     @media (min-width: 376px) {
       background: white;
@@ -81,9 +80,22 @@
   @media (min-width: 992px) {
     margin-top: 10rem;
   }
+
+  .vibakukm & {
+    height: 60rem;
+    @media (min-width: 992px) {
+      margin-top: 0;
+    }
+  }
 }
 
 .card-component {
+  .vibakukm & {
+    @media (min-width: 992px) {
+      padding-top: 2rem;
+      padding-bottom: 2rem;
+    }
+  }
   img {
     height: 3.5rem;
     width: 3.5rem;

@@ -1204,7 +1204,21 @@ button {
     margin-top: 10rem;
   }
 }
+.vibakukm .card-info-section {
+  height: 60rem;
+}
+@media (min-width: 992px) {
+  .vibakukm .card-info-section {
+    margin-top: 0;
+  }
+}
 
+@media (min-width: 992px) {
+  .vibakukm .card-component {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+}
 .card-component img {
   height: 3.5rem;
   width: 3.5rem;
@@ -1991,63 +2005,53 @@ iframe {
   max-width: 27rem;
 }
 
+.card-image {
+  width: 19.4375rem;
+  height: 8rem;
+  border-radius: 0.75rem 0.75rem 0 0;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
 @media (min-width: 992px) {
   .card-image {
     width: 37.75rem;
     height: 15.375rem;
-    border-radius: 0.75rem 0.75rem 0 0;
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
   }
-  .card-image-large {
-    position: relative;
-    margin-top: 1rem;
-    width: 20.4375rem;
-    height: 12.75rem;
-    background: #a0aec0;
-  }
+}
+.card-image-large {
+  position: relative;
+  margin-top: 1rem;
+  width: 20.4375rem;
+  height: 12.75rem;
+  background: #a0aec0;
+}
+.card-image-small {
+  width: 5.5rem;
+  height: 5.5rem;
+  border-radius: 0.75rem;
+}
+@media (min-width: 992px) {
   .card-image-small {
     width: 10.9375rem;
     height: 10.9375rem;
-    border-radius: 0.75rem;
-  }
-  .card-image.card-news {
-    height: 15rem;
-    width: -webkit-fill-available;
   }
 }
-@media (min-width: 992px) and (min-width: 992px) {
+.card-image.card-news {
+  height: 10rem;
+  width: -webkit-fill-available;
+}
+@media (min-width: 992px) {
+  .card-image.card-news {
+    height: 15rem;
+  }
+}
+@media (min-width: 992px) {
   .card-image.first-news-image {
     height: 28rem;
   }
 }
-@media (max-width: 991.98px) {
-  .card-image {
-    width: 19.4375rem;
-    height: 8rem;
-    border-radius: 0.75rem 0.75rem 0 0;
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
-  }
-  .card-image-large {
-    position: relative;
-    margin-top: 1rem;
-    width: 20.4375rem;
-    height: 12.75rem;
-    background: #a0aec0;
-  }
-  .card-image-small {
-    width: 5.5rem;
-    height: 5.5rem;
-    border-radius: 0.75rem;
-  }
-  .card-image.card-news {
-    height: 10rem;
-    width: -webkit-fill-available;
-  }
-}
+
 .card-element {
   position: relative;
   padding: 0.9rem 1.4rem;
@@ -2055,6 +2059,10 @@ iframe {
 }
 .news-section .card-element {
   padding: 0.5rem;
+}
+.vibakukm .card-element {
+  border-radius: 0.75rem;
+  padding: 0;
 }
 
 .news-body {
@@ -4116,6 +4124,15 @@ ul {
   border-top: 2px solid hsla(var(--color-very-light-blue));
   width: 13rem;
   margin: 0.5rem auto;
+}
+
+.filter-section {
+  margin-bottom: 1rem;
+}
+@media (min-width: 992px) {
+  .filter-section {
+    margin-top: -9rem;
+  }
 }
 
 /*# sourceMappingURL=index.css.map */
