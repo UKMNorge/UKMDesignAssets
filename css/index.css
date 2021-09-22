@@ -1187,16 +1187,30 @@ button {
   margin-right: -0.4rem;
 }
 
-.ukm-card .message-title,
-.project-section .message-title {
-  font: normal normal var(--font-weight-semibold) 0.875rem/1.3125rem Poppins !important;
+.message-title .ukm-card, .project-section .message-title {
+  font: normal normal var(--font-weight-semibold) 0.875rem/1.3125rem Poppins;
   color: var(--color-even-darker-blue);
 }
-.ukm-card .message-content,
-.project-section .message-content {
+@media (min-width: 992px) {
+  .project-section .message-title {
+    font-size: 2.5rem;
+    line-height: 2.75rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+}
+.ukm-card .message-content, .project-section .message-content {
   display: block;
   font: var(--font-weight-regular) 0.75rem/1.125rem Roboto;
   color: hsl(var(--color-neutral-coldgray-700));
+}
+@media (min-width: 992px) {
+  .project-section .message-content {
+    font-size: 1.5rem;
+    line-height: 2.125rem;
+    color: hsl(var(--color-neutral-coldgray-700));
+    font-weight: var(--font-weight-light);
+  }
 }
 
 .card-info-section {
@@ -1284,6 +1298,9 @@ button {
   .message-content {
     margin-bottom: 1rem;
   }
+}
+.project-section .message-content {
+  max-width: none;
 }
 
 @media (min-width: 992px) {
@@ -3299,6 +3316,7 @@ a .post-grid-default {
 @media (min-width: 992px) {
   .footer {
     background: hsla(var(--color-primary-blue-100), 0.5);
+    padding-top: 2rem;
   }
 }
 

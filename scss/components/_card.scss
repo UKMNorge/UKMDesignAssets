@@ -61,18 +61,38 @@
   }
 }
 
-.ukm-card,
-.project-section {
-  .message {
-    &-title {
-      font: normal normal var(--font-weight-semibold) 0.875rem/1.3125rem Poppins !important;
+.message {
+  &-title {
+    .ukm-card,
+    .project-section & {
+      font: normal normal var(--font-weight-semibold) 0.875rem / 1.3125rem Poppins;
       color: var(--color-even-darker-blue);
     }
+    .project-section & {
+      @media (min-width: 992px) {
+        font-size: 2.5rem;
+        line-height: 2.75rem;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+      }
+    }
+  }
 
-    &-content {
+  &-content {
+    .ukm-card &,
+    .project-section & {
       display: block;
-      font: var(--font-weight-regular) 0.75rem/1.125rem Roboto;
+      font: var(--font-weight-regular) 0.75rem / 1.125rem Roboto;
       color: hsl(var(--color-neutral-coldgray-700));
+    }
+
+    .project-section & {
+      @media (min-width: 992px) {
+        font-size: 1.5rem;
+        line-height: 2.125rem;
+        color: hsl(var(--color-neutral-coldgray-700));
+        font-weight: var(--font-weight-light);
+      }
     }
   }
 }
@@ -110,7 +130,7 @@
   }
 
   h5 {
-    font: normal normal var(--font-weight-semibold) 0.875em/1.125em Poppins;
+    font: normal normal var(--font-weight-semibold) 0.875em / 1.125em Poppins;
     display: inline-block;
     margin-bottom: 0.25rem;
 
@@ -136,7 +156,7 @@
 }
 
 .message-title {
-  font: normal normal var(--font-weight-semibold) 0.875em/1.125em Poppins;
+  font: normal normal var(--font-weight-semibold) 0.875em / 1.125em Poppins;
   display: inline-block;
   margin-bottom: 0.25rem;
 
@@ -157,12 +177,16 @@
   @media (min-width: 992px) {
     margin-bottom: 1rem;
   }
+
+  .project-section & {
+    max-width: none;
+  }
 }
 
 .btn-text {
   @media (min-width: 992px) {
     // font: normal normal bold 1.25rem/1.5rem Roboto;
-    font: normal normal var(--font-weight-semibold) 1.375rem/2.0625rem Poppins;
+    font: normal normal var(--font-weight-semibold) 1.375rem / 2.0625rem Poppins;
     margin-top: 1rem;
   }
 }
