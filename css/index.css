@@ -1080,6 +1080,13 @@ button {
 .btn-blue:hover {
   color: white;
 }
+.btn-black {
+  color: white !important;
+  background: hsl(var(--color-neutral-warmgray-900));
+}
+.btn-black:hover {
+  color: #a09696;
+}
 .btn-orange {
   color: hsl(var(--color-primary-orange-900));
   text-align: center;
@@ -1141,6 +1148,9 @@ button {
   padding: 0;
   height: 100%;
   border-radius: 0.9375rem;
+}
+.vibakukm .ukm-card-front {
+  box-shadow: 0 0.5rem 1rem hsla(var(--color-primary-orange-500), 0.1);
 }
 .liker-section .ukm-card-front {
   height: revert;
@@ -2736,6 +2746,10 @@ a .post-grid-default {
   .some-icon-discord:hover {
     border-radius: 1.5625rem;
   }
+}
+
+.partnere-kulturtanken {
+  background: url("../../img/kulturtanken.png") no-repeat center/cover;
 }
 
 .testimonial-small:hover {
