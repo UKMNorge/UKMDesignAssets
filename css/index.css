@@ -1175,15 +1175,6 @@ button {
   background: linear-gradient(hsl(var(--white)) 19rem, rgba(237, 242, 250, 0.24) 8rem);
   box-shadow: 0 0.5rem 1rem #3983fa1d;
 }
-.ukm-card .message-title {
-  font: normal normal var(--font-weight-semibold) 0.875rem/1.3125rem Poppins !important;
-  color: var(--color-even-darker-blue);
-}
-.ukm-card .message-content {
-  display: block;
-  font: var(--font-weight-regular) 0.75rem/1.125rem Roboto;
-  color: hsl(var(--color-neutral-coldgray-700));
-}
 .ukm-card .icon {
   height: 1.2rem;
   width: auto;
@@ -1194,6 +1185,18 @@ button {
   align-self: center;
   margin-left: 0;
   margin-right: -0.4rem;
+}
+
+.ukm-card .message-title,
+.project-section .message-title {
+  font: normal normal var(--font-weight-semibold) 0.875rem/1.3125rem Poppins !important;
+  color: var(--color-even-darker-blue);
+}
+.ukm-card .message-content,
+.project-section .message-content {
+  display: block;
+  font: var(--font-weight-regular) 0.75rem/1.125rem Roboto;
+  color: hsl(var(--color-neutral-coldgray-700));
 }
 
 .card-info-section {
@@ -2019,6 +2022,13 @@ iframe {
     height: 15.375rem;
   }
 }
+.vibakukm .card-image {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  border-radius: 0.75rem;
+}
 .card-image-large {
   position: relative;
   margin-top: 1rem;
@@ -2059,10 +2069,6 @@ iframe {
 }
 .news-section .card-element {
   padding: 0.5rem;
-}
-.vibakukm .card-element {
-  border-radius: 0.75rem;
-  padding: 0;
 }
 
 .news-body {
@@ -2754,10 +2760,6 @@ a .post-grid-default {
   .some-icon-discord:hover {
     border-radius: 1.5625rem;
   }
-}
-
-.partnere-kulturtanken {
-  background: url("../../img/kulturtanken.png") no-repeat center/cover;
 }
 
 .testimonial-small:hover {

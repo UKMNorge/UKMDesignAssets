@@ -47,19 +47,6 @@
     box-shadow: 0 0.5rem 1rem #3983fa1d;
   }
 
-  .message {
-    &-title {
-      font: normal normal var(--font-weight-semibold) 0.875rem/1.3125rem Poppins !important;
-      color: var(--color-even-darker-blue);
-    }
-
-    &-content {
-      display: block;
-      font: var(--font-weight-regular) 0.75rem/1.125rem Roboto;
-      color: hsl(var(--color-neutral-coldgray-700));
-    }
-  }
-
   .icon {
     height: 1.2rem;
     width: auto;
@@ -70,6 +57,22 @@
       align-self: center;
       margin-left: 0;
       margin-right: -0.4rem;
+    }
+  }
+}
+
+.ukm-card,
+.project-section {
+  .message {
+    &-title {
+      font: normal normal var(--font-weight-semibold) 0.875rem/1.3125rem Poppins !important;
+      color: var(--color-even-darker-blue);
+    }
+
+    &-content {
+      display: block;
+      font: var(--font-weight-regular) 0.75rem/1.125rem Roboto;
+      color: hsl(var(--color-neutral-coldgray-700));
     }
   }
 }

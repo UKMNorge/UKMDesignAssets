@@ -89,6 +89,15 @@
       height: 15.375rem;
     }
 
+    .vibakukm & {
+      display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    border-radius: 0.75rem;
+
+    }
+
     &-large {
       position: relative;
       margin-top: 1rem;
@@ -130,11 +139,6 @@
 
   .news-section & {
     padding: 0.5rem;
-  }
-
-  .vibakukm & {
-    border-radius: 0.75rem;
-    padding: 0;
   }
 }
 
