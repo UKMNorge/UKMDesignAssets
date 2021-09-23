@@ -1197,6 +1197,7 @@ button {
     line-height: 2.75rem;
     margin-top: 2rem;
     margin-bottom: 2rem;
+    max-width: 100%;
   }
 }
 .ukm-card .message-content, .project-section .message-content {
@@ -3219,6 +3220,10 @@ a .post-grid-default {
   text-align: center;
 }
 
+.collab-col .list-group-item {
+  border: none;
+}
+
 .UKMblock {
   margin-bottom: 10vh;
   margin-top: 10vh;
@@ -4075,6 +4080,15 @@ header .backToMain span {
 }
 .card-info-section .card-component:nth-child(3) {
   animation: wait 1.5s, smooth_transform 800ms 1.5s;
+}
+.card-info-section .card-component:nth-child(4) {
+  animation: wait 2s, smooth_transform 800ms 2s;
+}
+.card-info-section .card-component:nth-child(5) {
+  animation: wait 2.5s, smooth_transform 800ms 2.5s;
+}
+.card-info-section .card-component:nth-child(6) {
+  animation: wait 3s, smooth_transform 800ms 3s;
 }
 
 ul {
