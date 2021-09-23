@@ -253,7 +253,12 @@ button {
         background: hsl(var(--color-neutral-warmgray-900));
 
         &:hover {
-            color: rgb(160, 150, 150);
+            color: white;
+            background: linear-gradient(
+                45deg,
+                hsl(var(--color-primary-orange-600)),
+                hsl(var(--color-primary-orange-500))
+            );
         }
     }
 
@@ -289,6 +294,7 @@ button {
 
         @media (min-width: 992px) {
             font-size: larger;
+            margin: 0.8rem;
         }
 
         > svg {
