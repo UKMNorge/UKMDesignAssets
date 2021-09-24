@@ -39,6 +39,10 @@ $(document).ready(function () {
             $('.hamburger-icon').removeClass('open');
             $('.hamburger-overlay').removeClass('open');
             $('.hamburger').removeClass('open');
+            $('html, body').css({
+                overflow: 'auto',
+                height: 'auto'
+            });
         }
     });
 
