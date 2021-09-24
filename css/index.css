@@ -792,10 +792,6 @@ img {
   height: auto;
 }
 
-article {
-  margin-bottom: 12rem;
-}
-
 blockquote.lead {
   padding-left: 2em;
   margin-top: 2em;
@@ -2162,7 +2158,7 @@ iframe {
 
 #the_post_image {
   margin: 0;
-  margin-top: -1em;
+  margin-top: 2em;
   margin-bottom: 1em;
   height: 40vh;
   width: 100vw;
@@ -3102,6 +3098,7 @@ a .post-grid-default {
   font-size: 1.875rem;
   line-height: 1.25;
   font-weight: 600;
+  padding: 0;
   font-style: var(--font-poppins);
   color: black;
   text-shadow: none;
@@ -3133,6 +3130,7 @@ a .post-grid-default {
   font-weight: 300;
   color: hsl(var(--color-neutral-gray-700));
   opacity: 0.85;
+  margin-top: 1.5em;
 }
 @media (min-width: 992px) {
   .info-text-lead {
