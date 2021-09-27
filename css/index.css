@@ -1090,7 +1090,7 @@ button {
   margin: 0.35rem;
   box-shadow: 0 0 0.2rem 0 hsl(var(--color-primary-orange-900));
 }
-.btn-orange:hover, .btn-orange .active {
+.btn-orange:hover {
   color: white;
   background: linear-gradient(45deg, hsl(var(--color-primary-orange-600)), hsl(var(--color-primary-orange-500)));
   outline: none;
@@ -1121,12 +1121,6 @@ button {
   .btn-derdubor {
     margin-top: 3rem;
   }
-}
-
-.activefilter {
-  color: white;
-  background: linear-gradient(45deg, hsl(var(--color-primary-orange-600)), hsl(var(--color-primary-orange-500)));
-  outline: none;
 }
 
 .front-buttons {
@@ -3222,9 +3216,7 @@ a .post-grid-default {
     height: 33rem;
   }
 }
-.front-carousel .message-title-end,
-.front-carousel .message-content-end,
-.front-carousel .message-category {
+.front-carousel .message-title-end, .front-carousel .message-content-end, .front-carousel .message-category {
   text-align: center;
 }
 

@@ -15,6 +15,7 @@
 }
 
 .front-carousel {
+
     &-image {
         background-repeat: no-repeat;
         background-position: center center;
@@ -31,16 +32,9 @@
             height: 33rem;
         }
     }
+    
 
-    .message-title-end,
-    .message-content-end,
-    .message-category {
+    .message-title-end, .message-content-end, .message-category {
         text-align: center;
     }
 }
-
-// .share-buttons {
-//     @media (min-width: 992px) {
-        
-//     }
-// }

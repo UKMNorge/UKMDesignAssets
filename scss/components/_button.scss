@@ -269,7 +269,7 @@ button {
         margin: 0.35rem;
         box-shadow: 0 0 0.2rem 0 hsl(var(--color-primary-orange-900));
 
-        &:hover, .active {
+        &:hover {
             color: white;
             background: linear-gradient(
                 45deg,
@@ -308,16 +308,6 @@ button {
             margin-top: 3rem;
         }
     }
-}
-
-.activefilter {
-    color: white;
-    background: linear-gradient(
-        45deg,
-        hsl(var(--color-primary-orange-600)),
-        hsl(var(--color-primary-orange-500))
-    );
-    outline: none;
 }
 
 .front-buttons {
