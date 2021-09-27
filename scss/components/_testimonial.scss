@@ -40,11 +40,15 @@
         font: normal normal normal 0.75rem/1.125rem Poppins;
         color: hsl(var(--color-neutral-coldgray-700));
         margin-left: 0.25rem;
-        margin-top: 0.25rem;
+        // margin-top: 0.25rem;
+        margin-top: -1.75rem;
 
         @media (min-width: 992px) {
             font: normal normal normal 2rem/3rem Poppins;
             margin-top: 11.25rem;
+        }
+        @media all and (device-width: 1024px) and (device-height: 1366px) {
+            width: 32rem;
         }
     }
 }
@@ -91,6 +95,10 @@
     overflow: hidden;
     @media (min-width: 992px) {
         overflow: hidden;
+        // position: absolute;
+    }
+    @media all and (device-width: 1024px) and (device-height: 1366px) {
+        position: absolute;
     }
 }
 
@@ -109,5 +117,5 @@
     &::-webkit-scrollbar {
         width: 0;
         height: 0;
-      }
+    }
 }
