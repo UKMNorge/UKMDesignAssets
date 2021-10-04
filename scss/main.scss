@@ -30,9 +30,6 @@
 @import "./components/testimonial";
 @import "./components/fadecollapsible";
 @import "./components/tidligere_arrangementer";
-@import "./components/velg_fylke";
-@import "./components/infopage";
-@import "./components/likerukmno";
 @import "./components/samarbeid";
 
 
@@ -44,6 +41,9 @@
 
 @import "./pages/fylke";
 @import "./pages/program";
+@import "./pages/infopage";
+@import "./pages/likerukmno";
+@import "./pages/velg_fylke";
 
 
 @keyframes subtle_transition {
