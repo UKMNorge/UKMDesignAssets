@@ -168,7 +168,7 @@ article h1,
     opacity: 1;
     text-shadow: 0 0.3125rem 0.9375rem rgba(0, 0, 0, 0.3);
 
-    .vibakukm & {
+    .vibakukm &, .liker-page & {
       width: 100%;
       @media (min-width: 768px) {
       font-size: 2.6rem
