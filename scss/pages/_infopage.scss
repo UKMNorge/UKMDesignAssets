@@ -1,0 +1,121 @@
+.info-section {
+  margin-top: 3rem;
+  background: transparent
+    linear-gradient(180deg, hsla(var(--color-primary-blue-100), 0) 0%, hsla(218, 81%, 94%, 0.5) 100%) 0% 0% no-repeat
+    padding-box;
+
+  @media (min-width: 992px) {
+    margin-top: 8rem;
+    background: transparent
+      linear-gradient(180deg, hsla(var(--color-primary-blue-100), 0) 0%, hsla(218, 81%, 94%, 0.5) 100%) 0% 0% no-repeat
+      padding-box;
+  }
+}
+
+.category-link {
+  font-size: 1rem;
+  letter-spacing: 0.063rem;
+  text-decoration: none;
+  color: hsl(var(--color-pink));
+  text-transform: uppercase;
+}
+
+.article-header {
+  margin-bottom: 1rem;
+  font-size: 1.875rem;
+  line-height: 1.25;
+  font-weight: 600;
+  padding: 0;
+
+  font-style: var(--font-poppins);
+  color: black;
+  text-shadow: none;
+  width: auto;
+  margin: 0;
+  @media (min-width: 992px) {
+    font-size: 3.75rem;
+    padding-top: 0;
+  }
+}
+
+.info-text-section {
+  margin-left: 0;
+  max-width: 76rem;
+  // padding: 0 1.5rem;
+
+  .dot-grey-large {
+    background-color: transparent;
+  }
+  @media (min-width: 992px) {
+    padding: 0;
+    padding-top: 2rem;
+  }
+}
+
+.info-text-lead {
+  font-weight: 300;
+  color: hsl(var(--color-neutral-gray-700));
+  opacity: 0.85;
+  margin-top: 1.5em;
+  // margin-bottom: 1.5em;
+  @media (min-width: 992px) {
+    font-size: 1.75rem;
+    color: hsl(var(--color-neutral-gray-900));
+    //font: var(--font-weight-semibold) 2.5em/2.75rem var(--font-poppins);
+    opacity: 0.85;
+  }
+}
+
+.bread-text {
+  font-size: 1.5rem;
+  line-height: 2.1875rem;
+}
+
+.share-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.gallery-indicators {
+  visibility: hidden;
+  // margin-bottom: -2rem;
+
+  li {
+    // background-color:red;
+  }
+}
+
+.article-date {
+  @media (min-width: 992px) {
+    font-size: 1.2rem;
+    line-height: 2.5rem;
+  }
+}
+
+.article-svg {
+  @media (min-width: 992px) {
+    & .dot-grey-large {
+      width: 3.9375rem;
+      height: 3.875rem;
+    }
+    & .svg-dot {
+      width: 1.75rem;
+      height: 1.75rem;
+    }
+  }
+}
+
+.share-dot {
+  @media (min-width: 992px) {
+    width: 3.9375rem;
+    height: 3.875rem;
+  }
+}
+
+.carousel-picture {
+  width: 100%;
+  height: auto;
+  aspect-ratio: auto 2400 / 1350;
+}
