@@ -4103,6 +4103,32 @@ header .backToMain span {
   padding-bottom: 0.5rem;
 }
 
+.filter-section {
+  margin-bottom: 1rem;
+}
+@media (min-width: 992px) {
+  .filter-section {
+    margin-top: -9rem;
+  }
+}
+
+.vibakukm-content .card-info-section {
+  margin-bottom: 0;
+}
+@media (min-width: 992px) {
+  .vibakukm-content .card-image {
+    height: 16.375rem;
+  }
+}
+@media (min-width: 992px) {
+  .vibakukm-content .card-info-section .card-component h5 {
+    max-width: 19.5rem;
+  }
+}
+.vibakukm-content .project-section .message-content:hover, .vibakukm-content .project-section .message-content:active {
+  text-decoration: none;
+}
+
 @keyframes subtle_transition {
   from {
     opacity: 0;
@@ -4225,21 +4251,6 @@ ul {
   border-top: 2px solid hsla(var(--color-very-light-blue));
   width: 13rem;
   margin: 0.5rem auto;
-}
-
-.filter-section {
-  margin-bottom: 1rem;
-}
-@media (min-width: 992px) {
-  .filter-section {
-    margin-top: -9rem;
-  }
-}
-
-@media (min-width: 992px) {
-  .vibakukm-content {
-    margin-top: 8rem;
-  }
 }
 
 /*# sourceMappingURL=index.css.map */

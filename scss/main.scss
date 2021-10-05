@@ -44,7 +44,7 @@
 @import "./pages/infopage";
 @import "./pages/likerukmno";
 @import "./pages/velg_fylke";
-
+@import "./pages/vibakukm";
 
 @keyframes subtle_transition {
     from {
@@ -178,16 +178,4 @@ ul {
     border-top: 2px solid hsla(var(--color-very-light-blue));
     width: 13rem;
     margin: 0.5rem auto;
-}
-.filter-section {
-    margin-bottom: 1rem;
-    @media(min-width: 992px) {
-        margin-top: -9rem;
-    }
-}
-
-.vibakukm-content {
-    @media(min-width: 992px) {
-        margin-top: 8rem;
-    }
 }
