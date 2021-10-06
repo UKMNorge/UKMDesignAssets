@@ -63,14 +63,14 @@
     linear-gradient(180deg, hsla(var(--color-primary-blue-100), 0) 0%, rgba(227, 236, 252, 0.5) 100%) 0% 0% no-repeat
     padding-box;
 
-    @media (min-width: 992px) {
-      height: 22.875rem;
-    }    
+  @media (min-width: 992px) {
+    height: 22.875rem;
+  }
 }
 
 .tiktok-footer {
-  width: 0.7rem;
-  height: 0.8rem;
+  width: 1rem;
+  height: 0.75rem;
   @media (min-width: 992px) {
     width: 2.3rem;
     height: 0.5rem;
@@ -107,9 +107,11 @@
   }
 
   img {
-    color: hsl(var(--color-neutral-coldgray-100));
-    width: 1.75rem;
-    height: 1rem;
+    width: 2.5rem;
+
+    @media (min-width: 576px) {
+      width: 2.75rem;
+    }
 
     @media (min-width: 992px) {
       width: 4rem;

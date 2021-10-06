@@ -152,11 +152,10 @@ header {
 
     .ukm-logo {
         color: hsl(var(--color-neutral-coldgray-100));
-        width: 1.75rem;
-        height: 1rem;
+        width: 2.5rem;
+      
         @media(min-width: 576px) {
         width: 2.75rem;
-        height: auto;
       }
 
         @media(min-width: 992px) {
