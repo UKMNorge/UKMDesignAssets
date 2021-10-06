@@ -3178,6 +3178,11 @@ a .post-grid-default {
   height: 9.875rem;
   background: transparent linear-gradient(180deg, hsla(var(--color-primary-blue-100), 0) 0%, rgba(227, 236, 252, 0.5) 100%) 0% 0% no-repeat padding-box;
 }
+@media (min-width: 992px) {
+  .gradient {
+    height: 22.875rem;
+  }
+}
 
 .tiktok-footer {
   width: 0.7rem;
@@ -4006,7 +4011,6 @@ header .backToMain span {
 .share-line-vertical .share-buttons {
   flex-direction: column;
   height: 7rem;
-  margin-top: 3rem;
 }
 @media (max-width: 992px) {
   .share-line-vertical {
@@ -4014,10 +4018,12 @@ header .backToMain span {
   }
 }
 
-@media (max-width: 992px) {
+.share-line-footer {
+  margin: 3rem;
+}
+@media (min-width: 992px) {
   .share-line-footer {
     display: none;
-    margin: 3rem;
   }
 }
 

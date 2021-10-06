@@ -129,7 +129,7 @@
 .share-line-vertical {
   & .share-buttons {
     flex-direction: column; height:7rem;
-    margin-top: 3rem
+    // margin-top: 3rem;
   }
   @media (max-width: 992px) {
     display: none;
@@ -137,8 +137,9 @@
 }
 
 .share-line-footer {
-  @media (max-width: 992px) {
+    margin: 3rem;
+  
+  @media (min-width: 992px) {
     display: none;
-    margin: 3rem
   }
 }

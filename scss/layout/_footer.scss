@@ -62,6 +62,10 @@
   background: transparent
     linear-gradient(180deg, hsla(var(--color-primary-blue-100), 0) 0%, rgba(227, 236, 252, 0.5) 100%) 0% 0% no-repeat
     padding-box;
+
+    @media (min-width: 992px) {
+      height: 22.875rem;
+    }    
 }
 
 .tiktok-footer {
