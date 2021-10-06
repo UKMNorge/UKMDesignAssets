@@ -75,67 +75,72 @@
   max-width: 27rem;
 }
 
-  .card-image {
-    width: 19.4375rem;
-    height: 8rem;
-    border-radius: 0.75rem 0.75rem 0 0;
+.card-image {
+  width: 19.4375rem;
+  height: 8rem;
+  border-radius: 0.75rem 0.75rem 0 0;
 
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
 
-    @media (min-width: 992px) {
-      width: 37.75rem;
-      height: 15.375rem;
-    }
+  @media (min-width: 992px) {
+    width: 37.75rem;
+    height: 15.375rem;
+  }
 
-    .vibakukm & {
-      display: block;
+  .vibakukm & {
+    display: block;
     margin-left: auto;
     margin-right: auto;
     width: 50%;
     border-radius: 0.75rem;
+  }
 
-    }
+  &-large {
+    position: relative;
+    margin-top: 1rem;
+    width: 20.4375rem;
+    height: 12.75rem;
+    background: #a0aec0;
+  }
 
-    &-large {
-      position: relative;
-      margin-top: 1rem;
-      width: 20.4375rem;
-      height: 12.75rem;
-      background: #a0aec0;
-    }
+  &-small {
+    width: 5.5rem;
+    height: 5.5rem;
+    border-radius: 0.75rem;
 
-    &-small {
-      width: 5.5rem;
-      height: 5.5rem;
-      border-radius: 0.75rem;
-
-      @media (min-width: 992px) {
-        width: 10.9375rem;
-        height: 10.9375rem;
-      }
-    }
-
-    &.card-news {
-      height: 10rem;
-      width: -webkit-fill-available;
-      @media (min-width: 992px) {
-        height: 15rem;
-      }
-    }
-
-    &.first-news-image {
-      @media (min-width: 992px) {
-        height: 28rem;
-      }
+    @media (min-width: 992px) {
+      width: 10.9375rem;
+      height: 10.9375rem;
     }
   }
+
+  &.card-news {
+    height: 10rem;
+    width: -webkit-fill-available;
+    @media (min-width: 992px) {
+      height: 15rem;
+    }
+  }
+
+  &.first-news-image {
+    @media (min-width: 992px) {
+      height: 28rem;
+    }
+  }
+}
 
 .card-element {
   position: relative;
   padding: 0.9rem 1.4rem;
   margin: 0;
+
+  &:hover {
+    svg.icon.icon-chevron {
+      fill: hsl(var(--color-primary-blue-800));;
+    }
+}
 
   .news-section & {
     padding: 0.5rem;

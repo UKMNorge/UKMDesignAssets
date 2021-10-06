@@ -2089,6 +2089,9 @@ iframe {
   padding: 0.9rem 1.4rem;
   margin: 0;
 }
+.card-element:hover svg.icon.icon-chevron {
+  fill: hsl(var(--color-primary-blue-800));
+}
 .news-section .card-element {
   padding: 0.5rem;
 }
