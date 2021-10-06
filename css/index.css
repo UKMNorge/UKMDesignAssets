@@ -3581,6 +3581,12 @@ header .ukm-logo {
   width: 1.75rem;
   height: 1rem;
 }
+@media (min-width: 576px) {
+  header .ukm-logo {
+    width: 2.75rem;
+    height: auto;
+  }
+}
 @media (min-width: 992px) {
   header .ukm-logo {
     width: 4rem;

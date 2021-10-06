@@ -154,6 +154,10 @@ header {
         color: hsl(var(--color-neutral-coldgray-100));
         width: 1.75rem;
         height: 1rem;
+        @media(min-width: 576px) {
+        width: 2.75rem;
+        height: auto;
+      }
 
         @media(min-width: 992px) {
             width: 4rem;
