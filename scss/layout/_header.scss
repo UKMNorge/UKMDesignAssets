@@ -365,13 +365,10 @@ header {
     &:hover,
     &:active {
         background-color: transparent !important;
-    }
 
-    > a {
-        &:hover,
-        &:active {
-            background-color: hsla(var(--color-neutral-coldgray-400));
-            border-radius: 15px;
+                img {
+                background-color: hsla(var(--color-neutral-coldgray-400));
+                border-radius: 15px;
         }
     }
 }

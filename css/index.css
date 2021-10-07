@@ -3830,7 +3830,7 @@ header .backToMain span {
 .backToMain:hover, .backToMain:active {
   background-color: transparent !important;
 }
-.backToMain > a:hover, .backToMain > a:active {
+.backToMain:hover img, .backToMain:active img {
   background-color: hsla(var(--color-neutral-coldgray-400));
   border-radius: 15px;
 }
