@@ -1974,11 +1974,7 @@ iframe {
 @media (min-width: 992px) {
   .news-section .card-news span:first-child,
 .news-case span:first-child {
-    display: block;
-    color: hsl(var(--color-pink));
-    text-transform: uppercase;
     font: normal normal bold 0.875rem/0.9375rem Roboto;
-    width: 100%;
     padding-right: 3rem;
     padding-bottom: 0.3rem;
     padding-top: 0.3rem;
@@ -1996,10 +1992,7 @@ iframe {
   .news-section .card-news span:nth-of-type(2),
 .news-case span:nth-of-type(2) {
     font: normal normal 600 1.5rem/1.875rem Poppins;
-    display: block;
     margin: 0.6875rem 0 0.6875rem -15px !important;
-    width: -webkit-fill-available;
-    width: 100%;
   }
 }
 .news-section .card-news p,
@@ -2015,10 +2008,18 @@ iframe {
 @media (min-width: 992px) {
   .news-section .card-news p,
 .news-case p {
-    display: block;
-    color: hsl(var(--color-neutral-coldgray-700));
     font: normal normal normal 1.125rem/1.6875rem Roboto;
-    max-width: 100%;
+  }
+}
+@media (min-width: 1199px) {
+  .news-section .card-news p,
+.news-case p {
+    width: 33rem;
+  }
+}
+@media (min-width: 1390px) {
+  .news-section .card-news p,
+.news-case p {
     width: 100%;
   }
 }
@@ -4057,12 +4058,6 @@ header .backToMain span {
   width: 100%;
   height: auto;
   aspect-ratio: auto 2400/1350;
-}
-
-@media (min-width: 992px) {
-  .share-line-horizontal {
-    display: none;
-  }
 }
 
 .share-line-vertical .share-buttons {

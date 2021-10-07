@@ -22,11 +22,7 @@
     width: 100%;
 
     @media (min-width: 992px) {
-      display: block;
-      color: hsl(var(--color-pink));
-      text-transform: uppercase;
       font: normal normal bold 0.875rem/0.9375rem Roboto;
-      width: 100%;
       padding-right: 3rem;
       padding-bottom: 0.3rem;
       padding-top: 0.3rem;
@@ -42,10 +38,7 @@
     width: 100%;
     @media (min-width: 992px) {
       font: normal normal 600 1.5rem/1.875rem Poppins;
-      display: block;
       margin: 0.6875rem 0 0.6875rem -15px !important;
-      width: -webkit-fill-available;
-      width: 100%;
     }
   }
 
@@ -58,11 +51,16 @@
     max-width: 100%;
     width: 100%;
     font-weight: 300 !important;
+
     @media (min-width: 992px) {
-      display: block;
-      color: hsl(var(--color-neutral-coldgray-700));
       font: normal normal normal 1.125rem/1.6875rem Roboto;
-      max-width: 100%;
+    }
+
+    @media (min-width: 1199px) {
+      width: 33rem;
+    }
+
+    @media (min-width: 1390px) {
       width: 100%;
     }
   }
@@ -138,9 +136,9 @@
 
   &:hover {
     svg.icon.icon-chevron {
-      fill: hsl(var(--color-primary-blue-800));;
+      fill: hsl(var(--color-primary-blue-800));
     }
-}
+  }
 
   .news-section & {
     padding: 0.5rem;
