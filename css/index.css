@@ -4029,6 +4029,7 @@ header .backToMain span {
 .gallery-indicators {
   visibility: hidden;
 }
+
 @media (min-width: 992px) {
   .article-date {
     font-size: 1.2rem;
@@ -4060,9 +4061,14 @@ header .backToMain span {
   aspect-ratio: auto 2400/1350;
 }
 
+@media (min-width: 992px) {
+  .share-line-horizontal {
+    display: none;
+  }
+}
+
 .share-line-vertical .share-buttons {
   flex-direction: column;
-  height: 7rem;
 }
 @media (max-width: 992px) {
   .share-line-vertical {

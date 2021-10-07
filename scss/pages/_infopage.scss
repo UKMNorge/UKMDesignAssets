@@ -80,11 +80,6 @@
 
 .gallery-indicators {
   visibility: hidden;
-  // margin-bottom: -2rem;
-
-  li {
-    // background-color:red;
-  }
 }
 
 .article-date {
@@ -121,15 +116,14 @@
 }
 
 .share-line-horizontal {
-  // @media (min-width: 992px) {
-  //   display: none;
-  // }
+  @media (min-width: 992px) {
+    display: none;
+  }
 }
 
 .share-line-vertical {
   & .share-buttons {
     flex-direction: column; 
-    height: 7rem;
   }
   @media (max-width: 992px) {
     display: none;
