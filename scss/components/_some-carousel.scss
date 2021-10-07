@@ -1,8 +1,20 @@
 .some {
     &-title {
-        padding: 0.7rem 0.5rem 0;
+        padding-top: 0.7rem;
         margin: 0;
 
+        & .col {
+            padding: 0;
+            @media (min-width: 368px) {
+                padding: 0 15px;
+            }
+
+        }
+        
+        @media (min-width: 368px) {
+            padding: 0.7rem 0.5rem 0;
+        }
+        
         @media (min-width: 992px) {
             border-top: 0.25rem solid rgba(90, 102, 129, 0.05);
             margin-top: 13.5rem;
@@ -17,10 +29,20 @@
     }
 
     &-section {
-        padding: 0.7rem 0.5rem 1.3rem;
+        padding: 0.7rem 0rem 1.3rem;
         margin: 0;
+        @media (min-width: 368px) {
+        padding: 0.7rem 0.5rem 1.3rem;
+        }
         @media (min-width: 992px) {
             margin-bottom: 19rem;
+        }
+    }
+
+    &-col {
+        margin-left: -1.25rem;
+        @media (min-width: 368px) {
+            margin: 0;
         }
     }
 

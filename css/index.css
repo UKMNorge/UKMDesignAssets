@@ -2288,8 +2288,21 @@ a .post-grid-default {
 }
 
 .some-title {
-  padding: 0.7rem 0.5rem 0;
+  padding-top: 0.7rem;
   margin: 0;
+}
+.some-title .col {
+  padding: 0;
+}
+@media (min-width: 368px) {
+  .some-title .col {
+    padding: 0 15px;
+  }
+}
+@media (min-width: 368px) {
+  .some-title {
+    padding: 0.7rem 0.5rem 0;
+  }
 }
 @media (min-width: 992px) {
   .some-title {
@@ -2305,12 +2318,25 @@ a .post-grid-default {
   }
 }
 .some-section {
-  padding: 0.7rem 0.5rem 1.3rem;
+  padding: 0.7rem 0rem 1.3rem;
   margin: 0;
+}
+@media (min-width: 368px) {
+  .some-section {
+    padding: 0.7rem 0.5rem 1.3rem;
+  }
 }
 @media (min-width: 992px) {
   .some-section {
     margin-bottom: 19rem;
+  }
+}
+.some-col {
+  margin-left: -1.25rem;
+}
+@media (min-width: 368px) {
+  .some-col {
+    margin: 0;
   }
 }
 .some-item {
