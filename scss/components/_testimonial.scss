@@ -21,8 +21,11 @@
     @media (min-width: 992px) {
         height: 64rem;
         width: 92rem;
-        max-width: 87rem;
+        max-width: 100%;
     }
+    @media (min-width: 1384px) {
+    max-width: 87rem;
+}
 }
 
 .signature {
@@ -44,8 +47,14 @@
         margin-top: -1.75rem;
 
         @media (min-width: 992px) {
-            font: normal normal normal 2rem/3rem Poppins;
+        font: normal normal normal 1.5rem/2.5rem Poppins;
+
             margin-top: 11.25rem;
+        }
+        @media (min-width: 1199px) {
+            font: normal normal normal 2rem/3rem Poppins;
+
+           
         }
         @media all and (device-width: 1024px) and (device-height: 1366px) {
             width: 32rem;
@@ -70,6 +79,7 @@
     height: 15.625rem;
     border-radius: 0.75rem;
     @media (min-width: 992px) {
+        margin: 0;
         width: 31.5rem;
         height: 40.375rem;
         border-radius: 0.75rem;

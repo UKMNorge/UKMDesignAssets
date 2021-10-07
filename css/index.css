@@ -2836,6 +2836,11 @@ a .post-grid-default {
   .testimonial {
     height: 64rem;
     width: 92rem;
+    max-width: 100%;
+  }
+}
+@media (min-width: 1384px) {
+  .testimonial {
     max-width: 87rem;
   }
 }
@@ -2860,8 +2865,13 @@ a .post-grid-default {
 }
 @media (min-width: 992px) {
   .signature-text {
-    font: normal normal normal 2rem/3rem Poppins;
+    font: normal normal normal 1.5rem/2.5rem Poppins;
     margin-top: 11.25rem;
+  }
+}
+@media (min-width: 1199px) {
+  .signature-text {
+    font: normal normal normal 2rem/3rem Poppins;
   }
 }
 @media all and (device-width: 1024px) and (device-height: 1366px) {
@@ -2891,6 +2901,7 @@ a .post-grid-default {
 }
 @media (min-width: 992px) {
   .side-pic {
+    margin: 0;
     width: 31.5rem;
     height: 40.375rem;
     border-radius: 0.75rem;
