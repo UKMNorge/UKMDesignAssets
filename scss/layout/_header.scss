@@ -321,6 +321,15 @@ header {
     }
 }
 
+.nav-title {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    margin-left: 0.8rem;
+    font: normal normal 600 14px / 18px Poppins;
+    color: hsla(225, 43%, 5%, 1);
+}
+
 .hamburger-overlay.open {
     background-color: hsla(218, 81%, 94%, 1);
     position: fixed;

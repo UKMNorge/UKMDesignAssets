@@ -3790,6 +3790,15 @@ header .backToMain span {
   padding-left: 0.5rem;
 }
 
+.nav-title {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  margin-left: 0.8rem;
+  font: normal normal 600 14px/18px Poppins;
+  color: #070a12;
+}
+
 .hamburger-overlay.open {
   background-color: #e3ecfc;
   position: fixed;
