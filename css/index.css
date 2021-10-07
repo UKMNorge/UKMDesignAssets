@@ -3060,12 +3060,6 @@ a .post-grid-default {
   }
 }
 
-@media (min-width: 992px) {
-  .btn {
-    line-height: 3rem;
-  }
-}
-
 .leaf {
   overflow: hidden;
 }
