@@ -4266,15 +4266,6 @@ ul {
   list-style-type: none;
 }
 
-.title {
-  text-overflow: ellipsis;
-  overflow: hidden;
-  white-space: nowrap;
-  margin-left: 0.8rem;
-  font: normal normal 600 14px/18px Poppins;
-  color: #070a12;
-}
-
 .choice-item {
   background-color: rgba(227, 236, 252, 0.5);
   padding: 1rem;
