@@ -1,3 +1,10 @@
+.fylke-section {
+  margin-bottom: 3rem;
+  @media (min-width: 768px) {
+    margin-top: 7rem;
+  }
+}
+
 .fylke {
     &-title {
       font: normal normal var(--font-weight-semibold) 0.75rem/1.125rem Poppins;
