@@ -2057,7 +2057,7 @@ iframe {
   margin-top: 1rem;
   width: 20.4375rem;
   height: 12.75rem;
-  background: #A0AEC0;
+  background: #a0aec0;
 }
 .card-image-small {
   width: 5.5rem;
@@ -2073,16 +2073,10 @@ iframe {
 .card-image.card-news {
   height: 10rem;
   width: -webkit-fill-available;
-  background-size: 0 0;
 }
 @media (min-width: 992px) {
   .card-image.card-news {
     height: 15rem;
-  }
-}
-@media (min-width: 1199px) {
-  .card-image.card-news {
-    background-size: cover;
   }
 }
 @media (min-width: 992px) {
@@ -2147,12 +2141,6 @@ iframe {
 @media (min-width: 992px) {
   .card-margin {
     padding: 12px;
-  }
-}
-
-@media (min-width: 1199px) {
-  .larger-article-image {
-    visibility: hidden;
   }
 }
 
