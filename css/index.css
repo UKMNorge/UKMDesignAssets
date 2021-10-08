@@ -2836,6 +2836,12 @@ a .post-grid-default {
   height: 20.5625rem;
   max-width: 540px;
   background: transparent linear-gradient(360deg, hsl(var(--white)) 0%, hsla(var(--color-primary-blue-100), 0.75) 27%, hsl(var(--white)) 100%) 0% 0% no-repeat padding-box;
+  margin-bottom: 6rem;
+}
+@media (min-width: 400px) {
+  .testimonial {
+    margin-bottom: 0;
+  }
 }
 @media (min-width: 768px) {
   .testimonial {
@@ -2876,7 +2882,12 @@ a .post-grid-default {
   font: normal normal normal 0.75rem/1.125rem Poppins;
   color: hsl(var(--color-neutral-coldgray-700));
   margin-left: 0.25rem;
-  margin-top: -1.75rem;
+  margin-top: -2.75rem;
+}
+@media (min-width: 400px) {
+  .signature-text {
+    margin-top: -1.75rem;
+  }
 }
 @media (min-width: 768px) {
   .signature-text {
@@ -2945,6 +2956,11 @@ a .post-grid-default {
   height: 15.625rem;
   border-radius: 0.75rem;
 }
+@media (min-width: 400px) {
+  .side-pic {
+    height: 18.625rem;
+  }
+}
 @media (min-width: 768px) {
   .side-pic {
     margin: 0;
@@ -2969,10 +2985,15 @@ a .post-grid-default {
 
 .people-carousel {
   margin-left: 0.5rem;
-  margin-top: -1.5rem;
+  margin-top: 1.5rem;
   height: 100%;
   width: 100%;
   overflow: hidden;
+}
+@media (min-width: 400px) {
+  .people-carousel {
+    margin-top: -1.5rem;
+  }
 }
 @media (min-width: 768px) {
   .people-carousel {

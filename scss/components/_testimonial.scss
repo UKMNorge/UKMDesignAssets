@@ -17,6 +17,12 @@
             hsl(var(--white)) 100%
         )
         0% 0% no-repeat padding-box;
+    margin-bottom: 6rem;
+
+    @media (min-width: 400px) {
+        margin-bottom: 0;
+    }
+
     @media (min-width: 768px) {
         max-width: 720px;
     }
@@ -49,7 +55,10 @@
         font: normal normal normal 0.75rem/1.125rem Poppins;
         color: hsl(var(--color-neutral-coldgray-700));
         margin-left: 0.25rem;
-        margin-top: -1.75rem;
+        margin-top: -2.75rem;
+        @media (min-width: 400px) {
+            margin-top: -1.75rem;
+        }
         @media (min-width: 768px) {
             font-size: 1rem;
             line-height: 1.5rem;
@@ -100,6 +109,10 @@
     width: 12.1875rem;
     height: 15.625rem;
     border-radius: 0.75rem;
+    @media (min-width: 400px) {
+        height: 18.625rem;
+    }
+
     @media (min-width: 768px) {
         margin: 0;
     }
@@ -120,11 +133,14 @@
 }
 .people-carousel {
     margin-left: 0.5rem;
-    margin-top: -1.5rem;
+    margin-top: 1.5rem;
     // overflow: scroll;
     height: 100%;
     width: 100%;
     overflow: hidden;
+    @media (min-width: 400px) {
+        margin-top: -1.5rem;
+    }
 
     @media (min-width: 768px) {
         margin-top: -3rem;
