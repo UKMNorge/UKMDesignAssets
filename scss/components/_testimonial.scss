@@ -5,10 +5,10 @@
         transition: opacity 0.2s ease-out;
     }
 }
-
 .testimonial {
     margin-top: 7.5rem;
     height: 20.5625rem;
+    max-width: 540px;
     background: transparent
         linear-gradient(
             360deg,
@@ -17,49 +17,50 @@
             hsl(var(--white)) 100%
         )
         0% 0% no-repeat padding-box;
+    @media (min-width: 768px) {
+        max-width: 720px;
+    }
     @media (min-width: 992px) {
         height: 64rem;
         width: 92rem;
-        max-width: 720px;
+        max-width: 100%;
     }
     @media (min-width: 1384px) {
+        max-width: 87rem;
     }
 }
-
 .signature {
     font: normal normal normal 0.875rem/1.125rem Sacramento;
     color: hsl(var(--color-neutral-coldgray-700));
     margin-left: 0.25rem;
-
+    @media (min-width: 768px) {
+        font: normal normal normal 1.4rem/2.125rem Sacramento;
+    }
     @media (min-width: 992px) {
         font: normal normal normal 2.125rem/2.75rem Sacramento;
         color: hsl(var(--color-neutral-coldgray-700));
         margin-left: 0.25rem;
     }
-
     &-text {
         font: normal normal normal 0.75rem/1.125rem Poppins;
         color: hsl(var(--color-neutral-coldgray-700));
         margin-left: 0.25rem;
-        // margin-top: 0.25rem;
         margin-top: -1.75rem;
-
+        @media (min-width: 768px) {
+            font: normal normal normal 1rem/1.5rem Poppins;
+        }
         @media (min-width: 992px) {
-        font: normal normal normal 1.5rem/2.5rem Poppins;
-
+            font: normal normal normal 1.5rem/2.5rem Poppins;
             margin-top: 11.25rem;
         }
         @media (min-width: 1199px) {
             font: normal normal normal 2rem/3rem Poppins;
-
-           
         }
         @media all and (device-width: 1024px) and (device-height: 1366px) {
             width: 32rem;
         }
     }
 }
-
 .svg-quote {
     width: 3.3rem;
     height: 3.75rem;
@@ -70,7 +71,6 @@
         margin-left: -1rem;
     }
 }
-
 .side-pic {
     margin-left: -1.25rem;
     width: 12.1875rem;
@@ -83,7 +83,6 @@
         border-radius: 0.75rem;
     }
 }
-
 .svg-chevron {
     @media (min-width: 992px) {
         height: 7.2rem;
@@ -92,12 +91,10 @@
         margin-top: 1.5rem;
     }
 }
-
 .people-carousel {
     margin-left: 0.5rem;
     margin-top: -3rem;
     // overflow: scroll;
-
     height: 100%;
     width: 100%;
     overflow: hidden;
@@ -109,19 +106,16 @@
         position: absolute;
     }
 }
-
 .some-carousel {
     overflow: scroll;
     scrollbar-width: none;
 }
-
 .testimonial-items {
     height: 100%;
     width: 100%;
     overflow: auto;
     padding-right: 20px;
     scrollbar-width: none;
-
     &::-webkit-scrollbar {
         width: 0;
         height: 0;
