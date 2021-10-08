@@ -2830,36 +2830,19 @@ a .post-grid-default {
 .testimonial {
   margin-top: 7.5rem;
   height: 20.5625rem;
-  max-width: 540px;
   background: transparent linear-gradient(360deg, hsl(var(--white)) 0%, hsla(var(--color-primary-blue-100), 0.75) 27%, hsl(var(--white)) 100%) 0% 0% no-repeat padding-box;
-}
-@media (min-width: 768px) {
-  .testimonial {
-    max-width: 720px;
-  }
 }
 @media (min-width: 992px) {
   .testimonial {
     height: 64rem;
     width: 92rem;
-    max-width: 100%;
+    max-width: 720px;
   }
 }
-@media (min-width: 1384px) {
-  .testimonial {
-    max-width: 87rem;
-  }
-}
-
 .signature {
   font: normal normal normal 0.875rem/1.125rem Sacramento;
   color: hsl(var(--color-neutral-coldgray-700));
   margin-left: 0.25rem;
-}
-@media (min-width: 768px) {
-  .signature {
-    font: normal normal normal 1.4rem/2.125rem Sacramento;
-  }
 }
 @media (min-width: 992px) {
   .signature {
@@ -2873,11 +2856,6 @@ a .post-grid-default {
   color: hsl(var(--color-neutral-coldgray-700));
   margin-left: 0.25rem;
   margin-top: -1.75rem;
-}
-@media (min-width: 768px) {
-  .signature-text {
-    font: normal normal normal 1rem/1.5rem Poppins;
-  }
 }
 @media (min-width: 992px) {
   .signature-text {
