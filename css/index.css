@@ -2883,6 +2883,7 @@ a .post-grid-default {
   color: hsl(var(--color-neutral-coldgray-700));
   margin-left: 0.25rem;
   margin-top: -2.75rem;
+  word-break: break-word;
 }
 @media (min-width: 400px) {
   .signature-text {
