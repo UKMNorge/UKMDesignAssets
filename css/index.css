@@ -3983,6 +3983,7 @@ header .backToMain span {
   font-weight: 600;
   padding: 0;
   word-break: break-word;
+  hyphens: auto;
   font-style: var(--font-poppins);
   color: black;
   text-shadow: none;
