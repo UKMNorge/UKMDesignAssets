@@ -2246,8 +2246,8 @@ iframe {
 .featured-image-play {
   position: absolute;
   width: 5em;
-  top: "Calc( 50% - 2.5em )";
-  left: "Calc( 50% - 2.5em )";
+  top: calc( 50% - 4em );
+  left: calc( 50% - 2.5em );
   opacity: 0.92;
 }
 
