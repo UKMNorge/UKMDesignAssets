@@ -1156,11 +1156,11 @@ button {
 .vibakukm .ukm-card-front {
   box-shadow: 0 0.5rem 1rem hsla(var(--color-primary-orange-500), 0.1);
 }
-.liker-section .ukm-card-front {
+.liker-section .ukm-card-front, .festival-section .ukm-card-front {
   height: revert;
 }
 @media (min-width: 992px) {
-  .liker-section .ukm-card-front {
+  .liker-section .ukm-card-front, .festival-section .ukm-card-front {
     height: 100%;
   }
 }
@@ -2101,7 +2101,7 @@ iframe {
   max-width: 11.5rem;
   padding: 0 0 0 1.1rem;
 }
-.liker-section .news-body {
+.liker-section .news-body, .festival-section .news-body {
   max-width: 18.5rem;
   padding: 1.25rem;
 }
@@ -2114,7 +2114,7 @@ iframe {
   .news-body {
     max-width: 25rem;
   }
-  .liker-section .news-body {
+  .liker-section .news-body, .festival-section .news-body {
     max-width: 28rem;
   }
 }
@@ -2122,7 +2122,7 @@ iframe {
   .news-body {
     max-width: 21rem;
   }
-  .liker-section .news-body {
+  .liker-section .news-body, .festival-section .news-body {
     max-width: 37rem;
   }
 }
@@ -2130,7 +2130,7 @@ iframe {
   .news-body {
     max-width: 28rem;
   }
-  .liker-section .news-body {
+  .liker-section .news-body, .festival-section .news-body {
     max-width: 39rem;
   }
 }
@@ -2820,12 +2820,6 @@ a .post-grid-default {
     height: 64rem;
     width: 92rem;
     max-width: 720px;
-  }
-}
-@media (max-width: 400px) {
-  #testimonial .quote-font-left {
-    min-width: 122px;
-    font-size: 12px;
   }
 }
 .signature {

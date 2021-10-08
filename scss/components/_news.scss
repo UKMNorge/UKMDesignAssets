@@ -148,7 +148,7 @@
 .news-body {
   max-width: 11.5rem;
   padding: 0 0 0 1.1rem;
-  .liker-section & {
+  .liker-section &, .festival-section & {
     max-width: 18.5rem;
     padding: 1.25rem;
   }
@@ -158,21 +158,21 @@
 
   @media (min-width: 992px) {
     max-width: 25rem;
-    .liker-section & {
+    .liker-section &, .festival-section & {
       max-width: 28rem;
     }
   }
 
   @media (min-width: 1200px) {
     max-width: 21rem;
-    .liker-section & {
+    .liker-section &, .festival-section & {
       max-width: 37rem;
     }
   }
 
   @media (min-width: 1399px) {
     max-width: 28rem;
-    .liker-section & {
+    .liker-section &, .festival-section & {
       max-width: 39rem;
     }
   }
