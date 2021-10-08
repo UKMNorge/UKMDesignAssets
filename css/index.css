@@ -2071,12 +2071,18 @@ iframe {
   }
 }
 .card-image.card-news {
-  height: 10rem;
+  height: auto;
   width: -webkit-fill-available;
+  display: flex;
+  overflow: hidden;
+}
+.card-image.card-news img.artikkel-img {
+  width: 100%;
+  margin: auto;
 }
 @media (min-width: 992px) {
   .card-image.card-news {
-    height: 15rem;
+    height: auto;
   }
 }
 @media (min-width: 992px) {
