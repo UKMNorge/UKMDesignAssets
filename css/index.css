@@ -2073,7 +2073,6 @@ iframe {
 .card-image.card-news {
   height: auto;
   width: -webkit-fill-available;
-  display: flex;
   overflow: hidden;
   background-size: 0 0;
 }
@@ -2085,6 +2084,7 @@ iframe {
 @media (min-width: 1199px) {
   .card-image.card-news {
     background-size: cover;
+    height: 15rem;
   }
 }
 .card-image.card-news img.artikkel-img {

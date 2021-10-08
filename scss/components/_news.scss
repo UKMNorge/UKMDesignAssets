@@ -100,7 +100,7 @@
   &.card-news {
     height: auto;
     width: -webkit-fill-available;
-    display: flex;
+    // display: flex;
     overflow: hidden;
     background-size: 0 0;
     @media (min-width: 992px) {
@@ -108,6 +108,7 @@
     }
     @media (min-width: 1199px) {
      background-size: cover;
+     height: 15rem;
     }
 
     & img.artikkel-img {
