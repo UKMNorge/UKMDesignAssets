@@ -3,6 +3,11 @@
   @media (min-width: 768px) {
     margin-top: 7rem;
   }
+
+  & .pageContainer {
+    text-align: -moz-center;
+    text-align: -webkit-center;
+  }
 }
 
 .fylke {
@@ -19,7 +24,7 @@
       @media (min-width: 992px) {
         font: normal normal var(--font-weight-semibold) 1.125rem/1.625rem Poppins;
         display: initial;
-        padding: 0;
+        padding: 0 2.4375rem;
       }
     }
 
