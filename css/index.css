@@ -2840,7 +2840,7 @@ a .post-grid-default {
   }
 }
 @media (max-width: 400px) {
-  #testimonial .offset-xl-1 {
+  #testimonial .quote-font-left {
     min-width: 122px;
     font-size: 12px;
   }
