@@ -1509,7 +1509,6 @@ button {
 
 .ukm-bolge {
   height: 25rem;
-  overflow: hidden;
 }
 @media (min-width: 992px) {
   .ukm-bolge {
@@ -1975,11 +1974,7 @@ iframe {
 @media (min-width: 992px) {
   .news-section .card-news span:first-child,
 .news-case span:first-child {
-    display: block;
-    color: hsl(var(--color-pink));
-    text-transform: uppercase;
     font: normal normal bold 0.875rem/0.9375rem Roboto;
-    width: 100%;
     padding-right: 3rem;
     padding-bottom: 0.3rem;
     padding-top: 0.3rem;
@@ -1997,10 +1992,7 @@ iframe {
   .news-section .card-news span:nth-of-type(2),
 .news-case span:nth-of-type(2) {
     font: normal normal 600 1.5rem/1.875rem Poppins;
-    display: block;
     margin: 0.6875rem 0 0.6875rem -15px !important;
-    width: -webkit-fill-available;
-    width: 100%;
   }
 }
 .news-section .card-news p,
@@ -2016,10 +2008,18 @@ iframe {
 @media (min-width: 992px) {
   .news-section .card-news p,
 .news-case p {
-    display: block;
-    color: hsl(var(--color-neutral-coldgray-700));
     font: normal normal normal 1.125rem/1.6875rem Roboto;
-    max-width: 100%;
+  }
+}
+@media (min-width: 1199px) {
+  .news-section .card-news p,
+.news-case p {
+    width: 33rem;
+  }
+}
+@media (min-width: 1390px) {
+  .news-section .card-news p,
+.news-case p {
     width: 100%;
   }
 }
@@ -2289,8 +2289,21 @@ a .post-grid-default {
 }
 
 .some-title {
-  padding: 0.7rem 0.5rem 0;
+  padding-top: 0.7rem;
   margin: 0;
+}
+.some-title .col {
+  padding: 0;
+}
+@media (min-width: 368px) {
+  .some-title .col {
+    padding: 0 15px;
+  }
+}
+@media (min-width: 368px) {
+  .some-title {
+    padding: 0.7rem 0.5rem 0;
+  }
 }
 @media (min-width: 992px) {
   .some-title {
@@ -2306,12 +2319,25 @@ a .post-grid-default {
   }
 }
 .some-section {
-  padding: 0.7rem 0.5rem 1.3rem;
+  padding: 0.7rem 0rem 1.3rem;
   margin: 0;
+}
+@media (min-width: 368px) {
+  .some-section {
+    padding: 0.7rem 0.5rem 1.3rem;
+  }
 }
 @media (min-width: 992px) {
   .some-section {
     margin-bottom: 19rem;
+  }
+}
+.some-col {
+  margin-left: -1.25rem;
+}
+@media (min-width: 368px) {
+  .some-col {
+    margin: 0;
   }
 }
 .some-item {
@@ -2522,8 +2548,8 @@ a .post-grid-default {
 }
 
 .svg-dot {
-  width: 1.25rem;
-  height: 1rem;
+  width: 0.83125rem;
+  height: 0.875rem;
   top: 0;
   right: 0;
   bottom: 0;
@@ -2534,6 +2560,15 @@ a .post-grid-default {
 }
 @media (min-width: 992px) {
   .svg-dot {
+    width: 2.75rem;
+  }
+}
+.footer .svg-dot {
+  width: 1.25rem;
+  height: 1rem;
+}
+@media (min-width: 992px) {
+  .footer .svg-dot {
     width: 2.75rem;
   }
 }
@@ -2807,6 +2842,11 @@ a .post-grid-default {
   .testimonial {
     height: 64rem;
     width: 92rem;
+    max-width: 100%;
+  }
+}
+@media (min-width: 1384px) {
+  .testimonial {
     max-width: 87rem;
   }
 }
@@ -2841,8 +2881,13 @@ a .post-grid-default {
 }
 @media (min-width: 992px) {
   .signature-text {
-    font: normal normal normal 2rem/3rem Poppins;
+    font: normal normal normal 1.5rem/2.5rem Poppins;
     margin-top: 11.25rem;
+  }
+}
+@media (min-width: 1199px) {
+  .signature-text {
+    font: normal normal normal 2rem/3rem Poppins;
   }
 }
 @media all and (device-width: 1024px) and (device-height: 1366px) {
@@ -2872,6 +2917,7 @@ a .post-grid-default {
 }
 @media (min-width: 992px) {
   .side-pic {
+    margin: 0;
     width: 31.5rem;
     height: 40.375rem;
     border-radius: 0.75rem;
@@ -3030,12 +3076,6 @@ a .post-grid-default {
   }
 }
 
-@media (min-width: 992px) {
-  .btn {
-    line-height: 3rem;
-  }
-}
-
 .leaf {
   overflow: hidden;
 }
@@ -3139,6 +3179,19 @@ a .post-grid-default {
   display: flex;
   align-items: center;
 }
+.footerLinks svg {
+  margin-right: 0.4rem;
+}
+@media (min-width: 768px) {
+  .footerLinks svg {
+    margin: 0;
+  }
+}
+@media (min-width: 992px) {
+  .footerLinks svg {
+    margin-right: 0.4rem;
+  }
+}
 
 .mainAccordText {
   background: hsla(var(--white));
@@ -3203,12 +3256,12 @@ a .post-grid-default {
   }
 }
 
-.tiktok-footer {
+span.dot.svg-dot.tiktok-footer {
   width: 1rem;
   height: 0.75rem;
 }
 @media (min-width: 992px) {
-  .tiktok-footer {
+  span.dot.svg-dot.tiktok-footer {
     width: 2.3rem;
     height: 0.5rem;
   }
@@ -3382,15 +3435,32 @@ a .post-grid-default {
 }
 
 .accordSubtext {
-  font: normal normal var(--font-weight-regular) 1rem/1.1875rem Roboto;
+  font: normal normal var(--font-weight-regular) 0.985rem/1.1875rem Roboto;
   color: hsla(var(--color-neutral-coldgray-900), 1);
   z-index: 999;
   position: inherit;
 }
+@media (min-width: 445px) {
+  .accordSubtext {
+    font-size: 1rem;
+    line-height: 1rem;
+  }
+}
+@media (min-width: 768px) {
+  .accordSubtext {
+    font-size: 0.775rem;
+  }
+}
 @media (min-width: 992px) {
   .accordSubtext {
-    font: normal normal var(--font-weight-regular) 1.5rem/1.75rem Roboto;
+    font-size: 1rem;
+    line-height: 1.75rem;
     color: hsla(var(--color-neutral-coldgray-900), 1);
+  }
+}
+@media (min-width: 1199px) {
+  .accordSubtext {
+    font-size: 1.4rem;
   }
 }
 
@@ -3765,6 +3835,15 @@ header .backToMain span {
   padding-left: 0.5rem;
 }
 
+.nav-title {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  margin-left: 0.8rem;
+  font: normal normal 600 14px/18px Poppins;
+  color: #070a12;
+}
+
 .hamburger-overlay.open {
   background-color: #e3ecfc;
   position: fixed;
@@ -3796,7 +3875,7 @@ header .backToMain span {
 .backToMain:hover, .backToMain:active {
   background-color: transparent !important;
 }
-.backToMain > a:hover, .backToMain > a:active {
+.backToMain:hover img, .backToMain:active img {
   background-color: hsla(var(--color-neutral-coldgray-400));
   border-radius: 15px;
 }
@@ -3948,6 +4027,8 @@ header .backToMain span {
   line-height: 1.25;
   font-weight: 600;
   padding: 0;
+  word-break: break-word;
+  hyphens: auto;
   font-style: var(--font-poppins);
   color: black;
   text-shadow: none;
@@ -4004,6 +4085,7 @@ header .backToMain span {
 .gallery-indicators {
   visibility: hidden;
 }
+
 @media (min-width: 992px) {
   .article-date {
     font-size: 1.2rem;
@@ -4043,7 +4125,6 @@ header .backToMain span {
 
 .share-line-vertical .share-buttons {
   flex-direction: column;
-  height: 7rem;
 }
 @media (max-width: 992px) {
   .share-line-vertical {
@@ -4238,15 +4319,6 @@ header .backToMain span {
 
 ul {
   list-style-type: none;
-}
-
-.title {
-  text-overflow: ellipsis;
-  overflow: hidden;
-  white-space: nowrap;
-  margin-left: 0.8rem;
-  font: normal normal 600 14px/18px Poppins;
-  color: #070a12;
 }
 
 .choice-item {
