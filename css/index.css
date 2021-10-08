@@ -2835,19 +2835,19 @@ a .post-grid-default {
 }
 
 .signature {
-  font: normal normal normal 0.875rem/1.125rem Sacramento;
+  font: normal normal normal 1.2rem/1.125rem Sacramento;
   color: hsl(var(--color-neutral-coldgray-700));
   margin-left: 0.25rem;
 }
 @media (min-width: 768px) {
   .signature {
-    font: normal normal normal 1.4rem/2.125rem Sacramento;
+    font-size: 1.4rem;
+    line-height: 2.125rem;
   }
 }
 @media (min-width: 992px) {
   .signature {
-    font: normal normal normal 2.125rem/2.75rem Sacramento;
-    color: hsl(var(--color-neutral-coldgray-700));
+    font-size: 3.125rem;
     margin-left: 0.25rem;
   }
 }
@@ -2859,23 +2859,49 @@ a .post-grid-default {
 }
 @media (min-width: 768px) {
   .signature-text {
-    font: normal normal normal 1rem/1.5rem Poppins;
+    font-size: 1rem;
+    line-height: 1.5rem;
   }
 }
 @media (min-width: 992px) {
   .signature-text {
-    font: normal normal normal 1.5rem/2.5rem Poppins;
-    margin-top: 11.25rem;
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+    margin-top: 7.25rem;
+    margin-bottom: 2rem;
   }
 }
 @media (min-width: 1199px) {
   .signature-text {
-    font: normal normal normal 2rem/3rem Poppins;
+    font-size: 2rem;
+    line-height: 3rem;
   }
 }
 @media all and (device-width: 1024px) and (device-height: 1366px) {
   .signature-text {
     width: 32rem;
+  }
+}
+.signature > span {
+  font: normal 0.75rem/1.125rem Poppins;
+}
+@media (min-width: 768px) {
+  .signature > span {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+}
+@media (min-width: 992px) {
+  .signature > span {
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+    margin-top: 11.25rem;
+  }
+}
+@media (min-width: 1199px) {
+  .signature > span {
+    font-size: 2rem;
+    line-height: 3rem;
   }
 }
 
@@ -2887,7 +2913,7 @@ a .post-grid-default {
   .svg-quote {
     width: 7.5rem;
     height: 8.375rem;
-    margin-bottom: -26rem;
+    margin-bottom: -15rem;
     margin-left: -1rem;
   }
 }
@@ -2898,9 +2924,13 @@ a .post-grid-default {
   height: 15.625rem;
   border-radius: 0.75rem;
 }
-@media (min-width: 992px) {
+@media (min-width: 768px) {
   .side-pic {
     margin: 0;
+  }
+}
+@media (min-width: 992px) {
+  .side-pic {
     width: 31.5rem;
     height: 40.375rem;
     border-radius: 0.75rem;
@@ -2918,10 +2948,15 @@ a .post-grid-default {
 
 .people-carousel {
   margin-left: 0.5rem;
-  margin-top: -3rem;
+  margin-top: -1.5rem;
   height: 100%;
   width: 100%;
   overflow: hidden;
+}
+@media (min-width: 768px) {
+  .people-carousel {
+    margin-top: -3rem;
+  }
 }
 @media (min-width: 992px) {
   .people-carousel {
