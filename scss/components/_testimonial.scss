@@ -26,12 +26,6 @@
     }
 }
 
-#testimonials .signature-text {
-    @media (max-width: 992px) {
-        font-size: inherit !important;
-    }
-}
-
 .signature {
     font: normal normal normal 0.875rem/1.125rem Sacramento;
     color: hsl(var(--color-neutral-coldgray-700));

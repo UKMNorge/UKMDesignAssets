@@ -2830,9 +2830,9 @@ a .post-grid-default {
   margin-left: 0.25rem;
   margin-top: -1.75rem;
 }
-@media (min-width: 768px) {
+@media (min-width: 320px) {
   .signature-text {
-    font: normal normal normal 1rem/1.5rem Poppins;
+    font-size: inherit !important;
   }
 }
 @media (min-width: 992px) {
