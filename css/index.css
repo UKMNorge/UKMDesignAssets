@@ -2822,6 +2822,12 @@ a .post-grid-default {
     max-width: 720px;
   }
 }
+@media (max-width: 400px) {
+  #testimonial .quote-font-left {
+    min-width: 122px;
+    font-size: 12px;
+  }
+}
 .signature {
   font: normal normal normal 0.875rem/1.125rem Sacramento;
   color: hsl(var(--color-neutral-coldgray-700));
