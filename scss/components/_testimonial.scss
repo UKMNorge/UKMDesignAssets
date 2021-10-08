@@ -9,7 +9,6 @@
 .testimonial {
     margin-top: 7.5rem;
     height: 20.5625rem;
-    max-width: 28rem;
     background: transparent
         linear-gradient(
             360deg,
@@ -18,19 +17,12 @@
             hsl(var(--white)) 100%
         )
         0% 0% no-repeat padding-box;
-    @media (max-width: 992px) {
-        max-width: 720px;
-    }
-    @media (max-width: 767px) {
-        max-width: 100%;
-    }
     @media (min-width: 992px) {
         height: 64rem;
         width: 92rem;
-        max-width: 100%;
+        max-width: 720px;
     }
     @media (min-width: 1384px) {
-        max-width: 87rem;
     }
 }
 

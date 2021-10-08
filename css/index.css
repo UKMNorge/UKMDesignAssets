@@ -2795,19 +2795,15 @@ a .post-grid-default {
 .testimonial {
   margin-top: 7.5rem;
   height: 20.5625rem;
-  max-width: 540px;
   background: transparent linear-gradient(360deg, hsl(var(--white)) 0%, hsla(var(--color-primary-blue-100), 0.75) 27%, hsl(var(--white)) 100%) 0% 0% no-repeat padding-box;
 }
 @media (min-width: 768px) {
-  .testimonial {
-    max-width: 720px;
-  }
+
 }
 @media (min-width: 992px) {
   .testimonial {
     height: 64rem;
     width: 92rem;
-    max-width: 87rem;
   }
 }
 
