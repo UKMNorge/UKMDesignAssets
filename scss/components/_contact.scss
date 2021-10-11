@@ -1,6 +1,7 @@
 .contact-section {
   margin-top: 20vh;
-  height: 27.875rem;
+  // height: 27.875rem;
+  padding-bottom: 21.375vh;
   background: transparent
     linear-gradient(
       180deg,
@@ -8,6 +9,18 @@
       hsla(218, 81%, 94%, 0.5) 100%
     )
     0% 0% no-repeat padding-box;
+
+  .contact-link {
+    opacity: 1;
+    @include animate-underline;
+
+    span::before {
+      bottom: -0.25rem;
+      @media (min-width: 768px) {
+      bottom: -0.4rem;
+    }
+    }
+  }
 
   &.other-page {
     height: 80rem;
@@ -17,8 +30,8 @@
   }
 
   @media (min-width: 992px) {
-    margin-top: 40.60625rem;
-    height: 27.875rem;
+    margin-top: 30rem;
+    // height: 27.875rem;
     background: transparent
       linear-gradient(
         180deg,

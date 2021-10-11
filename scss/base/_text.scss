@@ -39,11 +39,11 @@
     text-transform: uppercase;
 }
 
-a:visited,
+// a:visited,
 a:focus,
 a:active,
 a:hover {
-    color: hsl(var(--color-primary-blue-900));
+    color: hsla(var(--color-even-darker-blue));
 }
 
 .wp-caption,

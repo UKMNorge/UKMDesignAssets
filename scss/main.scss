@@ -1,6 +1,7 @@
 @import "./abstracts/mixins";
 @import "./abstracts/functions";
 @import "./abstracts/ukm/colors";
+@import "./abstracts/bak_ukm/colors";
 
 @import "./base/bootstrap_mods";
 @import "./base/fonts";
@@ -29,9 +30,8 @@
 @import "./components/testimonial";
 @import "./components/fadecollapsible";
 @import "./components/tidligere_arrangementer";
-@import "./components/velg_fylke";
-@import "./components/infopage";
-@import "./components/likerukmno";
+@import "./components/samarbeid";
+
 
 @import "./layout/block";
 @import "./layout/footer";
@@ -41,174 +41,141 @@
 
 @import "./pages/fylke";
 @import "./pages/program";
+@import "./pages/infopage";
+@import "./pages/likerukmno";
+@import "./pages/velg_fylke";
+@import "./pages/vibakukm";
+
+@keyframes subtle_transition {
+    from {
+        opacity: 0;
+        transition: rotateX(-10deg);
+    }
+
+    to {
+        opacity: 1;
+        transition: rotateX(0);
+    }
+}
+
+@mixin fadeIn($waitTime) {
+    animation: wait #{$waitTime}, smooth_transform 800ms #{$waitTime};
+}
+
+@keyframes wait {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes smooth_transform {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.navbar .container {
+    animation: subtle_transition 0.75s;
+}
+
+.hero-container .row:first-child {
+    animation: smooth_transform 1s;
+}
+
+.card-info-section .card-component {
+    &:first-child {
+        @include fadeIn('0.5s');
+
+    }
+    &:nth-child(2) {
+        @include fadeIn('1s');
+    }
+    &:nth-child(3) {
+        @include fadeIn('1.5s');
+    }
+    &:nth-child(4) {
+        @include fadeIn('2s');
+    }
+    &:nth-child(5) {
+        @include fadeIn('2.5s');
+    }
+    &:nth-child(6) {
+        @include fadeIn('3s');
+    }
+}
 
 ul {
-  list-style-type: none;
+    list-style-type: none;
 }
 
-.title {
-  text-overflow: ellipsis;
-  overflow: hidden;
-  white-space: nowrap;
-  margin-left: 0.8rem;
-  font: normal normal 600 14px/18px Poppins;
-  color: hsla(225, 43%, 5%, 1);
-}
+// testtest
 
 .choice-item {
-  background-color: hsla(218, 81%, 94%, 0.5);
-  padding: 1.5rem;
+    background-color: hsla(218, 81%, 94%, 0.5);
+    padding: 1rem;
+    border-radius: 0.3125rem;
 
-  @media (min-width: 768px) {
-   width: 18rem;
-  }
+    @media(min-width: 768px) {
+        width: 18rem;
+    }
 
-  @media (min-width: 992px) {
-    width: 29rem;
-   }
+    @media(min-width: 992px) {
+        width: 29rem;
+        padding: 1.25rem;
+    }
 }
 
-// test
-// * {
-//     outline: 1px solid hsl(var(--color-primary-blue-400));
-// }
-// test
-
 .clickable {
-  display: inline-block;
-  padding: 0.8rem 0.5rem;
+    display: inline-block;
+    padding: 0.8rem 0.5rem;
 }
 
 .ukm-card-section-3 {
-  width: 20.4375rem;
-  height: 18.9375rem;
-}
-
-.people-carousel {
-  margin-left: 0.5rem;
-  margin-top: -3rem;
-  overflow: scroll;
-  scrollbar-width: none;
-}
-
-@media (min-width: 992px) {
-  .people-carousel {
-    overflow: hidden;
-  }
-}
-
-.some-carousel {
-  overflow: scroll;
-  scrollbar-width: none;
-}
-
-@media (max-width: 991.98px) {
-  .card-image {
-    width: 19.4375rem;
-    height: 8rem;
-    border-radius: 0.75rem 0.75rem 0 0;
-
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
-
-    &-large {
-      position: relative;
-      // margin-left: auto;
-      margin-top: 1rem;
-      width: 20.4375rem;
-      height: 12.75rem;
-      background: #a0aec0;
-    }
-
-    &-small {
-      width: 5.5rem;
-      height: 5.5rem;
-      border-radius: 0.75rem;
-    }
-
-    &.card-news {
-      height: 10rem;
-      width: -webkit-fill-available;
-    }
-  }
-}
-
-@media (min-width: 992px) {
-  .card-image {
-    width: 37.75rem;
-    height: 15.375rem;
-    border-radius: 0.75rem 0.75rem 0 0;
-
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
-
-    &-large {
-      position: relative;
-      // margin-left: auto;
-      margin-top: 1rem;
-      width: 20.4375rem;
-      height: 12.75rem;
-      background: #a0aec0;
-    }
-
-    &-small {
-      // width: 5.5rem;
-      // height: 5.5rem;
-      width: 10.9375rem;
-      height: 10.9375rem;
-      border-radius: 0.75rem;
-    }
-
-    &.card-news {
-      height: 15rem;
-      width: -webkit-fill-available;
-    }
-
-    &.first-news-image {
-      @media (min-width: 992px) {
-          height: 28rem;
-      }
-  }
-  }
-}
-
-.card-element {
-  position: relative;
-  padding: 0.9rem 1.4rem;
-  margin: 0;
-}
-
-.card-element-end {
-  padding: 0.5rem;
+    width: 20.4375rem;
+    height: 18.9375rem;
 }
 
 .se-mer {
-  color: hsl(var(--color-primary-blue-800));
+    color: hsl(var(--color-primary-blue-800));
 }
 
 .btn-toolbar {
-  justify-content: center;
+    justify-content: center;
 }
 
 .bread-title {
-  font: normal normal 600 12px/18px Poppins;
+    font: normal normal 600 12px / 18px Poppins;
 }
 
 .ukm-button-plain {
-  font: normal normal 600 0.75rem/1.125rem Poppins !important;
-  background: none !important;
-  padding: 0.875rem 0 !important;
+    @include animate-underline;
+    font: normal normal 600 0.75rem / 1.125rem Poppins !important;
+    background: none !important;
+    padding: 0.875rem 0 !important;
+    span::before {
+        bottom: -0.25rem;
+        @media (min-width: 768px) {
+        bottom: -0.4rem;
+      }
+    }
 }
 
 .ukm-button-footer {
-  background: none !important;
-  padding: 0.875rem 0.5rem !important;
+    background: none !important;
+    padding: 0.875rem 0.5rem !important;
 }
 
 .dropdown-divider {
-  border-top: 2px solid hsla(var(--color-very-light-blue));
-  width: 13rem;
-  margin: 0.5rem auto;
+    border-top: 2px solid hsla(var(--color-very-light-blue));
+    width: 13rem;
+    margin: 0.5rem auto;
 }

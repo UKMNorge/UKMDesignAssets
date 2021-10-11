@@ -3,7 +3,8 @@
  * background-color: hsl(var(--color-primary-100));
  * background-color: hsla(var(--color-primary-100), .5);
 */
-:root {
+
+%color-palette-bak-ukm {
   --color-primary-orange-50: 40, 100%, 99%;
   /* --color-primary-orange-100: #fff; */
   --color-primary-orange-200: 23, 57%, 95%;
@@ -15,7 +16,7 @@
   --color-primary-orange-800: 18, 73%, 29%;
   --color-primary-orange-900: 8, 52%, 9%;
 
-  --color-neutral-warmgray-100: 0, 0, 97%;
+  /* --color-neutral-warmgray-100: #fff;
   --color-neutral-warmgray-200: #fff;
   --color-neutral-warmgray-300: #fff;
   --color-neutral-warmgray-400: #fff;
@@ -23,5 +24,5 @@
   --color-neutral-warmgray-600: #fff;
   --color-neutral-warmgray-700: #fff;
   --color-neutral-warmgray-800: #fff;
-  --color-neutral-warmgray-900: 20, 6%, 9%;
+  --color-neutral-warmgray-900: #fff; */
 }

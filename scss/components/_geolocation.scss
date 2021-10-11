@@ -1,37 +1,49 @@
 .geolocation {
-
   &-banner {
     display: flex;
     flex-direction: column;
     background-color: hsl(var(--color-primary-blue-900));
     margin-bottom: -1.5rem;
     height: 4rem;
+
+    .vibakukm & {
+      background-color: hsl(var(--color-neutral-warmgray-900));
+    }
   }
 
   &-box {
-    font-size: 0.6em;
-    margin-top: .2rem;
-    padding: 0.375rem;
-  
-    @media (min-width: 768px) {
-      font-size: 1em;
-    }
-
     display: flex;
     align-items: center;
     justify-content: center;
-    font-family: var(--font-roboto) !important;
-    font-weight: var(--font-weight-regular);
-    text-decoration: none !important;
-    touch-action: manipulation;
-    
-    color: hsl(var(--color-primary-blue-100)) !important;
-    a,
-    a:active,
-    a:focus
-    a:hover {
-      color: hsl(var(--color-primary-blue-100)) !important;
+    margin-top: 0.2rem;
+    padding: 0.375rem;
+
+    svg {
+      fill: hsl(var(--color-pink));
+      // fill: white;
+      width: 0.8rem;
+      height: 0.8rem;
+      margin-right: 0.3rem;
+      .vibakukm & {
+        fill: white;
+      }
+    }
+
+    span {
+      font-family: var(--font-roboto);
+      font-weight: var(--font-weight-regular);
       text-decoration: none;
+      touch-action: manipulation;
+      color: hsl(var(--color-primary-blue-100));
+      font-size: 0.6em;
+
+      &:hover, &:active {
+        text-decoration: underline;
+      }
+
+      @media (min-width: 768px) {
+        font-size: 1em;
+      }
     }
   }
 }

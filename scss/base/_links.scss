@@ -2,10 +2,20 @@
 a {
 	color: hsl(var(--color-primary-blue-900));
 	cursor: pointer;
+    
+    &:hover {
+        text-decoration: underline;
+    }
+
     .nocolor {
         color: rgba(0, 0, 0, 0.85);
     }
 }
 .no-color > a {
 	color: #212529 !important;
+}
+
+.small-links {
+    font: normal normal normal .75rem/.875rem Roboto; 
+    color: hsla(222, 18%, 43%, 1);
 }

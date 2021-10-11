@@ -1,100 +1,170 @@
 .testimonial-small {
-  opacity:0.5;
+    // opacity: 0.5;
+    &:hover {
+        opacity: 1;
+        transition: opacity 0.2s ease-out;
+    }
 }
-
-.testimonial-small:hover {
-  opacity:1;
-  transition: opacity .2s ease-out;
-}
-
 .testimonial {
+    margin-top: 7.5rem;
     height: 20.5625rem;
-    background: transparent linear-gradient(360deg, hsl(var(--white)) 0%, hsla((var(--color-primary-blue-100)), 0.75) 27%, hsl(var(--white)) 100%) 0% 0% no-repeat padding-box;
-}
+    max-width: 540px;
+    background: transparent
+        linear-gradient(
+            360deg,
+            hsl(var(--white)) 0%,
+            hsla((var(--color-primary-blue-100)), 0.75) 27%,
+            hsl(var(--white)) 100%
+        )
+        0% 0% no-repeat padding-box;
+    margin-bottom: 6rem;
 
-.signature {
-    font: normal normal normal .875rem/1.125rem Sacramento;
-    color: hsl(var(--color-neutral-coldgray-700));
-    margin-left: .25rem;
-
-    &-text {
-        font: normal normal normal .75rem/1.125rem Poppins;
-        color: hsl(var(--color-neutral-coldgray-700));
-        margin-left: .25rem;
-        margin-top: .25rem;
-    }
-}
-
-.side-pic {
-    margin-left:-1.25rem; 
-    width: 12.1875rem; 
-    height: 15.625rem; 
-    border-radius: .75rem;
-}
-
-@media (max-width: 991.98px) {
-    .testimonial {
-        height: 20.5625rem;
+    @media (min-width: 400px) {
+        margin-bottom: 0;
     }
 
-    .signature {
-        font: normal normal normal .875rem/1.125rem Sacramento;
-        color: hsl(var(--color-neutral-coldgray-700));
-        margin-left: .25rem;
-    
-        &-text {
-            font: normal normal normal .75rem/1.125rem Poppins;
-            color: hsl(var(--color-neutral-coldgray-700));
-            margin-left: .25rem;
-            margin-top: .25rem;
-        }
+    @media (min-width: 768px) {
+        max-width: 720px;
     }
-
-    .svg-quote {
-        width: 3.3rem;
-        height: 3.75rem;
-    }
-
-}
-
-@media (min-width: 992px) {
-    .testimonial {
+    @media (min-width: 992px) {
         height: 64rem;
         width: 92rem;
+        max-width: 100%;
+    }
+    @media (min-width: 1384px) {
+        max-width: 87rem;
+    }
+}
+.signature {
+    font: normal normal normal 1.2rem/1.125rem Sacramento;
+    color: hsl(var(--color-neutral-coldgray-700));
+    margin-left: 0.25rem;
+    @media (min-width: 768px) {
+        font-size: 1.4rem;
+        line-height: 2.125rem;
+    }
+    @media (min-width: 992px) {
+        font-size: 3.125rem;
+        margin-left: 0.25rem;
+    }
+    @media (min-width: 1199px) {
+        // line-height: 5.75rem;
     }
 
-    .signature {
-        font: normal normal normal 34px/44px Sacramento;
+    &-text {
+        font: normal normal normal 0.75rem/1.125rem Poppins;
         color: hsl(var(--color-neutral-coldgray-700));
-        margin-left: .25rem;
-    
-        &-text {
-            font: normal normal normal 32px/48px Poppins;
-            color: hsl(var(--color-neutral-coldgray-700));
-            margin-left: .25rem;
-            margin-top: 11.25rem;
+        margin-left: 0.25rem;
+        margin-top: -2.75rem;
+        @media (min-width: 400px) {
+            margin-top: -1.75rem;
+        }
+        @media (min-width: 768px) {
+            font-size: 1rem;
+            line-height: 1.5rem;
+        }
+        @media (min-width: 992px) {
+            font-size: 1.5rem;
+            line-height: 2.5rem;
+            margin-top: 7.25rem;
+            margin-bottom: 2rem;
+        }
+        @media (min-width: 1199px) {
+            font-size: 2rem;
+            line-height: 3rem;
+        }
+        @media all and (device-width: 1024px) and (device-height: 1366px) {
+            width: 32rem;
         }
     }
-
-    .side-pic {
-        // margin-left:-1.25rem; 
-        width: 31.5rem;
-        height: 40.375rem;
-        border-radius: .75rem;
+    > span {
+        font: normal 0.75rem/1.125rem Poppins;
+        @media (min-width: 768px) {
+            font-size: 1rem;
+            line-height: 1.5rem;
+        }
+        @media (min-width: 992px) {
+            font-size: 1.5rem;
+            line-height: 2.5rem;
+            margin-top: 11.25rem;
+        }
+        @media (min-width: 1199px) {
+            font-size: 2rem;
+            line-height: 3rem;
+        }
     }
-
-    .svg-quote {
+}
+.svg-quote {
+    width: 3.3rem;
+    height: 3.75rem;
+    @media (min-width: 992px) {
         width: 7.5rem;
         height: 8.375rem;
-        margin-bottom: -26rem;
+        margin-bottom: -15rem;
         margin-left: -1rem;
     }
+}
+.side-pic {
+    margin-left: -1.25rem;
+    width: 12.1875rem;
+    height: 15.625rem;
+    border-radius: 0.75rem;
+    @media (min-width: 400px) {
+        height: 18.625rem;
+    }
 
-    .svg-chevron {
+    @media (min-width: 768px) {
+        margin: 0;
+    }
+
+    @media (min-width: 992px) {
+        width: 31.5rem;
+        height: 40.375rem;
+        border-radius: 0.75rem;
+    }
+}
+.svg-chevron {
+    @media (min-width: 992px) {
         height: 7.2rem;
         width: auto;
         margin-left: 0;
         margin-top: 1.5rem;
     }
+}
+.people-carousel {
+    margin-left: 0.5rem;
+    margin-top: 1.5rem;
+    // overflow: scroll;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    @media (min-width: 400px) {
+        margin-top: -1.5rem;
+    }
 
+    @media (min-width: 768px) {
+        margin-top: -3rem;
+    }
+    @media (min-width: 992px) {
+        overflow: hidden;
+        // position: absolute;
+    }
+    @media all and (device-width: 1024px) and (device-height: 1366px) {
+        position: absolute;
+    }
+}
+.some-carousel {
+    overflow: scroll;
+    scrollbar-width: none;
+}
+.testimonial-items {
+    height: 100%;
+    width: 100%;
+    overflow: auto;
+    padding-right: 20px;
+    scrollbar-width: none;
+    &::-webkit-scrollbar {
+        width: 0;
+        height: 0;
+    }
 }

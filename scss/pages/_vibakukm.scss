@@ -1,0 +1,34 @@
+.filter-section {
+    margin-bottom: 1rem;
+    @media(min-width: 992px) {
+        margin-top: -9rem;
+    }
+}
+
+.vibakukm-content {
+    @media(min-width: 992px) {
+        // margin-top: 8rem;
+    }
+
+    & .card-info-section {
+        margin-bottom: 0;
+    }
+
+    & .card-image {
+        @media(min-width: 992px)  {
+            height: 16.375rem;
+        }
+    }
+
+    & .card-info-section .card-component h5 {
+        @media(min-width: 992px) {
+        max-width: 19.5rem;
+    }
+    }
+
+    & .project-section .message-content {
+        &:hover, &:active {
+            text-decoration: none;
+        }
+    }
+}
