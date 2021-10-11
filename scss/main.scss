@@ -157,9 +157,16 @@ ul {
 }
 
 .ukm-button-plain {
+    @include animate-underline;
     font: normal normal 600 0.75rem / 1.125rem Poppins !important;
     background: none !important;
     padding: 0.875rem 0 !important;
+    span::before {
+        bottom: -0.25rem;
+        @media (min-width: 768px) {
+        bottom: -0.4rem;
+      }
+    }
 }
 
 .ukm-button-footer {
