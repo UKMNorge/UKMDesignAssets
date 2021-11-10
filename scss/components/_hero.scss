@@ -36,6 +36,10 @@
       background-color: hsl(var(--color-neutral-warmgray-100));
     }
 
+    .bolgepage & {
+      background: hsl(var(--color-primary-blue-900));
+    }
+
     &-tint {
       background: linear-gradient(0deg, rgba(19, 21, 27, 0.7) 0%, white 100%);
       width: 100%;
@@ -49,6 +53,19 @@
       }
 
       .vibakukm & {
+        background: linear-gradient(0deg, rgba(19, 21, 27, 0.7) 0%, white 100%) !important;
+        width: 100%;
+        height: 22rem;
+        opacity: 0.3;
+        z-index: 1;
+        border-radius: 1.25rem 1.25rem 0 0;
+
+        @media (min-width: 992px) {
+          height: inherit;
+        }
+      }
+
+      .bolgepage & {
         background: linear-gradient(0deg, rgba(19, 21, 27, 0.7) 0%, white 100%) !important;
         width: 100%;
         height: 22rem;
