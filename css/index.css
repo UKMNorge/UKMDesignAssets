@@ -1548,9 +1548,6 @@ button {
 .bolgepage .ukm-bolge > .div-radius {
   background: hsl(var(--color-primary-blue-900));
 }
-.delta .ukm-bolge > .div-radius {
-  background: hsl(var(--color-primary-blue-400));
-}
 .ukm-bolge > .div-radius-tint {
   background: linear-gradient(0deg, rgba(19, 21, 27, 0.7) 0%, white 100%);
   width: 100%;
@@ -1587,19 +1584,6 @@ button {
 }
 @media (min-width: 992px) {
   .bolgepage .ukm-bolge > .div-radius-tint {
-    height: inherit;
-  }
-}
-.delta .ukm-bolge > .div-radius-tint {
-  background: linear-gradient(0deg, rgba(19, 21, 27, 0.7) 0%, white 100%) !important;
-  width: 100%;
-  height: 22rem;
-  opacity: 0.3;
-  z-index: 1;
-  border-radius: 1.25rem 1.25rem 0 0;
-}
-@media (min-width: 992px) {
-  .delta .ukm-bolge > .div-radius-tint {
     height: inherit;
   }
 }
@@ -1702,9 +1686,6 @@ article h1-lead.other-page,
     padding-top: 11rem;
   }
 }
-.delta .hero-container {
-  padding: 2.3rem 0.9375rem;
-}
 @media (min-width: 576px) {
   .hero-container {
     padding: 4vw 0 0 0;
@@ -1727,16 +1708,16 @@ article h1-lead.other-page,
   opacity: 1;
   text-shadow: 0 0.3125rem 0.9375rem rgba(0, 0, 0, 0.3);
 }
-.vibakukm .hero-container h1, .liker-page .hero-container h1, .delta .hero-container h1 {
+.vibakukm .hero-container h1, .liker-page .hero-container h1 {
   width: 100%;
 }
 @media (min-width: 768px) {
-  .vibakukm .hero-container h1, .liker-page .hero-container h1, .delta .hero-container h1 {
+  .vibakukm .hero-container h1, .liker-page .hero-container h1 {
     font-size: 2.6rem;
   }
 }
 @media (min-width: 992px) {
-  .vibakukm .hero-container h1, .liker-page .hero-container h1, .delta .hero-container h1 {
+  .vibakukm .hero-container h1, .liker-page .hero-container h1 {
     font-size: 4rem;
   }
 }
@@ -1758,11 +1739,6 @@ article h1-lead.other-page,
 }
 .hero-container h3 {
   display: none;
-}
-.delta .hero-container h3 {
-  display: initial;
-  color: hsla(var(--color-neutral-coldgray-100));
-  font-weight: 300;
 }
 @media (min-width: 992px) {
   .hero-container h3 {
@@ -2460,6 +2436,8 @@ a .post-grid-default {
   }
   .collab-col .some-list-group {
     flex-direction: row;
+    display: flex;
+    justify-content: center;
   }
 }
 @media (min-width: 992px) {
@@ -3241,6 +3219,8 @@ a .post-grid-default {
 
 .collab-col .list-group-item {
   border: none;
+  width: 200px;
+  margin: auto 0;
 }
 
 .UKMblock {

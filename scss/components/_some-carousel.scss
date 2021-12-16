@@ -120,6 +120,8 @@
 
         .collab-col & {
             flex-direction: row;
+            display: flex;
+            justify-content: center;
         }
     }
     @media (min-width: 992px) {
