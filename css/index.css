@@ -4497,4 +4497,20 @@ ul {
   margin: 0.5rem auto;
 }
 
+/* LOGG INN MENY */
+#logginnShowMeny {
+  transform-origin: left top; 
+  top: auto;
+  margin-top: 10px;
+  overflow: hidden;
+  padding: 0;
+}
+@media (max-width: 992px) {
+  #logginnShowMeny {
+    left: auto !important;
+    right: 0 !important;
+    transform-origin: right top !important;
+  }
+}
+
 /*# sourceMappingURL=index.css.map */
