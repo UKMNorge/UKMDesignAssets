@@ -122,6 +122,10 @@
         margin-bottom: 1rem;
         padding: 0 1rem;
 
+        & .nav-link.active, & .show>.nav-link {
+            color: inherit;
+        }
+
         ul {
             font: normal normal var(--font-weight-semibold) 0.875rem / 1.125rem var(--font-poppins);
             color: hsla(225, 43%, 5%, 1);
@@ -372,3 +376,20 @@ header {
         }
     }
 }
+
+/* LOGG INN MENY */
+#logginnShowMeny {
+    transform-origin: left top; 
+    top: auto;
+    margin-top: 1rem;
+    overflow: hidden;
+    padding: 0;
+  }
+  @media (max-width: 992px) {
+    #logginnShowMeny {
+      margin-top: 10px;
+      left: auto !important;
+      right: 0 !important;
+      transform-origin: right top !important;
+    }
+  }

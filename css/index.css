@@ -3733,6 +3733,9 @@ span.dot.svg-dot.tiktok-footer {
   margin-bottom: 1rem;
   padding: 0 1rem;
 }
+.ukm-navbar.other-page .nav-link.active, .ukm-navbar.other-page .show > .nav-link {
+  color: inherit;
+}
 .ukm-navbar.other-page ul {
   font: normal normal var(--font-weight-semibold) 0.875rem/1.125rem var(--font-poppins);
   color: #070a12;
@@ -3971,6 +3974,23 @@ header .backToMain span {
   border-radius: 15px;
 }
 
+/* LOGG INN MENY */
+#logginnShowMeny {
+  transform-origin: left top;
+  top: auto;
+  margin-top: 1rem;
+  overflow: hidden;
+  padding: 0;
+}
+
+@media (max-width: 992px) {
+  #logginnShowMeny {
+    margin-top: 10px;
+    left: auto !important;
+    right: 0 !important;
+    transform-origin: right top !important;
+  }
+}
 .banner {
   background: hsl(var(--color-primary-blue-900));
   color: #fff;
@@ -4495,22 +4515,6 @@ ul {
   border-top: 2px solid hsla(var(--color-very-light-blue));
   width: 13rem;
   margin: 0.5rem auto;
-}
-
-/* LOGG INN MENY */
-#logginnShowMeny {
-  transform-origin: left top; 
-  top: auto;
-  margin-top: 10px;
-  overflow: hidden;
-  padding: 0;
-}
-@media (max-width: 992px) {
-  #logginnShowMeny {
-    left: auto !important;
-    right: 0 !important;
-    transform-origin: right top !important;
-  }
 }
 
 /*# sourceMappingURL=index.css.map */
