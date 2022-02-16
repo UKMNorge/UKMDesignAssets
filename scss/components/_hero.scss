@@ -14,7 +14,7 @@
 .ukm-bolge {
   height: 25rem;
   @media (min-width: 992px) {
-    height: 59rem;
+    height: 48rem;
   }
   > .div-radius {
     background: url("../../img/bolger-ny.png") top center / 100% 100% no-repeat;
@@ -174,10 +174,6 @@ article h1,
     padding: 0;
   }
 
-  @media (min-width: 992px) {
-    padding-top: 5rem;
-  }
-
   h1 {
     font: var(--font-weight-bold) 1.75rem/1.5em var(--font-poppins);
     width: 15rem;
@@ -214,9 +210,9 @@ article h1,
     @media (min-width: 992px) {
       display: block;
       color: hsl(var(--color-neutral-gray-100));
-      font: var(--font-weight-semibold) 2.5em/2.75rem var(--font-poppins);
+      font: var(--font-weight-semibold) 2em/2.75rem var(--font-poppins);
       opacity: 0.85;
-      margin-bottom: 3em;
+      margin-bottom: 3.5rem;
       width: 41rem;
     }
   }

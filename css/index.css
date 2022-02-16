@@ -1229,7 +1229,7 @@ button {
 }
 @media (min-width: 992px) {
   .card-info-section {
-    margin-top: 10rem;
+    margin-top: 5rem;
   }
 }
 .vibakukm .card-info-section {
@@ -1523,7 +1523,7 @@ button {
 }
 @media (min-width: 992px) {
   .ukm-bolge {
-    height: 59rem;
+    height: 48rem;
   }
 }
 .ukm-bolge > .div-radius {
@@ -1696,11 +1696,6 @@ article h1-lead.other-page,
     padding: 0;
   }
 }
-@media (min-width: 992px) {
-  .hero-container {
-    padding-top: 5rem;
-  }
-}
 .hero-container h1 {
   font: var(--font-weight-bold) 1.75rem/1.5em var(--font-poppins);
   width: 15rem;
@@ -1744,9 +1739,9 @@ article h1-lead.other-page,
   .hero-container h3 {
     display: block;
     color: hsl(var(--color-neutral-gray-100));
-    font: var(--font-weight-semibold) 2.5em/2.75rem var(--font-poppins);
+    font: var(--font-weight-semibold) 2em/2.75rem var(--font-poppins);
     opacity: 0.85;
-    margin-bottom: 3em;
+    margin-bottom: 3.5rem;
     width: 41rem;
   }
 }
