@@ -792,6 +792,11 @@ img {
   height: auto;
 }
 
+article a {
+  color: hsl(var(--color-primary-blue-900));
+  text-decoration: underline;
+}
+
 blockquote.lead {
   padding-left: 2em;
   margin-top: 2em;

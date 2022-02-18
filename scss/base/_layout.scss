@@ -1,3 +1,6 @@
-// article {
-//     margin-bottom: 12rem;
-// }
+article {
+    a {
+        color: hsl(var(--color-primary-blue-900));
+        text-decoration: underline;
+    }
+}
