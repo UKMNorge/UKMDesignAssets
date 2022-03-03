@@ -179,3 +179,33 @@ ul {
     width: 13rem;
     margin: 0.5rem auto;
 }
+
+.accordion-item .card {
+    border-radius: 5px;
+    box-shadow: #0000001f 0px 2px 4px;
+    background-color: #EDF2F7;
+    font: normal normal 300 14px/16px Roboto;
+    text-align: left;
+    letter-spacing: 0px;
+    border: none;
+}
+.accordion-item .card-body-arrangement {
+    color: #1A202C;
+    background-color: #EDF2F7;
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    margin-right: 2px;
+}
+.accordion-panel-child {
+    margin: 14px;
+    margin-left: 23px;
+    padding: 0;
+}
+.fellesmonstring-kommuner .info-inactive-button .info-label,
+.accordion-item span .info-label {
+    color: #A0AEC0;
+    font-size: 11px;
+    margin: 0;
+    margin-top: 2px;
+}
