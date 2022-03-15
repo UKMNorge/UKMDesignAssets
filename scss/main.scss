@@ -180,7 +180,7 @@ ul {
     margin: 0.5rem auto;
 }
 
-.accordion-item .card {
+.event-container {
     border-radius: 5px;
     box-shadow: #0000001f 0px 2px 4px;
     background-color: #EDF2F7;
@@ -189,23 +189,48 @@ ul {
     letter-spacing: 0px;
     border: none;
 }
-.accordion-item .card-body-arrangement {
-    color: #1A202C;
-    background-color: #EDF2F7;
-    display: flex;
-    justify-content: space-between;
-    padding: 0;
-    margin-right: 2px;
-}
-.accordion-panel-child {
+
+.event-box {
     margin: 14px;
     margin-left: 23px;
     padding: 0;
+    color: #1A202C;
+    background-color: #EDF2F7;
+    display: flex;  
 }
-.fellesmonstring-kommuner .info-inactive-button .info-label,
-.accordion-item span .info-label {
+
+.event-lead {
     color: #A0AEC0;
     font-size: 11px;
     margin: 0;
     margin-top: 2px;
+}
+
+.event-button {
+    height: 24px;
+    max-width: 24px;
+    max-width: 24px;
+    align-self: center; 
+    margin-left: auto;
+    @media(min-width: 360px) {
+        display: none;
+    }
+}
+
+.btn-paamelding {
+    display: none;
+    vertical-align: middle; 
+    margin-left: auto; 
+    align-self: center; 
+    height: 40px; 
+    width: 102px;
+    z-index: 2; 
+    position: relative;
+    @media(min-width: 360px) {
+        display: revert;
+    }
+
+    &.mer-info {
+       white-space: nowrap;
+    }
 }
