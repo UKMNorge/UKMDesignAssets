@@ -1594,10 +1594,8 @@ button {
 article h1,
 .hero-text {
   font: var(--font-weight-bold) 1.75rem/1.5em var(--font-poppins);
-  margin: 0;
   color: black;
   text-shadow: none;
-  padding: 2rem 0;
 }
 header article h1,
 header .hero-text {
@@ -1608,22 +1606,33 @@ header .hero-text {
 @media (min-width: 576px) {
   article h1,
 .hero-text {
-    width: auto;
-    font: var(--font-weight-bold) 2.25rem/1.5em var(--font-poppins);
+    font-size: 2.25rem;
+    line-height: 1.5em;
   }
 }
 @media (min-width: 768px) {
   article h1,
 .hero-text {
-    width: auto;
-    font: var(--font-weight-bold) 3rem/1.5em var(--font-poppins);
+    font-size: 3rem;
   }
 }
 @media (min-width: 992px) {
   article h1,
 .hero-text {
-    width: auto;
-    font: var(--font-weight-bold) 5rem/1.4em var(--font-poppins);
+    font-size: 4rem;
+    line-height: 1.4em;
+  }
+}
+article h1.lead,
+.hero-text.lead {
+  font-size: 1.2rem;
+  font-weight: 400;
+  margin: 1rem 0;
+}
+@media (min-width: 576px) {
+  article h1.lead,
+.hero-text.lead {
+    font-size: 1.875rem;
   }
 }
 article h1-section,
