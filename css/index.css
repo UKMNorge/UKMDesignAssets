@@ -2288,6 +2288,11 @@ iframe {
   left: 40%;
 }
 
+sup {
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
 .post-grid-default {
   margin-bottom: 1em;
   overflow-x: hidden;
