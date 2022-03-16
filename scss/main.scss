@@ -31,6 +31,7 @@
 @import "./components/fadecollapsible";
 @import "./components/tidligere_arrangementer";
 @import "./components/samarbeid";
+@import "./components/arrangement";
 
 
 @import "./layout/block";
@@ -178,59 +179,4 @@ ul {
     border-top: 2px solid hsla(var(--color-very-light-blue));
     width: 13rem;
     margin: 0.5rem auto;
-}
-
-.event-container {
-    border-radius: 5px;
-    box-shadow: #0000001f 0px 2px 4px;
-    background-color: #EDF2F7;
-    font: normal normal 300 14px/16px Roboto;
-    text-align: left;
-    letter-spacing: 0px;
-    border: none;
-}
-
-.event-box {
-    margin: 14px;
-    margin-left: 23px;
-    padding: 0;
-    color: #1A202C;
-    background-color: #EDF2F7;
-    display: flex;  
-}
-
-.event-lead {
-    color: #A0AEC0;
-    font-size: 11px;
-    margin: 0;
-    margin-top: 2px;
-}
-
-.event-button {
-    height: 24px;
-    max-width: 24px;
-    max-width: 24px;
-    align-self: center; 
-    margin-left: auto;
-    @media(min-width: 360px) {
-        display: none;
-    }
-}
-
-.btn-paamelding {
-    display: none;
-    vertical-align: middle; 
-    margin-left: auto; 
-    align-self: center; 
-    height: 40px; 
-    width: 102px;
-    z-index: 2; 
-    position: relative;
-    @media(min-width: 360px) {
-        display: revert;
-    }
-
-    &.mer-info {
-       white-space: nowrap;
-    }
 }
