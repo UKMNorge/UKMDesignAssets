@@ -88,10 +88,10 @@
 article h1,
 .hero-text {
   font: var(--font-weight-bold) 1.75rem/1.5em var(--font-poppins);
-  margin: 0;
+  // margin: 0;
   color: black;
   text-shadow: none;
-  padding: 2rem 0;
+  // padding: 2rem 0;
 
   header & {
     width: auto;
@@ -99,17 +99,24 @@ article h1,
     text-shadow: 0 0.3125rem 0.9375rem hsla(0, 0%, 0%, 0.3);
   }
   @media (min-width: 576px) {
-    width: auto;
-    font: var(--font-weight-bold) 2.25rem/1.5em var(--font-poppins);
+    font-size: 2.25rem;
+    line-height: 1.5em;
   }
   @media (min-width: 768px) {
-    width: auto;
-    font: var(--font-weight-bold) 3rem/1.5em var(--font-poppins);
+    font-size: 3rem;
+  }
+  @media (min-width: 992px) {
+    font-size: 4rem;
+    line-height: 1.4em;
   }
 
-  @media (min-width: 992px) {
-    width: auto;
-    font: var(--font-weight-bold) 5rem/1.4em var(--font-poppins);
+  &.lead {
+    font-size: 1.2rem;
+    font-weight: 400;
+    margin: 1rem 0;
+    @media (min-width: 576px) {
+      font-size: 1.875rem;
+    }
   }
 
   &-section {
@@ -162,14 +169,12 @@ article h1,
     padding-top: 0;
 
     @media (min-width: 992px) {
-    padding-top: 11rem;
+      padding-top: 11rem;
+    }
   }
-  }
-
   @media (min-width: 576px) {
     padding: 4vw 0 0 0;
   }
-
   @media (min-width: 768px) {
     padding: 0;
   }
@@ -181,14 +186,15 @@ article h1,
     opacity: 1;
     text-shadow: 0 0.3125rem 0.9375rem rgba(0, 0, 0, 0.3);
 
-    .vibakukm &, .liker-page & {
+    .vibakukm &,
+    .liker-page & {
       width: 100%;
       @media (min-width: 768px) {
-      font-size: 2.6rem
+        font-size: 2.6rem;
       }
       @media (min-width: 992px) {
-        font-size: 4rem
-        }
+        font-size: 4rem;
+      }
     }
 
     @media (min-width: 576px) {
@@ -198,7 +204,6 @@ article h1,
     @media (min-width: 768px) {
       font: var(--font-weight-bold) 3rem/1.2em var(--font-poppins);
     }
-
     @media (min-width: 992px) {
       font: var(--font-weight-bold) 5rem/1.4em var(--font-poppins);
     }
