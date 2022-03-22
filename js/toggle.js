@@ -44,7 +44,7 @@ function UKMtoggleShow(target) {
     $(document).trigger('pre_UKMtoggleShow#' + target);
     $('#' + target + '.UKMtoggleContent').slideDown(function () {
         $(document).trigger('UKMtoggleShow#' + target);
-        AOS.refresh();
+        // AOS.refresh();
     });
     $('.' + target + '.UKMtoggleShow').hide();
     $('.' + target + '.UKMtoggleHide').fadeIn();
