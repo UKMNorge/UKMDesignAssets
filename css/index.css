@@ -2215,7 +2215,11 @@ iframe {
   margin: 0px;
 }
 
+.the-post-image-div {
+  display: flex;
+}
 #the_post_image {
+  margin: auto;
   margin-top: 2em;
   margin-bottom: 1em;
 }
