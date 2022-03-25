@@ -3939,6 +3939,7 @@ header .hamburger.open {
   height: 2rem;
   border-radius: 50%;
 }
+.delta-menu .hamburger-button,
 header .hamburger-icon {
   width: 1.5rem;
   position: relative;
@@ -3955,18 +3956,22 @@ header .hamburger-icon {
 header .hamburger-icon:focus {
   box-shadow: none;
 }
+
+.delta-menu.show .hamburger-button span:nth-child(1),
 header .hamburger-icon.open span:nth-child(1) {
   transform: rotate(45deg);
   top: 0.3rem;
   left: 0.4375rem;
   background: #070a12;
 }
+.delta-menu.show .hamburger-button span:nth-child(2),
 header .hamburger-icon.open span:nth-child(2) {
   transform: rotate(-45deg);
   top: 1.3rem;
   left: 0.4375rem;
   background: #070a12;
 }
+.delta-menu .hamburger-button span,
 header .hamburger-icon span {
   display: block;
   position: absolute;
@@ -3983,13 +3988,18 @@ header .hamburger-icon span {
   left: 50%;
   transform: translateX(-50%);
 }
+.delta-menu .hamburger-button span:nth-child(1),
 header .hamburger-icon span:nth-child(1) {
   top: 0.6rem;
   transform-origin: left center;
 }
+.delta-menu .hamburger-button span:nth-child(2),
 header .hamburger-icon span:nth-child(2) {
   top: 1.1rem;
   transform-origin: left center;
+}
+.delta-menu .hamburger-button span {
+  background: #070a12;
 }
 header .backToMain {
   font: normal normal 600 0.625rem/1.125rem Poppins;
