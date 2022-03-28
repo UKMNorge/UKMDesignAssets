@@ -1,4 +1,4 @@
-jQuery(document).on('touchend click', '.clickLinkWithin', function(e) {
+jQuery(document).on('click', '.clickLinkWithin', function(e) {
     if (jQuery(e.target).is('a') || jQuery(e.target).is('button')) {
         return true;
     }
