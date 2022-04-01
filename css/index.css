@@ -3334,6 +3334,9 @@ a .post-grid-default {
   .UKMblock .image {
     height: 45vh;
   }
+  .hva-er-home.container {
+    margin-top: 50px;
+  }
 }
 .UKMblock .text > h1,
 .UKMblock .text > h2 {
