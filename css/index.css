@@ -4080,6 +4080,9 @@ header .backToMain span {
     right: 0 !important;
     transform-origin: right top !important;
   }
+  .hva-er-home.container {
+    margin-top: 40px;
+  }
 }
 .banner {
   background: hsl(var(--color-primary-blue-900));
