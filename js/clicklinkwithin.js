@@ -1,4 +1,9 @@
-jQuery(document).on('click', '.clickLinkWithin', function(e) {
+var dragged = false;
+jQuery(document).on('mousedown', () => {dragged = false}).on('mousemove', () => {dragged = true}).on('click', '.clickLinkWithin', function(e) {
+    // Det er ikke klikk!
+    if(dragged == true) return;
+
+    // ... det er klikk
     if (jQuery(e.target).is('a') || jQuery(e.target).is('button')) {
         return true;
     }
