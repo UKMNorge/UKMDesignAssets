@@ -1848,6 +1848,12 @@ iframe {
 .innslag .header .data {
   float: right;
 }
+.innslagData div .header.noImage {
+  padding: 0 !important;
+}
+.innslagData div .header.noImage h1.mb-2 {
+  margin: 10px 0;
+}
 .innslag .data {
   background: hsl(var(--color-primary-blue-900));
   color: #fff;
