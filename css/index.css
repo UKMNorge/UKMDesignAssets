@@ -122,8 +122,8 @@ body .text-danger {
   color: hsl(var(--color-danger-100)) !important;
 }
 body .lead {
-  font-family: Poppins;
-  font-size: .8rem;
+  font-family: "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-size: 1.33rem;
   font-weight: var(--font-weight-light);
   line-height: 1.5em;
 }
