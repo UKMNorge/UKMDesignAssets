@@ -180,3 +180,19 @@ ul {
     width: 13rem;
     margin: 0.5rem auto;
 }
+
+// Festivalen
+.question-box-festivalen {
+    display: flex;
+}
+.question-box-festivalen .buttons {
+    display: flex;
+    margin: auto;
+}
+.question-box-festivalen .buttons .inner {
+    margin: 30px;
+}
+button.festival-style,
+a.festival-style {
+    border-radius: 15px;
+}
