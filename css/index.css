@@ -4626,4 +4626,51 @@ ul {
   margin: 0.5rem auto;
 }
 
+.question-box-festivalen {
+  display: flex;
+}
+.question-box-festivalen .buttons {
+  display: flex;
+  margin: auto;
+}
+.question-box-festivalen .buttons .inner {
+  margin: 30px;
+}
+button.festival-style,
+a.festival-style {
+  border-radius: 15px;
+}
+.question-box-festivalen .boxes .box .inner {
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: -1px 1px 5px 1px #0000003d;
+}
+.question-box-festivalen .boxes .box {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  text-decoration: none !important;
+}
+.question-box-festivalen .boxes .box .inner .title,
+.question-box-festivalen .boxes .box .inner .beskrivelse {
+  margin: 0;
+}
+.question-box-festivalen .boxes .box .inner .beskrivelse {
+  margin-top: 10px;
+}
+.question-box-festivalen .boxes .box .inner:hover {
+  background: linear-gradient(45deg, hsl(var(--color-primary-blue-800, var(--color-primary-orange-900))), hsl(var(--color-primary-blue-600, var(--color-primary-orange-900)))) !important;
+}
+.question-box-festivalen .boxes .box .inner:hover .title,
+.question-box-festivalen .boxes .box .inner:hover .beskrivelse {
+  color: #fff;
+}
+@media (max-width: 720px) {
+  .question-box-festivalen .buttons {
+    display: inline;
+  }
+  .question-box-festivalen .boxes .box {
+    padding: 0 !important;
+  }
+}
+
 /*# sourceMappingURL=index.css.map */
