@@ -221,7 +221,14 @@ a.festival-style {
     color: #fff;
 }
 
+#festivalHeader {
+    margin-bottom: 50px;
+}
+
 @media(max-width: 767px) {
+    #festivalHeader {
+        margin-bottom: 20px;
+    }
     .question-box-festivalen .buttons {
         display: inline;
     }
