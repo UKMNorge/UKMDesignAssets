@@ -4541,6 +4541,10 @@ ul {
   list-style-type: none;
 }
 
+article ul {
+  list-style-type: disc;
+}
+
 .choice-item {
   background-color: rgba(227, 236, 252, 0.5);
   padding: 1rem;
