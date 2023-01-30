@@ -1,0 +1,11 @@
+.as-box-style {
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 0 2px 7px #00000014;
+    margin-bottom: 30px;
+    overflow: hidden;
+    padding: 15px;
+    position: relative;
+    width: 100%;
+    padding: 20px;
+}
