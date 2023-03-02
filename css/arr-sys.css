@@ -33,4 +33,10 @@
     border: solid 1px #4f46e5;
     color: #4f46e5;
     background: #fff;
+    transition: .2s;
+}
+.as-botton-style-simple:hover {
+    color: #fff;
+    background: #4f46e5;
+    transition: .2s;
 }
