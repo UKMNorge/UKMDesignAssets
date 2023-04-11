@@ -4652,6 +4652,10 @@ button.festival-style,
 a.festival-style {
   border-radius: 15px;
 }
+a.festival-style.btn-xs {
+  border-radius: 5px;
+  font-size: 12px;
+}
 .question-box-festivalen .boxes .box .inner {
   padding: 30px;
   border-radius: 10px;
