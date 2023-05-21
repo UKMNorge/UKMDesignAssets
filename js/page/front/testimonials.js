@@ -29,6 +29,6 @@ jQuery(document).on('mouseover click', '.testimonial-small', function(e) {
         }
         setTimeout(function() { 
           switchToImage(images[interval]) 
-        }, 5000);
+        }, 10000);
       }) ($('.testimonial-items li')[0]);
    });
