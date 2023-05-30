@@ -4345,6 +4345,11 @@ header .backToMain span {
   aspect-ratio: auto 2400/1350;
 }
 
+.share-line-horizontal.workshop-social-media {
+  width: 100%;
+  padding-left: 30px;
+}
+
 @media (min-width: 992px) {
   .share-line-horizontal {
     display: none;
@@ -4437,6 +4442,10 @@ header .backToMain span {
 @media (min-width: 768px) {
   .fylke-section {
     margin-top: 7rem;
+  }
+  .share-line-horizontal.workshop-social-media {
+    width: 100%;
+    padding-left: 15px;
   }
 }
 .fylke-section .pageContainer {
