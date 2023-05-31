@@ -4707,6 +4707,10 @@ a.festival-style.btn-xs {
   .question-box-festivalen {
     padding: 0 15px !important;
   }
+  a.festival-style {
+    display: block !important;
+    text-align: center !important;
+  }
 }
 
 /*# sourceMappingURL=index.css.map */
