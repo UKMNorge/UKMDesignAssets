@@ -1086,6 +1086,28 @@ button {
 .btn-blue:hover {
   color: white;
 }
+.btn-blue.empty-style {
+  border: solid 4px #3e62f2;
+  background: #fff;
+  color: #3e62f2 !important;
+  padding: 16px 27px;
+}
+.btn-blue.empty-style svg.icon {
+  fill: #3e62f2;
+}
+.btn-blue.empty-style:hover {
+  background: #3e62f2;
+  color: #fff !important;
+}
+.btn-blue.empty-style:hover svg.icon {
+  fill: #fff;
+}
+@media (max-width: 992px) {
+  .btn-blue.empty-style {
+    padding: 12px 27px;
+  }
+}
+
 .btn-black {
   color: white !important;
   background: hsl(var(--color-neutral-warmgray-900));
