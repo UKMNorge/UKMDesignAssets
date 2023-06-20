@@ -786,6 +786,9 @@ a:hover {
   color: hsla(var(--color-even-darker-blue));
 }
 
+.nop {
+  padding: 0;
+}
 .wp-caption,
 img {
   max-width: 100% !important;
@@ -4736,6 +4739,9 @@ a.festival-style.btn-xs {
   a.festival-style {
     display: block !important;
     text-align: center !important;
+  }
+  .nop-xs {
+    padding: 0;
   }
 }
 
