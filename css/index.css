@@ -4721,6 +4721,40 @@ a.festival-style.btn-xs {
 #festivalHeader {
   margin-bottom: 50px;
 }
+.activity-timeline {
+  border-left: dashed 1px #cfd8e0;
+  position: relative;
+  margin-left: 85px;
+  min-height: 70px;
+    padding: 20px 0;
+}
+.activity-timeline .point-only {
+  position: absolute;
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  left: -8px;
+  top: 24px;
+  border: solid 5px #75797d;
+  background: #fff;
+}
+.activity-timeline .left-side-item {
+  position: absolute;
+  left: -85px;
+  color: #75797d;
+  font-size: 13px;
+  top: 19px;
+}
+.activity-timeline .inner {
+  padding-left: 25px;
+}
+.activity-timeline .inner .title {
+  margin: 0;
+  font-size: 18px;
+}
+.activity-timeline .inner .under-title {
+    font-size: 12px;
+}
 @media (max-width: 767px) {
   #festivalHeader {
     margin-bottom: 20px;
