@@ -4744,6 +4744,8 @@ a.festival-style.btn-xs {
   color: #75797d;
   font-size: 13px;
   top: 19px;
+  max-width: 75px;
+  word-break: break-all;
 }
 .activity-timeline .inner {
   padding-left: 25px;
