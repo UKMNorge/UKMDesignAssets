@@ -1094,6 +1094,7 @@ button {
   background: #fff;
   color: #3e62f2 !important;
   padding: 16px 27px;
+  display: block;
 }
 .btn-blue.empty-style svg.icon {
   fill: #3e62f2;
