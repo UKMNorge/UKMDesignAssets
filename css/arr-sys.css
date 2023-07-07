@@ -23,6 +23,7 @@
 
 /** CSS PRIMARY COLORS */ 
 :root {
+    --color-primary-bla-50:  #CEE6FC;
     --color-primary-bla-100:  #b4d9fb;
     --color-primary-bla-200:  #98cdf9;
     --color-primary-bla-300:  #7ac1f8;
@@ -36,14 +37,21 @@
     --color-primary-white: #fff;
 
     /* Black color */
-    --color-primary-black: #131313;
+    --color-primary-black: #333333;
 
     /* Shades of grey */
+    --color-primary-grey-lightest: #F4F4F4;
     --color-primary-grey-light: #dbdbdb;
     --color-primary-grey-medium: #b4b4b4;
     --color-primary-grey-dark: #717171;
 
 }
+
+/* Fonts */
+:root {
+    --font-roboto: "Roboto", sans-serif;
+}
+
 
 
 /** CSS VALUES */ 
@@ -51,20 +59,56 @@
     --initial-space-box: 8px;
 
     --radius-minimum: 3px;
+    --radius-minimal: 7px;
     --radius-medium: 12px;
     --radius-high: 15px;
     --radius-max: 25px;
+
+    --transition-time-min: .2s;
+    --transition-time-medium: .4s;
+    --transition-time-max: .6s;
 }
 
-h1, h2, h3, h4, h5, p {
+.as-container * {
+    font-family: var(--font-roboto);
+}
+
+.as-container h1,
+.as-container h2, 
+.as-container h3, 
+.as-container h4, 
+.as-container h5, 
+.as-container p {
     margin: 0;
     padding: 0;
 }
+
+.as-container a:focus {
+    outline: none;
+    box-shadow: none;
+}
+.as-container a:link { text-decoration: none; }
+.as-container a:visited { text-decoration: none; }
+.as-container a:hover { text-decoration: none; }
+.as-container a:active { text-decoration: none; }
+
+
 
 /* Box shadows */
 .as-box-shadow-card {
     box-shadow: 0 2px 7px #00000014;
 }
+.as-card-1 {
+    box-shadow: 0 2px 7px #00000014;
+    background-color: #fff;
+    border-radius: var(--radius-high);
+}
+.as-card-2 {
+    box-shadow: 0 2px 7px #00000014;
+    background-color: #fff;
+    border-radius: var(--radius-minimal);
+}
+
 
 /** SPACES - red box */
 
