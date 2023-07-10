@@ -23,6 +23,7 @@
 
 /** CSS PRIMARY COLORS */ 
 :root {
+    --color-primary-bla-lightest: #f2f7fd;
     --color-primary-bla-50:  #CEE6FC;
     --color-primary-bla-100:  #b4d9fb;
     --color-primary-bla-200:  #98cdf9;
@@ -52,8 +53,6 @@
     --font-roboto: "Roboto", sans-serif;
 }
 
-
-
 /** CSS VALUES */ 
 :root {
     --initial-space-box: 8px;
@@ -67,6 +66,19 @@
     --transition-time-min: .2s;
     --transition-time-medium: .4s;
     --transition-time-max: .6s;
+}
+
+/* hover, focus, active, visited */
+.as-btn-hover-default {
+    transition: var(--transition-time-min);
+}
+.as-btn-hover-default:hover {
+    transition: var(--transition-time-min);
+    background: var(--color-primary-bla-100) !important;
+    cursor: pointer;
+}
+.as-btn-hover-default:hover * {
+    color: var(--color-primary-black) !important;
 }
 
 .as-container * {
