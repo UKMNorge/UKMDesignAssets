@@ -75,7 +75,12 @@
 .as-btn-hover-default:hover {
     transition: var(--transition-time-min);
     background: var(--color-primary-bla-100) !important;
+    border-color: var(--color-primary-bla-100) !important;
     cursor: pointer;
+}
+.as-btn-hover-default:active {
+    background: var(--color-primary-bla-200) !important;
+    border-color: var(--color-primary-bla-200) !important;
 }
 .as-btn-hover-default:hover * {
     color: var(--color-primary-black) !important;
@@ -340,6 +345,42 @@
     padding-left: calc(5 * var(--initial-space-box));
 }
 
+/* Phanotm */
+/* Phantom loading */
+@keyframes placeHolderShimmer{
+    0%{
+        background-position: -468px 0
+    }
+    100%{
+        background-position: 468px 0
+    }
+}
+.loaded.phantom,
+.loaded .phantom {
+    display: none;
+}
+.phantom-loading {
+    animation-duration: .8s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-name: placeHolderShimmer;
+    animation-timing-function: linear;
+    background: #f6f7f8;
+    background: linear-gradient(to right, #eeeeee 8%, #dddddd 18%, #eeeeee 33%);
+    background-size: 1000px 104px;
+    position: relative;
+    overflow: hidden;
+    color: #0000 !important;
+    fill: #0000 !important;
+    border-radius: var(--radius-minimum);
+}
+.phantom-loading * {
+    fill: transparent;
+}
+
+.phantom-loading canvas {
+    background: transparent !important;
+}
 
 
 
@@ -381,4 +422,5 @@
     color: #fff;
     background: #4f46e5;
     transition: .2s;
+    
 }
