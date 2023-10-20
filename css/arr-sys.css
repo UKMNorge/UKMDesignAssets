@@ -134,6 +134,14 @@
     padding: 0;
 }
 
+.as-mini-label-style {
+    background: #e9f0f8;
+    border-radius: 7px;
+    color: #718096;
+    font-size: 12px;
+    padding: 0 9px;
+}
+
 .as-container a:focus {
     outline: none;
     box-shadow: none;
