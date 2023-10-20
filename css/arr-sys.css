@@ -27,6 +27,7 @@
 /** CSS PRIMARY COLORS */ 
 :root {
     --color-primary-bla-lightest: #f2f7fd;
+    --color-primary-bla-25:  #e3f1ff;
     --color-primary-bla-50:  #CEE6FC;
     --color-primary-bla-100:  #b4d9fb;
     --color-primary-bla-200:  #98cdf9;
@@ -135,11 +136,18 @@
 }
 
 .as-mini-label-style {
-    background: #e9f0f8;
+    background: var(--color-primary-bla-25);
     border-radius: 7px;
-    color: #718096;
+    color: var(--color-primary-grey-dark);
     font-size: 12px;
-    padding: 0 9px;
+    padding: calc(var(--initial-space-box)/2) var(--initial-space-box);
+    text-shadow: none;
+    display: inline;
+}
+.as-mini-label-style span.icon svg {
+    margin-right: 3px;
+    vertical-align: top;
+    width: 13px;
 }
 
 .as-container a:focus {
