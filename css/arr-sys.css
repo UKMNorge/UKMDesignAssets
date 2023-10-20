@@ -20,6 +20,9 @@
 .nop {
     padding: 0;
 }
+.nom {
+    margin: 0;
+}
 
 /** CSS PRIMARY COLORS */ 
 :root {
@@ -415,6 +418,7 @@
 
 
 
+/* OLD */
 .as-box-style {
     background: #fff;
     border-radius: 15px;
