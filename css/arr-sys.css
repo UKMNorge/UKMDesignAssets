@@ -90,6 +90,16 @@
 .as-btn-hover-default:hover * {
     color: var(--color-primary-black) !important;
 }
+/* <a></a> elements */
+a.as-btn-hover-default {
+    padding: 3px;
+    margin: -3px;
+    text-decoration: none !important;
+}
+a.as-btn-hover-default:hover {
+    border-radius: var(--radius-minimum);
+}
+
 
 .as-btn-default {
     border: none;
