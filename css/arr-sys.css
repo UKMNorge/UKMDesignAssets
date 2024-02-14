@@ -50,6 +50,11 @@
     --color-primary-grey-medium: #b4b4b4;
     --color-primary-grey-dark: #717171;
 
+    /* Success Primary colors */
+    --as-color-primary-success: #4CAF50;
+
+    /* Danger Primary colors */
+    --as-color-primary-danger: #ff4d4d;
 }
 
 /* Fonts */
