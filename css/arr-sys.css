@@ -410,6 +410,11 @@ a.as-btn-hover-default:hover {
     padding-left: calc(5 * var(--initial-space-box));
 }
 
+/* positionings */
+.as-display-flex {
+    display: flex;
+}
+
 /* Phanotm */
 /* Phantom loading */
 @keyframes placeHolderShimmer{
