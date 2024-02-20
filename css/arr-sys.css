@@ -446,6 +446,9 @@ a.as-btn-hover-default:hover {
 .as-display-flex {
     display: flex;
 }
+.as-margin-auto {
+    margin: auto;
+}
 
 /* Phanotm */
 /* Phantom loading */
