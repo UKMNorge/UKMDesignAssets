@@ -23,6 +23,18 @@
 .nom {
     margin: 0;
 }
+.nosh {
+    box-shadow: none;
+}
+.nop-impt {
+    padding: 0 !important;
+}
+.nom-impt {
+    margin: 0 !important;
+}
+.nosh-impt {
+    box-shadow: none !important;
+}
 
 /** CSS PRIMARY COLORS */ 
 :root {
@@ -56,7 +68,16 @@
     --as-color-primary-success: #78b57a;
 
     /* Danger Primary colors */
+    --as-color-primary-danger-lightest: #ffebeb;
+    --as-color-primary-danger-lighter: #fcd3d3;
+    --as-color-primary-danger-light: #fcb1b1;
     --as-color-primary-danger: #fc8282;
+
+    /* Warning Primary colors */
+    --as-color-primary-warning-lightest: #fff3d6;
+    --as-color-primary-warning-lighter: #ffebae;
+    --as-color-primary-warning-light: #ffd88c;
+    --as-color-primary-warning-medium: #ffcc5c;
 }
 
 /* Fonts */
