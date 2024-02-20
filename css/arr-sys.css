@@ -449,6 +449,9 @@ a.as-btn-hover-default:hover {
 .as-margin-auto {
     margin: auto;
 }
+.as-text-center {
+    text-align: center;
+}
 
 /* Phanotm */
 /* Phantom loading */
