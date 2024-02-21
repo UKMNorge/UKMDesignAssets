@@ -179,6 +179,12 @@ a.as-btn-hover-default:hover {
     font-family: var(--font-roboto);
 }
 
+.as-btn-simple.as-btn-simple-small {
+    padding: var(--initial-space-box) calc(2 * var(--initial-space-box));
+    font-size: 13px;
+}
+
+
 .as-container h1,
 .as-container h2, 
 .as-container h3, 
