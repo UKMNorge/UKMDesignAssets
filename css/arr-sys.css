@@ -78,6 +78,13 @@
     --as-color-primary-warning-lighter: #ffebae;
     --as-color-primary-warning-light: #ffd88c;
     --as-color-primary-warning-medium: #ffcc5c;
+
+    /* Info Primary colors */
+    --as-color-primary-info-lightest: #e6f7ff;
+    --as-color-primary-info-lighter: #b3e6ff;
+    --as-color-primary-info-light: #80d4ff;
+    --as-color-primary-info: #4dc2ff;
+    
 }
 
 /* Fonts */
