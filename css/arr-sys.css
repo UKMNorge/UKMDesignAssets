@@ -57,6 +57,7 @@
     --color-primary-black: #333333;
 
     /* Shades of grey */
+    --color-primary-grey-extra-lightes: #f9f9f9;
     --color-primary-grey-lightest: #F4F4F4;
     --color-primary-grey-light: #dbdbdb;
     --color-primary-grey-medium: #b4b4b4;
@@ -72,6 +73,7 @@
     --as-color-primary-success-lighter: #baeabc;
     --as-color-primary-success-light: #a2d8a4;
     --as-color-primary-success: #78b57a;
+    --as-color-primary-success-darker: #5e9d60;
 
     /* Danger Primary colors */
     --as-color-primary-danger-lightest: #ffebeb;
@@ -171,14 +173,41 @@ a.as-btn-hover-default:hover {
 .as-btn-simple:active {
     background: var(--color-primary-grey-medium) !important;
 }
+
+/* Primary button */
+.as-btn-simple.primary {
+    background: var(--as-color-primary-primary-lighter);
+}
+.as-btn-simple.primary:hover,
+.as-btn-simple.primary:active {
+    background: var(--as-color-primary-primary-light) !important;
+}
+.as-btn-simple.primary:focus {
+    background: var(--as-color-primary-primary-darker) !important;
+}
+
+/* Default button */
+.as-btn-simple.default {
+    background: var(--color-primary-grey-lightest);
+}
+.as-btn-simple.default:hover,
+.as-btn-simple.default:active {
+    background: var(--color-primary-grey-light) !important;
+}
+.as-btn-simple.primary:focus {
+    background: var(--color-primary-grey-dark) !important;
+}
+
+/* Success button */
 .as-btn-simple.success {
     background: var(--as-color-primary-success-lighter);
 }
-
 .as-btn-simple.success:hover,
-.as-btn-simple.success:focus,
 .as-btn-simple.success:active {
     background: var(--as-color-primary-success-light) !important;
+}
+.as-btn-simple.success:focus {
+    background: var(--as-color-primary-success-darker) !important;
 }
 
 .as-container * {
@@ -391,6 +420,21 @@ a.as-btn-hover-default:hover {
 }
 .as-padding-space-5 {
     padding: calc(5 * var(--initial-space-box));
+}
+.as-padding-space-6 {
+    padding: calc(6 * var(--initial-space-box));
+}
+.as-padding-space-7 {
+    padding: calc(7 * var(--initial-space-box));
+}
+.as-padding-space-8 {
+    padding: calc(8 * var(--initial-space-box));
+}
+.as-padding-space-9 {
+    padding: calc(9 * var(--initial-space-box));
+}
+.as-padding-space-10 {
+    padding: calc(10 * var(--initial-space-box));
 }
 
 /* padding-top */
