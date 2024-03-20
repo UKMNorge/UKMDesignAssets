@@ -67,6 +67,7 @@
     --as-color-primary-primary-lightest: #f2f7fd;
     --as-color-primary-primary-lighter: #d4e6f9;
     --as-color-primary-primary-light: #a2d0f5;
+    --as-color-primary-primary-normal: #6daaf0;
     
 
     /* Success Primary colors */
@@ -183,7 +184,7 @@ a.as-btn-hover-default:hover {
     background: var(--as-color-primary-primary-light) !important;
 }
 .as-btn-simple.primary:focus {
-    background: var(--as-color-primary-primary-darker) !important;
+    background: var(--as-color-primary-primary-normal) !important;
 }
 
 /* Default button */
@@ -194,7 +195,7 @@ a.as-btn-hover-default:hover {
 .as-btn-simple.default:active {
     background: var(--color-primary-grey-light) !important;
 }
-.as-btn-simple.primary:focus {
+.as-btn-simple.default:focus {
     background: var(--color-primary-grey-dark) !important;
 }
 
