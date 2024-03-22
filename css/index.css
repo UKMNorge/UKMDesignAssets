@@ -2336,6 +2336,66 @@ figure.wp-block-embed-ukm-tv div iframe.wp-embedded-content {
   left: auto !important;
 }
 
+/* Dropdown bruker meny */
+#arrangorBrukerMenu {
+  position: absolute;
+  left: -150px;
+  margin-top: 4px;
+  width: 150px;
+  box-shadow: 0px 0px 5px 2px #9a9a9a4f !important;
+  border-radius: 10px !important;
+  width: 200px;
+  overflow: hidden;
+}
+#arrangorBrukerMenu .mainpage .dropdown-item.drop-item {
+  padding: 8px 16px !important;
+}
+#buttonBrukerMenu {
+  height: 30px;
+}
+#buttonBrukerMenu button {
+  background: transparent;
+  height: 32px !important;
+  width: 23px !important;
+  box-shadow: none !important;
+  border: none !important;
+  padding: 0 10px !important;
+  border-radius: var(--radius-normal);
+  transition: all .1s;
+}
+#wp-admin-bar-menu-toggle .ab-item {
+  border-radius: var(--radius-normal);
+  transition: all .1s;
+}
+#buttonBrukerMenu button:hover,
+#wpadminbar #wp-admin-bar-menu-toggle a:hover {
+  background-color: #fff !important;
+  transition: all .1s;
+}
+#buttonBrukerMenu button .hamburger-inner {
+  background-color: #ffffff;
+  width: 100% !important;
+  height: 3px;
+  border-radius: 10px !important;
+  margin: 5px 0;
+}
+#buttonBrukerMenu button:hover .hamburger-inner {
+  background-color: #000;
+}
+#wp-admin-bar-logout {
+  margin-right: 15px !important;
+  display: inline-block !important;
+}
+#wp-admin-bar-logout:hover .ab-item {
+  background: transparent !important;
+}
+#wp-admin-bar-logout .ab-item {
+  padding: 0 !important;
+}
+#arrangorBrukerMenu .mainpage .drop-item:hover {
+  background: var(--color-primary-grey-lightest) !important;
+}
+
 /*
  * PLAY ICON FOR FEATURED IMAGE
  * (video on top)
