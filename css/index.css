@@ -2353,6 +2353,7 @@ figure.wp-block-embed-ukm-tv div iframe.wp-embedded-content {
 #buttonBrukerMenu {
   height: 30px;
   margin: auto !important;
+  display: flex;
 }
 #buttonBrukerMenu button {
   background: transparent;
