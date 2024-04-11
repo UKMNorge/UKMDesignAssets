@@ -2352,6 +2352,7 @@ figure.wp-block-embed-ukm-tv div iframe.wp-embedded-content {
 }
 #buttonBrukerMenu {
   height: 30px;
+  margin: auto !important;
 }
 #buttonBrukerMenu button {
   background: transparent;
@@ -2391,6 +2392,7 @@ figure.wp-block-embed-ukm-tv div iframe.wp-embedded-content {
 }
 #wp-admin-bar-logout .ab-item {
   padding: 0 !important;
+  display: flex !important;
 }
 #arrangorBrukerMenu .mainpage .drop-item:hover {
   background: var(--color-primary-grey-lightest) !important;
