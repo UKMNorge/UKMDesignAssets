@@ -36,6 +36,10 @@
     box-shadow: none !important;
 }
 
+ol {
+    margin-left: 0;
+}
+
 /** CSS PRIMARY COLORS */ 
 :root {
     --color-primary-bla-lightest: #f2f7fd;
