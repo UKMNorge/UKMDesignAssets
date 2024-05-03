@@ -514,6 +514,9 @@ a.as-btn-hover-default:hover {
 .as-display-flex {
     display: flex;
 }
+.as-display-block {
+    display: block;
+}
 .as-margin-auto {
     margin: auto;
 }
