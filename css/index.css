@@ -4849,5 +4849,8 @@ a.festival-style.btn-xs {
     padding: 0;
   }
 }
+.sitemap .pageContainer .page a, .sitemap .pageContainer .page a:visited {
+  color: hsl(var(--color-primary-blue-900)) !important;
+}
 
 /*# sourceMappingURL=index.css.map */
