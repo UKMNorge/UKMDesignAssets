@@ -35,6 +35,12 @@
 .nosh-impt {
     box-shadow: none !important;
 }
+.noborder {
+    border: none;
+}
+.noborder-impt {
+    border: none !important;
+}
 
 ol {
     margin-left: 0;
