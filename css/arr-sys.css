@@ -85,6 +85,7 @@ ol {
     --as-color-primary-danger-lighter: #fcd3d3;
     --as-color-primary-danger-light: #fcb1b1;
     --as-color-primary-danger: #fc8282;
+    --as-color-primary-danger-darker: #fc5a5a;
 
     /* Warning Primary colors */
     --as-color-primary-warning-lightest: #fff3d6;
@@ -143,6 +144,7 @@ a.as-btn-hover-default {
     padding: 3px;
     margin: -3px;
     text-decoration: none !important;
+    color: var(--color-primary-black) !important;
 }
 a.as-btn-hover-default:hover {
     border-radius: var(--radius-minimum);
@@ -213,6 +215,19 @@ a.as-btn-hover-default:hover {
 }
 .as-btn-simple.success:focus {
     background: var(--as-color-primary-success-darker) !important;
+}
+
+/* Danger button */
+.as-btn-simple.danger {
+    background: var(--as-color-primary-danger);
+    color: #fff !important;
+}
+.as-btn-simple.danger:hover,
+.as-btn-simple.danger:active {
+    background: var(--as-color-primary-danger-darker) !important;
+}
+.as-btn-simple.danger:focus {
+    background: var(--as-color-primary-danger-darker) !important;
 }
 
 .as-container * {
