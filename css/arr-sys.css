@@ -271,7 +271,11 @@ a.as-btn-hover-default:hover {
     width: 13px;
 }
 
+.as-container input:focus,
+.as-container textarea:focus,
+.as-container select:focus,
 .as-container a:focus {
+
     outline: none;
     box-shadow: none;
 }
