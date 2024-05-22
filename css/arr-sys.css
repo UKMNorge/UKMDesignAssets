@@ -660,3 +660,10 @@ a.as-btn-hover-default:hover {
     transition: .2s;
     
 }
+
+
+/* Vuetify Modifications */
+.v-field__input {
+    border: none !important;
+    max-height: max-content;
+}
