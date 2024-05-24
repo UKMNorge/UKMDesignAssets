@@ -300,6 +300,47 @@ a.as-btn-hover-default:hover {
     background-color: #fff;
     border-radius: var(--radius-minimal);
 }
+.as-card-lightest-color {
+    background: var(--color-primary-grey-lightest);
+}
+
+/* Attributes */
+.as-chip {
+    background: var(--color-primary-bla-50);
+    border-radius: var(--radius-minimum);
+    font-weight: 300;
+    letter-spacing: 1px;
+    display: flex;
+    height: 100%;
+    min-width: 40px;
+    min-height: 35px;
+    padding: var(--initial-space-box);
+    transition: var(--transition-time-min);
+}
+.as-chip:hover {
+    transition: var(--transition-time-min);
+    background: var(--color-primary-bla-100) !important;
+    border-color: var(--color-primary-bla-100) !important;
+    cursor: pointer;
+}
+.as-chip button {
+    display: flex;
+    margin-left: calc(var(--initial-space-box) / 2);
+}
+.as-chip.button-chip {
+    padding: 0 !important;
+}
+.as-chip button.icon-button {
+    padding: var(--initial-space-box);
+    margin: 0 !important;
+    width: 100%
+}
+.as-chip button.icon-button svg {
+    fill: var(--color-primary-black) !important;
+}
+.as-chip svg {
+    margin: auto;
+}
 
 
 /** SPACES - red box */
@@ -670,4 +711,7 @@ a.as-btn-hover-default:hover {
 .v-field__input {
     border: none !important;
     max-height: max-content;
+}
+.v-label.v-field-label.v-field-label--floating {
+    color: var(--color-primary-grey-dark) !important;
 }
