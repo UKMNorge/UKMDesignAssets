@@ -72,6 +72,7 @@ ol {
     --color-primary-grey-light: #dbdbdb;
     --color-primary-grey-medium: #b4b4b4;
     --color-primary-grey-dark: #717171;
+    --color-primary-grey-darkest: #333333;
 
     /* Primary Primary colors */
     --as-color-primary-primary-lightest: #f2f7fd;
@@ -586,6 +587,12 @@ a.as-btn-hover-default:hover {
 .as-margin-auto {
     margin: auto;
 }
+.as-margin-right-none {
+    margin-right: 0;
+}
+.as-margin-left-none {
+    margin-left: 0;
+}
 .as-text-center {
     text-align: center;
 }
@@ -714,4 +721,21 @@ a.as-btn-hover-default:hover {
 }
 .v-label.v-field-label.v-field-label--floating {
     color: var(--color-primary-grey-dark) !important;
+}
+.v-field-label {
+    color: var(--color-primary-black) !important;
+}
+.v-textarea .v-field__field,
+.v-field {
+    background: var(--color-primary-grey-lightest);
+}
+.v-field input {
+    border: none !important;
+    background: var(--color-primary-grey-lightest);
+}
+.v-label.v-label--clickable {
+    margin: auto;
+}
+.v-switch.v-input {
+    display: inline-flex;
 }
