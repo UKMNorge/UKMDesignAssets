@@ -82,6 +82,7 @@ ol {
     
 
     /* Success Primary colors */
+    --as-color-primary-success-lightest: #e6f7eb;
     --as-color-primary-success-lighter: #baeabc;
     --as-color-primary-success-light: #a2d8a4;
     --as-color-primary-success: #78b57a;
@@ -581,6 +582,10 @@ a.as-btn-hover-default:hover {
 .as-display-flex {
     display: flex;
 }
+.as-display-flex-wrap {
+    display: flex;
+    flex-wrap: wrap;
+}
 .as-display-block {
     display: block;
 }
@@ -595,6 +600,12 @@ a.as-btn-hover-default:hover {
 }
 .as-text-center {
     text-align: center;
+}
+.as-text-right {
+    text-align: right;
+}
+.as-text-left {
+    text-align: left;
 }
 
 /* Phanotm */
@@ -738,4 +749,37 @@ a.as-btn-hover-default:hover {
 }
 .v-switch.v-input {
     display: inline-flex;
+}
+.v-btn--hover-default:hover {
+    background: var(--color-primary-grey-light) !important;
+}
+.v-btn-as {
+    font-size: 14px; 
+    color: #000; 
+    border: none !important;
+    border-radius: var(--radius-normal) !important;
+}
+.v-btn-bla {
+    background: var(--color-primary-bla-100) !important;
+}
+.v-btn-hvit {
+    background: #fff !important;
+}
+.v-btn-hvit:hover {
+    background: var(--color-primary-grey-light) !important;
+}
+
+.v-btn-success {
+    background-color: var(--as-color-primary-success-light) !important;
+}
+.v-autocomplete-arr-sys div .v-field {
+    border-radius: var(--radius-normal) !important;
+}
+.v-overlay-container { 
+    z-index: 99999 !important;
+    display: block !important;
+}
+.vue-as-textarea .v-input__control {
+    border-radius: var(--radius-minimal) !important;
+    overflow: hidden !important;
 }
