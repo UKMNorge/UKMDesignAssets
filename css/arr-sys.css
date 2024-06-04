@@ -759,8 +759,14 @@ a.as-btn-hover-default:hover {
     border: none !important;
     border-radius: var(--radius-normal) !important;
 }
+.v-btn-as-shadow {
+    border-radius: var(--radius-normal) !important;
+}
 .v-btn-bla {
     background: var(--color-primary-bla-100) !important;
+}
+.v-btn-grey {
+    background: var(--color-primary-grey-light) !important;
 }
 .v-btn-hvit {
     background: #fff !important;
@@ -777,7 +783,9 @@ a.as-btn-hover-default:hover {
 }
 .v-overlay-container { 
     z-index: 99999 !important;
-    display: block !important;
+    display: flex !important;
+    width: 100%;
+    height: 100%;
 }
 .vue-as-textarea .v-input__control {
     border-radius: var(--radius-minimal) !important;
