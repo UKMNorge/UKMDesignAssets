@@ -157,7 +157,19 @@ a.as-btn-hover-default {
 a.as-btn-hover-default:hover {
     border-radius: var(--radius-minimum);
 }
-
+a.as-btn-ahref {
+    padding: 3px;
+    margin: -3px;
+    text-decoration: none !important;
+    color: var(--color-primary-black) !important;
+    background: var(--as-color-primary-primary-lighter);
+    border-radius: var(--radius-minimum);
+    padding: 2px 5px;
+    margin: 0;
+}
+a.as-btn-ahref:hover {
+    background: var(--as-color-primary-primary-light);
+}
 
 .as-btn-default {
     border: none;
@@ -295,7 +307,7 @@ a.as-btn-hover-default:hover {
 .as-card-1 {
     box-shadow: 0 2px 7px #00000014;
     background-color: #fff;
-    border-radius: var(--radius-high);
+    border-radius: var(--radius-high) !important;
 }
 .as-card-2 {
     box-shadow: 0 2px 7px #00000014;
@@ -786,6 +798,7 @@ a.as-btn-hover-default:hover {
     display: flex !important;
     width: 100%;
     height: 100%;
+    contain: none !important;
 }
 .vue-as-textarea .v-input__control {
     border-radius: var(--radius-minimal) !important;
