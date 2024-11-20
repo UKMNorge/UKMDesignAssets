@@ -826,14 +826,15 @@ a.as-btn-ahref:hover {
     background: var(--color-primary-grey-light) !important;
 }
 .v-btn-icon-round-small {
-    border-radius: 50% !important;
+    border-radius: 50% !important; 
     font-size: 16px !important;
 }
 
 .v-btn-success {
     background-color: var(--as-color-primary-success-light) !important;
 }
-.v-autocomplete-arr-sys div .v-field {
+.v-autocomplete-arr-sys div .v-field,
+.v-text-field-arr-sys div .v-field {
     border-radius: var(--radius-normal) !important;
 }
 .v-overlay-container { 
@@ -846,4 +847,7 @@ a.as-btn-ahref:hover {
 .vue-as-textarea .v-input__control {
     border-radius: var(--radius-minimal) !important;
     overflow: hidden !important;
+}
+.v-text-field-arr-sys .v-field__field {
+    padding: var(--initial-space-box) calc(0.5 * var(--initial-space-box))  !important;
 }
