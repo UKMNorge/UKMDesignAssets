@@ -1906,6 +1906,10 @@ iframe {
   border: solid 1px #bebebe2b;
   margin-bottom: 16px;
 }
+.kontaktperson-bilde img.bruker-img {
+  max-height: 60px !important;
+  max-width: 60px !important;
+}
 .kontakt-bilde {
   color: hsl(var(--color-primary-blue-900));
   padding-bottom: 66%;
