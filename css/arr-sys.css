@@ -100,6 +100,7 @@ ol {
     --as-color-primary-warning-lighter: #ffebae;
     --as-color-primary-warning-light: #ffd88c;
     --as-color-primary-warning-medium: #ffcc5c;
+    --as-color-primary-warning-default: #fb8c00;
 
     /* Info Primary colors */
     --as-color-primary-info-lightest: #e6f7ff;
