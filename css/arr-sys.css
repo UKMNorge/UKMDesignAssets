@@ -778,6 +778,9 @@ a.as-btn-ahref:hover {
 
 
 /* Vuetify Modifications */
+.v-timeline .v-timeline-divider__dot {
+    background-color: #fff !important;
+}
 .v-field__input {
     border: none !important;
     max-height: max-content;
