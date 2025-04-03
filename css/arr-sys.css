@@ -837,6 +837,10 @@ a.as-btn-ahref:hover {
 .v-btn-success {
     background-color: var(--as-color-primary-success-light) !important;
 }
+
+.v-btn-error {
+    background-color: var(--as-color-primary-danger) !important;
+}
 .v-autocomplete-arr-sys div .v-field,
 .v-text-field-arr-sys div .v-field {
     border-radius: var(--radius-normal) !important;
