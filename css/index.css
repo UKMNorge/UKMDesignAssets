@@ -3971,17 +3971,17 @@ header .header {
 }
 header .ukm-logo {
   color: hsl(var(--color-neutral-coldgray-100));
-  width: 2.5rem;
+  width: 35px;
 }
 @media (min-width: 576px) {
   header .ukm-logo {
-    width: 2.75rem;
+    width: 40px;
   }
 }
 @media (min-width: 992px) {
   header .ukm-logo {
-    width: 4rem;
-    height: 2.25rem;
+    width: auto;
+    height: 50px;
   }
 }
 .vibakukm header .ukm-logo {
