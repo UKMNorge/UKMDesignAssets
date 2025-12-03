@@ -1497,9 +1497,6 @@ button {
 .geolocation-banner {
   display: flex;
   flex-direction: column;
-  background-color: #FF520E;
-  margin-bottom: -1.5rem;
-  height: 4rem;
 }
 .vibakukm .geolocation-banner {
   background-color: hsl(var(--color-neutral-warmgray-900));
