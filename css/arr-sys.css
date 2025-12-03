@@ -857,5 +857,5 @@ a.as-btn-ahref:hover {
     overflow: hidden !important;
 }
 .v-text-field-arr-sys .v-field__field {
-    padding: var(--initial-space-box) calc(0.5 * var(--initial-space-box))  !important;
+    padding: calc(1.5 * var(--initial-space-box)) calc(0.5 * var(--initial-space-box))  !important;
 }
