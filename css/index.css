@@ -875,6 +875,20 @@ button {
   box-shadow: 0 0.5rem 1rem hsla(var(--color-primary-blue-600, var(--color-primary-orange-600)), 0.25);
   border-radius: 1.5625rem;
 }
+a.btn-ahref {
+    text-decoration: none !important;
+    color: #000000 !important;
+    background: rgb(173, 131, 255, 1);
+    border-radius: 10px;
+    padding: 4px 8px;
+    margin: 0;
+}
+a.btn-ahref:hover {
+    background: rgb(173, 131, 255, .9);
+}
+body .lead {
+    font-size: 1.1rem;
+}
 @media (min-width: 992px) {
   .ukm-button-primary {
     top: 0;
